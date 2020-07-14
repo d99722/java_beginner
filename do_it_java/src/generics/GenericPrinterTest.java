@@ -15,7 +15,7 @@ public class GenericPrinterTest {
 		Plastic plastic = plasticPrinter.getMaterial();
 		System.out.println(plasticPrinter);
 		
-		GenericPrinter<String> stringPrinter = new GenericPrinter<>();
+//		GenericPrinter<String> stringPrinter = new GenericPrinter<>();
 
 	}
 
