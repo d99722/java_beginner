@@ -1,0 +1,21 @@
+package sorting;
+
+public class HeapSort implements Sort{
+
+	@Override
+	public void ascending(int[] arr) {
+		System.out.println("HeapSort Ascending");
+		
+	}
+
+	@Override
+	public void descending(int[] arr) {
+		System.out.println("HeapSort Descending");
+		
+	}
+	@Override
+	public void description() {
+		Sort.super.description();
+		System.out.println("HeapSort 입니다.");
+	}
+}

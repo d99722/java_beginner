@@ -1,0 +1,357 @@
+{\rtf1\ansi\ansicpg949\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset129 AppleSDGothicNeo-Regular;\f1\fnil\fcharset129 AppleSDGothicNeo-Bold;\f2\fswiss\fcharset0 Helvetica;
+\f3\fswiss\fcharset0 Helvetica-Bold;\f4\fswiss\fcharset0 Helvetica-Oblique;\f5\fswiss\fcharset0 Helvetica-BoldOblique;
+}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red106\green62\blue62;\red0\green0\blue192;
+\red42\green0\blue255;}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c0\c0\c75294;
+\csgenericrgb\c16471\c0\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11000\viewh19580\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs42 \cf0 ch19. \'c0\'af\'c8\'bf\'b9\'fc\'c0\'a7 scope\
+\
+
+\f1\b \ul * \'c0\'af\'c8\'bf\'b9\'fc\'c0\'a7
+\f0\b0 \ulnone \
+- \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'cc \'c4\'bf\'c1\'f6\'b8\'e9, \'bf\'a9\'b7\'af\'b0\'a1\'c1\'f6 \'c0\'cc\'c0\'af\'b7\'ce \'c0\'cc\'b8\'a7\'c0\'cc \'c3\'e6\'b5\'b9\'c7\'cf\'b0\'d4 \'b5\'c8\'b4\'d9.\
+	: left - \'b3\'b2\'b0\'dc\'b5\'ce\'b4\'d9, \'bf\'de\'c2\'ca \'a1\'a6\
+	: right - \'b1\'c7\'b8\'ae, \'bf\'c0\'b8\'a5\'c2\'ca \'a1\'a6 \
+- \'c0\'cc\'b8\'a6 \'c7\'d8\'b0\'e1\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'b9\'e6\'b9\'fd \'c1\'df \'c7\'cf\'b3\'aa\'b0\'a1 scope, \'c0\'af\'c8\'bf\'b9\'fc\'c0\'a7\'c0\'cc\'b4\'d9.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2\fs32 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b \cf2 public
+\f2\b0 \cf0  
+\f3\b \cf2 class
+\f2\b0 \cf0  ScopeDemo \{\
+	\
+	
+\f3\b \cf2 static
+\f2\b0 \cf0  
+\f3\b \cf2 void
+\f2\b0 \cf0  a() \{\
+		
+\f3\b \cf2 int
+\f2\b0 \cf0  \cf3 \ul \ulc3 i\cf0 \ulnone  = 0;\
+	\}\
+\
+	
+\f3\b \cf2 public
+\f2\b0 \cf0  
+\f3\b \cf2 static
+\f2\b0 \cf0  
+\f3\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		
+\f3\b \cf2 for
+\f2\b0 \cf0  (
+\f3\b \cf2 int
+\f2\b0 \cf0  \cf3 i\cf0  = 0; \cf3 i\cf0 <5; \cf3 i\cf0 ++) \{\
+			
+\f4\i a
+\f2\i0 ();\
+			System.
+\f5\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf3 i\cf0 );\
+		\}\
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs42 \cf0 - for\'b9\'ae \'b3\'bb\'bf\'a1\'bc\'ad a();\'b0\'a1 \'bd\'c7\'c7\'e0\'b5\'c7\'b8\'e9 i\'b0\'a1 0\'c0\'b8\'b7\'ce \'c3\'ca\'b1\'e2\'c8\'ad \'b5\'c7\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 i<5\'bf\'a1 \'b5\'b5\'b4\'de\'c7\'cf\'c1\'f6 \'b8\'f8\'c7\'cf\'b0\'ed \'b9\'ab\'c7\'d1\'b9\'dd\'ba\'b9 \'b5\'c7\'c1\'f6 \'be\'ca\'c0\'bb\'b1\'ee???\
+- \'be\'c6\'b4\'d4! i\'b6\'f3\'b4\'c2 \'ba\'af\'bc\'f6\'b4\'c2 a\'b6\'f3\'b4\'c2 method \'be\'c8\'bf\'a1\'bc\'ad \'bc\'b1\'be\'f0\'b5\'c7\'b0\'ed \'c0\'d6\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1, a method \'b9\'d9\'b1\'f9\'bf\'a1\'bc\'ad\'b4\'c2 \'bf\'b5\'c7\'e2\'c0\'bb \'b9\'cc\'c4\'a5 \'bc\'f6 \'be\'f8\'c0\'bd\
+- method\'be\'c8\'bf\'a1\'bc\'ad \'ba\'af\'bc\'f6\'b8\'a6 \'bc\'b1\'be\'f0\'c7\'cf\'b0\'d4 \'b5\'c7\'b8\'e9, \'b1\'d7 \'ba\'af\'bc\'f6\'b4\'c2 method\'be\'c8\'bf\'a1\'bc\'ad\'b8\'b8 \'c0\'af\'c8\'bf\'c7\'d1 \'ba\'af\'bc\'f6\'b0\'a1 \'b5\'c8\'b4\'d9 :: \'c0\'af\'c8\'bf\'b9\'fc\'c0\'a7! (scope)\
+\
+
+\f1\b \ul * \'b4\'d9\'be\'e7\'c7\'d1 \'c0\'af\'c8\'bf\'b9\'fc\'c0\'a7\'b5\'e9
+\f0\b0 \ulnone \
+- \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\'b7\'ce \'ba\'f1\'c0\'af\
+- \'c6\'c4\'c0\'cf\'c0\'cc \'b8\'b9\'be\'c6\'c1\'ae\'bc\'ad \'b0\'b0\'c0\'ba \'c0\'cc\'b8\'a7\'c0\'cc \'c1\'b8\'c0\'e7\'c7\'d1\'b4\'d9\'b0\'c5\'b3\'aa, \'c6\'c4\'c0\'cf\'c0\'bb \'b9\'de\'be\'d2\'b4\'c2\'b5\'a5 \'c0\'cc\'b8\'a7\'c0\'cc \'c3\'e6\'b5\'b9\'c7\'d1\'b4\'d9\'b8\'e9?\
+- \'b5\'a4\'be\'ee\'be\'b2\'b1\'e2 \'c7\'d2 \'b6\'a7 \'bb\'e7\'bf\'eb\'c0\'da\'bf\'a1\'b0\'d4 \'b9\'b0\'be\'ee\'ba\'b8\'b4\'c2 \'b5\'ee\'c0\'c7 \'b1\'e2\'b4\'c9\'c0\'cc \'c3\'df\'b0\'a1\'b5\'c8\'b4\'d9.\
+- \'c0\'cc \'b0\'fa\'c1\'a4\'bf\'a1\'bc\'ad \'b0\'ed\'be\'c8\'b5\'c8 \'b0\'cd\'c0\'cc \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\'a1\'a6 \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\'b0\'a1 \'b4\'d9\'b8\'a3\'b8\'e9 \'b0\'b0\'c0\'ba \'c0\'cc\'b8\'a7\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'d8\'b5\'b5 \'b9\'ae\'c1\'a6\'b0\'a1 \'b5\'c7\'c1\'f6 \'be\'ca\'b4\'c2\'b4\'d9. (\'c7\'f6\'bb\'f3 \'bf\'cf\'c8\'ad)\
+\
+(\'b9\'ab\'c7\'d1\'b7\'e7\'c7\'c1)
+\f2\fs32 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b \cf2 public
+\f2\b0 \cf0  
+\f3\b \cf2 class
+\f2\b0 \cf0  ScopeDemo2 \{\
+	
+\f3\b \cf2 static
+\f2\b0 \cf0  
+\f3\b \cf2 int
+\f2\b0 \cf0  
+\f4\i \cf4 i
+\f2\i0 \cf0 ;\
+	\
+	
+\f3\b \cf2 static
+\f2\b0 \cf0  
+\f3\b \cf2 void
+\f2\b0 \cf0  a() \{\
+		
+\f4\i \cf4 i
+\f2\i0 \cf0 =0;\
+	\}\
+\
+	
+\f3\b \cf2 public
+\f2\b0 \cf0  
+\f3\b \cf2 static
+\f2\b0 \cf0  
+\f3\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		
+\f3\b \cf2 for
+\f2\b0 \cf0  (
+\f4\i \cf4 i
+\f2\i0 \cf0 =0; 
+\f4\i \cf4 i
+\f2\i0 \cf0 <5; 
+\f4\i \cf4 i
+\f2\i0 \cf0 ++) \{\
+			
+\f4\i a
+\f2\i0 ();\
+			System.
+\f5\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(
+\f4\i \cf4 i
+\f2\i0 \cf0 );\
+		\}\
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs42 \cf0 - \'c2\'f7\'c0\'cc\'c1\'a1\
+	: int\'bf\'a1 \'b4\'eb\'c7\'d1 \'bc\'b1\'be\'f0\'c0\'cc \'c5\'ac\'b7\'a1\'bd\'ba \'b9\'d8\'bf\'a1\'bc\'ad \'bc\'b1\'be\'f0\
+	 ~ \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'c1\'f7\'bc\'d3 \'ba\'af\'bc\'f6 = \'c0\'fc\'bf\'aa\'ba\'af\'bc\'f6 (global variables)\
+	: for\'b9\'ae\'bf\'a1\'bc\'ad\'b5\'b5 \'b9\'d9\'b1\'f9\'bf\'a1\'bc\'ad \'c1\'a4\'c0\'c7\'b5\'c8 int i\'b8\'a6 \'bb\'e7\'bf\'eb\
+- \'b9\'dd\'b4\'eb\'b7\'ce, method\'be\'c8\'bf\'a1\'bc\'ad \'bc\'b3\'c1\'a4\'b5\'c8 \'ba\'af\'bc\'f6\'b4\'c2 \'c1\'f6\'bf\'aa\'ba\'af\'bc\'f6 (local varaibles)\
+- \'b0\'b0\'c0\'ba i\'b8\'a6 \'b0\'f8\'c0\'af\'c7\'cf\'b9\'c7\'b7\'ce, a();\'b7\'ce \'bc\'b1\'be\'f0\'b5\'c8 i = 0\'c0\'bb \'b9\'fe\'be\'ee\'b3\'af \'bc\'f6 \'be\'f8\'c0\'bd\
+\
+- \'c0\'cc \'b6\'a7, for\'b9\'ae\'c0\'c7 \'b3\'bb\'ba\'ce\'b3\'aa a() method \'c1\'a4\'c0\'c7 \'b0\'fa\'c1\'a4\'bf\'a1\'bc\'ad int\'b8\'a6 \'c0\'fb\'be\'ee\'c1\'d9\'bd\'c3 \'b9\'ab\'c7\'d1\'b7\'e7\'c7\'c1\'b0\'a1 \'c1\'f8\'c7\'e0\'b5\'c7\'c1\'f6 \'be\'ca\'b4\'c2\'b4\'d9.\
+- \'c0\'cc\'b0\'cd\'c0\'ba, method\'bf\'cd for\'b9\'ae\'c0\'c7 \'c1\'f6\'bf\'aa\'ba\'af\'bc\'f6\'b7\'ce i\'b0\'a1 \'c1\'a4\'c0\'c7\'b5\'c7\'b1\'e2 \'b6\'a7\'b9\'ae\'c0\'cc\'b4\'d9. (\'c0\'fc\'bf\'aa\'ba\'af\'bc\'f6 i\'c0\'c7 \'b0\'aa\'b0\'fa\'b4\'c2 \'b9\'ab\'b0\'fc\'c7\'d4)\
+\
+
+\f1\b \ul * \'c0\'af\'c8\'bf\'b9\'fc\'c0\'a7 \'bf\'b9\'bd\'c3
+\f0\b0 \ulnone \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2\fs32 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b \cf2 public
+\f2\b0 \cf0  
+\f3\b \cf2 class
+\f2\b0 \cf0  ScopeDemo4 \{\
+\
+	
+\f3\b \cf2 static
+\f2\b0 \cf0  
+\f3\b \cf2 void
+\f2\b0 \cf0  a() \{\
+		String \cf3 \ul \ulc3 title\cf0 \ulnone  = \cf5 "coding everybody"\cf0 ;\
+	\}\
+	\
+	
+\f3\b \cf2 public
+\f2\b0 \cf0  
+\f3\b \cf2 static
+\f2\b0 \cf0  
+\f3\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		\
+		
+\f4\i a
+\f2\i0 ();\
+		System.
+\f5\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\ul title\ulnone );\
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs42 \cf0 - \'c0\'a7 \'c4\'da\'b5\'e5\'b4\'c2 error\'b0\'a1 \'b6\'e1\'b4\'d9\'a1\'a6\
+- a method \'b3\'bb\'ba\'ce\'bf\'a1\'bc\'ad \'c1\'a4\'c0\'c7\'b5\'c8 \'c1\'f6\'bf\'aa\'ba\'af\'bc\'f6 title\'c0\'bb main method\'bf\'a1\'bc\'ad\'b4\'c2 \'c3\'a3\'c0\'bb \'bc\'f6 \'be\'f8\'b1\'e2 \'b6\'a7\'b9\'ae\'c0\'cc\'b4\'d9.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2\fs32 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b \cf2 public
+\f2\b0 \cf0  
+\f3\b \cf2 class
+\f2\b0 \cf0  ScopeDemo5 \{\
+\
+	
+\f3\b \cf2 public
+\f2\b0 \cf0  
+\f3\b \cf2 static
+\f2\b0 \cf0  
+\f3\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		
+\f3\b \cf2 for
+\f2\b0 \cf0  (
+\f3\b \cf2 int
+\f2\b0 \cf0  \cf3 i\cf0  = 0; \cf3 i\cf0 <5; \cf3 i\cf0 ++) \{\
+			System.
+\f5\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf3 i\cf0 );\
+		\}\
+		System.
+\f5\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\ul i\ulnone );\
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs42 \cf0 - \'b8\'b6\'c2\'f9\'b0\'a1\'c1\'f6\'b7\'ce error\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'d1\'b4\'d9.\
+- for\'b9\'ae\'bf\'a1\'bc\'ad \'c1\'a4\'c0\'c7\'b5\'c8 \'c1\'f6\'bf\'aa\'ba\'af\'bc\'f6 i\'b8\'a6 main method\'bf\'a1\'bc\'ad\'b4\'c2 \'c3\'a3\'c0\'bb \'bc\'f6 \'be\'f8\'b1\'e2 \'b6\'a7\'b9\'ae\'c0\'cc\'b4\'d9.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b \cf0 \ul \ulc0 * \'c1\'a4\'c0\'fb\'c0\'ce \'c0\'af\'c8\'bf\'b9\'fc\'c0\'a7 (static scope, lexical scope)
+\f0\b0 \ulnone \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 1. \'b8\'d5\'c0\'fa \'c1\'f6\'bf\'aa\'ba\'af\'bc\'f6\'bf\'a1\'bc\'ad \'c3\'a3\'c0\'bd (\'bf\'ec\'bc\'b1!)\
+2. \'b8\'b8\'be\'e0 \'c1\'f6\'bf\'aa\'ba\'af\'bc\'f6\'bf\'a1\'bc\'ad \'c1\'a4\'c0\'c7\'b5\'c7\'be\'ee\'c0\'d6\'c1\'f6 \'be\'ca\'b4\'d9\'b8\'e9, \'c0\'fc\'bf\'aa\'ba\'af\'bc\'f6 \'c1\'df\'bf\'a1\'bc\'ad \'c3\'a3\'c0\'bd\
+3. \'c0\'da\'b1\'e2\'c0\'da\'bd\'c5 (\'c1\'f6\'bf\'aa\'ba\'af\'bc\'f6), \'c0\'fc\'bf\'aa\'ba\'af\'bc\'f6 \'c1\'df\'bf\'a1 \'be\'f8\'b4\'d9\'b8\'e9 error\
+	: \'b4\'d9\'b8\'a5 method\'c0\'c7 \'c1\'f6\'bf\'aa \'ba\'af\'bc\'f6 \'b5\'ee\'c0\'ba \'bb\'e7\'bf\'eb X\
+	: \'c0\'cc \'b6\'a7, \'b4\'d9\'b8\'a5 method\'c0\'c7 \'c1\'f6\'bf\'aa \'ba\'af\'bc\'f6\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d1\'b4\'d9\'b8\'e9 \'a1\'b0\'b5\'bf\'c0\'fb\'c0\'ce \'c0\'af\'c8\'bf\'b9\'fc\'c0\'a7\'a1\'b1 \'c0\'cc\'b4\'d9. (dynamic scope)\
+- \'c0\'fc\'c3\'bc\'c0\'fb\'c0\'b8\'b7\'ce (\'c0\'fc\'bf\'aa\'ba\'af\'bc\'f6) \'be\'ee\'b6\'b2 \'b0\'aa\'c0\'bb \'b1\'f2\'be\'c6\'b5\'ce\'b0\'ed, \'c7\'ca\'bf\'e4 \'bd\'c3 \'c1\'f6\'bf\'aa\'ba\'af\'bc\'f6\'b7\'ce \'c1\'a4\'c0\'c7\'c7\'d8\'c1\'d8 \'b0\'e6\'bf\'ec \'c1\'f6\'bf\'aa\'ba\'af\'bc\'f6\'b8\'a6 \'bf\'ec\'bc\'b1 \'bb\'e7\'bf\'eb, \'be\'f8\'c0\'b8\'b8\'e9 \'c0\'fc\'bf\'aa\'ba\'af\'bc\'f6 \'bb\'e7\'bf\'eb\
+\
+
+\f1\b \ul * this
+\f0\b0 \ulnone \
+- \'b8\'b8\'be\'e0 \'c1\'f6\'bf\'aa\'ba\'af\'bc\'f6\'b0\'a1 \'c1\'a4\'c0\'c7\'b5\'c7\'be\'ee \'c0\'d6\'c0\'bb \'b6\'a7, \'c0\'fc\'bf\'aa\'ba\'af\'bc\'f6\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b0\'ed \'bd\'cd\'b4\'d9\'b8\'e9?\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2\fs32 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b \cf2 class
+\f2\b0 \cf0  C \{\
+	
+\f3\b \cf2 int
+\f2\b0 \cf0  \cf4 v\cf0  = 10;\
+	\
+	
+\f3\b \cf2 void
+\f2\b0 \cf0  m() \{\
+		
+\f3\b \cf2 int
+\f2\b0 \cf0  \cf3 v\cf0  = 20;\
+		System.
+\f5\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(
+\f3\b \cf2 this
+\f2\b0 \cf0 .\cf4 v\cf0 );\
+		System.
+\f5\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf3 v\cf0 );\
+	\}\
+\}\
+\
+
+\f3\b \cf2 public
+\f2\b0 \cf0  
+\f3\b \cf2 class
+\f2\b0 \cf0  ScopeDemo7 \{\
+\
+	
+\f3\b \cf2 public
+\f2\b0 \cf0  
+\f3\b \cf2 static
+\f2\b0 \cf0  
+\f3\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		C \cf3 c1\cf0  = 
+\f3\b \cf2 new
+\f2\b0 \cf0  C();\
+		\cf3 c1\cf0 .m();\
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs42 \cf0 >>> 10 / 20\
+- this\'b4\'c2 \'bf\'ec\'b8\'ae\'b0\'a1 \'b8\'b8\'b5\'e7 instance \'c0\'da\'c3\'bc\'b8\'a6 \'c0\'c7\'b9\'cc\'c7\'d1\'b4\'d9.\
+- \'b0\'b4\'c3\'bc\'bf\'a1 \'b4\'eb\'c7\'d1 \'c0\'fc\'bf\'aa\'c0\'c7 \'c0\'c7\'b9\'cc\'b8\'a6 \'b0\'ae\'b0\'d4 \'b5\'c8\'b4\'d9.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf0 	
+\f3\b \cf2 int
+\f2\b0 \cf0  left, right;\
+	\
+	
+\f3\b \cf2 public
+\f2\b0 \cf0  
+\f3\b \cf2 void
+\f2\b0 \cf0  \ul setOprands(
+\f3\b \cf2 \ulnone int
+\f2\b0 \cf0  \ul left,\ulnone  
+\f3\b \cf2 int
+\f2\b0 \cf0  \ul right)\ulnone  \{\
+		
+\f3\b \cf2 this
+\f2\b0 \cf0 .\ul left\ulnone  = left;\
+		
+\f3\b \cf2 this
+\f2\b0 \cf0 .\ul right\ulnone  = right;\
+	\}\
+	
+\f0\fs42 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 - this.left = \'c0\'fc\'bf\'aa\'ba\'af\'bc\'f6\'b8\'a6 \'b0\'a1\'b8\'a3\'c5\'b4\
+- left = \'c1\'f6\'bf\'aa\'ba\'af\'bc\'f6\'b8\'a6 \'b0\'a1\'b8\'a3\'c5\'b4\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf0 	
+\f3\b \cf2 int
+\f2\b0 \cf0  left, right;\
+	\
+	
+\f3\b \cf2 public
+\f2\b0 \cf0  
+\f3\b \cf2 void
+\f2\b0 \cf0  \ul setOprands(
+\f3\b \cf2 \ulnone int
+\f2\b0 \cf0  _left\ul ,\ulnone  
+\f3\b \cf2 int
+\f2\b0 \cf0  _right\ul )\ulnone  \{\
+		left = _left;\
+		right = _right;\
+	\}\
+	
+\f0\fs42 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 - \'c1\'ef, \'c0\'a7\'c3\'b3\'b7\'b3 \'b9\'d9\'b2\'d9\'be\'ee\'b5\'b5 \'b5\'bf\'c0\'db\'c7\'d1\'b4\'d9.\
+\
+
+\f1\b \ul * \'b1\'b3\'c8\'c6
+\f0\b0 \ulnone \
+- \'c0\'fd\'c2\'f7\'c1\'f6\'c7\'e2 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'bf\'a1\'bc\'ad\'b4\'c2 \'b8\'f0\'b5\'e7 \'b8\'de\'bc\'d2\'b5\'e5\'bf\'a1\'bc\'ad \'c1\'a2\'b1\'d9\'c0\'cc \'b0\'a1\'b4\'c9\'c7\'d1 \'ba\'af\'bc\'f6\'c0\'c7 \'bb\'e7\'bf\'eb\'c0\'bb \'c1\'cb\'be\'c7\'bd\'c3\'c7\'cf\'b4\'c2 \'b0\'e6\'c7\'e2\'c0\'cc \'c0\'d6\'b4\'d9.\
+- \'b0\'b4\'c3\'bc\'c1\'f6\'c7\'e2 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b9\'d6\'c0\'c7 \'b5\'ee\'c0\'e5 \'b9\'e8\'b0\'e6 \'c1\'df \'c7\'cf\'b3\'aa\'b4\'c2, \'c0\'a7\'bf\'a1\'bc\'ad \'c1\'a6\'bd\'c3\'b5\'c8 \'b9\'ae\'c1\'a6\'bf\'cd \'b8\'c2\'b4\'ea\'be\'c6 \'c0\'d6\'b4\'c2 \'b0\'e6\'c7\'e2\'c0\'cc \'c0\'d6\'b4\'d9.\
+\
+\
+\
+}

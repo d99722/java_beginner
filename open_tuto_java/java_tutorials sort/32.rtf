@@ -1,0 +1,793 @@
+{\rtf1\ansi\ansicpg949\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset129 AppleSDGothicNeo-Regular;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fswiss\fcharset0 Helvetica;
+\f3\fswiss\fcharset0 Helvetica-BoldOblique;\f4\fnil\fcharset129 AppleSDGothicNeo-Bold;\f5\fswiss\fcharset0 Helvetica-Oblique;
+}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red106\green62\blue62;\red0\green0\blue192;
+\red42\green0\blue255;\red63\green127\blue95;}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c0\c0\c75294;
+\csgenericrgb\c16471\c0\c100000;\csgenericrgb\c24706\c49804\c37255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11000\viewh19580\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 ch32. \'b4\'d9\'c7\'fc\'bc\'ba polymorphism\
+- \'c7\'cf\'b3\'aa\'c0\'c7 method\'b3\'aa class\'b0\'a1 \'c0\'d6\'c0\'bb \'b6\'a7, \'c0\'cc\'b0\'cd\'b5\'e9\'c0\'cc \'b4\'d9\'be\'e7\'c7\'d1 \'b9\'e6\'b9\'fd\'c0\'b8\'b7\'ce \'b5\'bf\'c0\'db\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'bb \'c0\'c7\'b9\'cc\'c7\'d1\'b4\'d9.\
+- \'bf\'b9\'b8\'a6\'b5\'e9\'be\'ee method A\'b0\'a1 \'c0\'d6\'c0\'bb \'b6\'a7, \'c0\'cc\'b7\'b1\'bd\'c4\'c0\'b8\'b7\'ce \'c7\'cf\'b8\'e9 ~\'b7\'ce \'c7\'e0\'b5\'bf\'c7\'cf\'b0\'ed, \'c0\'cc\'b7\'b1\'bd\'c4\'c0\'b8\'b7\'ce\'c7\'cf\'b8\'e9 ~\'b7\'ce \'c7\'e0\'b5\'bf\'c7\'cf\'b4\'c2 \'c2\'f7\'c0\'cc\'b8\'a6 \'b5\'d1 \'bc\'f6 \'c0\'d6\'b4\'d9\'b4\'c2 \'c1\'a1\'c0\'cc\'b4\'d9.\
+- \'c5\'b0\'ba\'b8\'b5\'e5 : \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b9\'e6\'b9\'fd (\'b4\'a9\'b8\'a5\'b4\'d9) \'c0\'ba \'b0\'b0\'c1\'f6\'b8\'b8, \'be\'ee\'b6\'b2 \'c5\'b0\'b8\'a6 \'b4\'a9\'b8\'a3\'b3\'c4\'bf\'a1 \'b5\'fb\'b6\'f3 \'bd\'c7\'c7\'e0\'b5\'c7\'b4\'c2 \'b5\'bf\'c0\'db\'c0\'cc \'b4\'d9\'b8\'a7\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf2 package
+\f2\b0 \cf0  java_tutorials.polymorphism;\
+\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  O\{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  a(
+\f1\b \cf2 int
+\f2\b0 \cf0  \cf3 param\cf0 ) \{\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "
+\f0 \'bc\'fd\'c0\'da\'c3\'e2\'b7\'c2
+\f2 "\cf0 );\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf3 param\cf0 );\
+	\}\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  a(String \cf3 param\cf0 ) \{\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "
+\f0 \'b9\'ae\'c0\'da\'c3\'e2\'b7\'c2
+\f2 "\cf0 );\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf3 param\cf0 );\
+	\}\
+\}\
+\
+
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 class
+\f2\b0 \cf0  PolymorphismOverloadingDemo \{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 static
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		O \cf3 o\cf0  = 
+\f1\b \cf2 new
+\f2\b0 \cf0  O();\
+		\cf3 o\cf0 .a(1);\
+		\cf3 o\cf0 .a(\cf5 "one"\cf0 );\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \
+- overloading\'b5\'b5 \'b4\'d9\'c7\'fc\'bc\'ba \'c1\'df \'c7\'cf\'b3\'aa\'b6\'f3\'b0\'ed \'ba\'bc \'bc\'f6 \'c0\'d6\'b4\'d9!\
+\
+
+\f4\b \ul * \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'cd \'b4\'d9\'c7\'fc\'bc\'ba
+\f0\b0 \ulnone \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf2 package
+\f2\b0 \cf0  java_tutorials.polymorphism;\
+\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  A\{\}\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  B 
+\f1\b \cf2 extends
+\f2\b0 \cf0  A\{\}\
+\
+
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 class
+\f2\b0 \cf0  PolymorphismDemo1 \{\
+\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 static
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		A \cf3 \ul \ulc3 obj\cf0 \ulnone  = 
+\f1\b \cf2 new
+\f2\b0 \cf0  B();\
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 - class B\'b7\'ce \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'b8\'b5\'e9\'be\'fa\'b4\'c2\'b5\'a5, \'b5\'a5\'c0\'cc\'c5\'cd\'c5\'b8\'c0\'d4\'c0\'ba A\'c0\'cc\'b4\'d9.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf2 package
+\f2\b0 \cf0  java_tutorials.polymorphism;\
+\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  A\{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  String x() \{\
+		
+\f1\b \cf2 return
+\f2\b0 \cf0  \cf5 "x"\cf0 ;\
+	\}\
+\}\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  B 
+\f1\b \cf2 extends
+\f2\b0 \cf0  A\{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  String y() \{\
+		
+\f1\b \cf2 return
+\f2\b0 \cf0  \cf5 "y"\cf0 ;\
+	\}\
+\}\
+\
+
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 class
+\f2\b0 \cf0  PolymorphismDemo1 \{\
+\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 static
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		A \cf3 obj\cf0  = 
+\f1\b \cf2 new
+\f2\b0 \cf0  B();\
+		\cf3 obj\cf0 .x();\
+\pard\pardeftab720\partightenfactor0
+\cf6 //		obj.y();\cf0 \
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 - obj.x(); \'bf\'a1\'bc\'ad x\'c0\'c7 \'bc\'d2\'c0\'e7\'b4\'c2 \'ba\'ce\'b8\'f0\'c5\'ac\'b7\'a1\'bd\'ba A\'c0\'cc\'b4\'d9. : obj\'b4\'c2 B\'b8\'a6 \'b4\'e3\'b0\'ed\'c0\'d6\'c1\'f6\'b8\'b8, A\'c0\'c7 \'c7\'e0\'bc\'bc\'b8\'a6 \'c7\'cf\'b0\'ed \'c0\'d6\'b4\'d9 \'a1\'a6 \'c1\'a4\'bb\'f3\'c0\'fb\'c0\'b8\'b7\'ce \'bd\'c7\'c7\'e0\'b5\'ca.\
+- obj.y(); \'b4\'c2 \'bd\'c7\'c7\'e0\'b5\'c7\'c1\'f6 \'be\'ca\'b4\'c2\'b4\'d9\'a1\'a6 : \'c7\'e0\'bc\'bc\'b8\'a6 \'c7\'cf\'b0\'ed \'c0\'d6\'b4\'c2 class A\'bf\'a1\'b4\'c2 y method\'b0\'a1 \'c1\'a4\'c0\'c7\'b5\'c7\'be\'ee\'c0\'d6\'c1\'f6 \'be\'ca\'b1\'e2 \'b6\'a7\'b9\'ae. (\'c1\'b8\'c0\'e7\'c7\'cf\'c1\'f6 \'be\'ca\'b4\'c2\'b4\'d9\'b0\'ed java\'b0\'a1 \'b0\'a3\'c1\'d6\'c7\'d1\'b4\'d9.)\
+- \'be\'ee\'b6\'b0\'c7\'d1 \'b0\'b4\'c3\'bc\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'c7\'fc\'c0\'ba, \'b1\'d7 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'b5\'c9 \'bc\'f6\'b5\'b5 \'c0\'d6\'b0\'ed \'ba\'ce\'b8\'f0 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'b5\'c9 \'bc\'f6\'b5\'b5 \'c0\'d6\'b4\'d9.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf2 package
+\f2\b0 \cf0  java_tutorials.polymorphism;\
+\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  A\{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  String x() \{\
+		
+\f1\b \cf2 return
+\f2\b0 \cf0  \cf5 "A.x"\cf0 ;\
+	\}\
+\}\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  B 
+\f1\b \cf2 extends
+\f2\b0 \cf0  A\{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  String x() \{\
+		
+\f1\b \cf2 return
+\f2\b0 \cf0  \cf5 "B.x"\cf0 ;\
+	\}\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  String y() \{\
+		
+\f1\b \cf2 return
+\f2\b0 \cf0  \cf5 "y"\cf0 ;\
+	\}\
+\}\
+\
+
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 class
+\f2\b0 \cf0  PolymorphismDemo1 \{\
+\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 static
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		A \cf3 obj\cf0  = 
+\f1\b \cf2 new
+\f2\b0 \cf0  B();\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf3 obj\cf0 .x());\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 - B\'bf\'a1\'bc\'ad x method\'b8\'a6 overriding\'c7\'d4\'a1\'a6\
+- B\'c0\'c7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba obj\'b4\'c2 \'b5\'a5\'c0\'cc\'c5\'cd\'c7\'fc A\'bf\'a1 \'b4\'e3\'c0\'bd\
+- \'c0\'cc \'b6\'a7\'c0\'c7 obj.x()\'b4\'c2 A\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'b4\'c2\'b0\'a1 B\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'b4\'c2\'b0\'a1? : B\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'d1\'b4\'d9.\
+- \'b9\'dd\'b8\'e9\'bf\'a1 obj.y()\'b8\'a6 \'c7\'cf\'b8\'e9 error\'b8\'a6 \'b9\'df\'bb\'fd\'bd\'c3\'c5\'b2\'b4\'d9.\
+- \'c1\'ef, A\'c0\'c7 \'c7\'e0\'bc\'bc\'b8\'a6 \'c7\'cf\'b4\'c2 \'b0\'cd : A\'bf\'a1 \'c1\'a4\'c0\'c7\'b5\'c7\'be\'ee\'c0\'d6\'b4\'c2 method\'b8\'b8 \'bd\'c7\'c7\'e0\'c7\'d1\'b4\'d9\'b4\'c2 \'b0\'cd\'c0\'cc\'b4\'d9. \'c0\'cc \'b6\'a7, \'b1\'d7 method\'b8\'a6 \'c7\'cf\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 overriding \'c7\'df\'b4\'d9\'b8\'e9, \'c7\'cf\'c0\'a7\'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 method\'b8\'a6 \'bd\'c7\'c7\'e0\'bd\'c3\'c5\'b2\'b4\'d9.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf2 package
+\f2\b0 \cf0  java_tutorials.polymorphism;\
+\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  A\{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  String x() \{\
+		
+\f1\b \cf2 return
+\f2\b0 \cf0  \cf5 "A.x"\cf0 ;\
+	\}\
+\}\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  B 
+\f1\b \cf2 extends
+\f2\b0 \cf0  A\{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  String x() \{\
+		
+\f1\b \cf2 return
+\f2\b0 \cf0  \cf5 "B.x"\cf0 ;\
+	\}\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  String y() \{\
+		
+\f1\b \cf2 return
+\f2\b0 \cf0  \cf5 "y"\cf0 ;\
+	\}\
+\}\
+\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  B2 
+\f1\b \cf2 extends
+\f2\b0 \cf0  A \{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  String x() \{\
+		
+\f1\b \cf2 return
+\f2\b0 \cf0  \cf5 "B2.x"\cf0 ;\
+	\}\
+\}\
+\
+
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 class
+\f2\b0 \cf0  PolymorphismDemo1 \{\
+\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 static
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		A \cf3 obj\cf0  = 
+\f1\b \cf2 new
+\f2\b0 \cf0  B();\
+		A \cf3 obj2\cf0  = 
+\f1\b \cf2 new
+\f2\b0 \cf0  B2();\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf3 obj\cf0 .x());\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf3 obj2\cf0 .x());\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 >>> B.x / B2.x\
+- \'b5\'a5\'c0\'cc\'c5\'cd \'c5\'b8\'c0\'d4\'c0\'ba \'b5\'d1\'b4\'d9 \'ba\'ce\'b8\'f0\'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b4\'d9.\
+- \'b5\'fb\'b6\'f3\'bc\'ad \'ba\'ce\'b8\'f0\'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1 \'c1\'a4\'c0\'c7\'b5\'c8 method\'bf\'a1 \'c7\'d1\'c7\'d8\'bc\'ad\'b8\'b8 \'c8\'a3\'c3\'e2\'c0\'cc \'b0\'a1\'b4\'c9\'c7\'cf\'b4\'d9.\
+- (\'c0\'da\'bd\'c4 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1\'bc\'ad \'c3\'df\'b0\'a1\'b5\'c8 method\'b4\'c2 \'c1\'b8\'c0\'e7\'c7\'cf\'c1\'f6 \'be\'ca\'b4\'c2 \'b0\'cd\'c0\'cc \'b5\'c8\'b4\'d9.)\
+- \'ba\'ce\'b8\'f0\'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1 \'c1\'a4\'c0\'c7\'b5\'c8 method\'b8\'a6 \'c0\'da\'bd\'c4\'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1\'bc\'ad overriding \'c7\'df\'b4\'d9\'b8\'e9, \'b1\'d7\'b0\'cd\'c0\'cc \'c8\'a3\'c3\'e2\'b5\'c8\'b4\'d9.\
+\
+
+\f4\b \ul * \'bf\'b9\'c1\'a6\
+
+\f0\b0 \ulnone (\'ba\'af\'b0\'e6 \'c0\'fc)\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf2 package
+\f2\b0 \cf0  java_tutorials.polymorphism;\
+
+\f1\b \cf2 abstract
+\f2\b0 \cf0  
+\f1\b \cf2 class
+\f2\b0 \cf0  Calculator\{\
+	
+\f1\b \cf2 int
+\f2\b0 \cf0  \cf4 left\cf0 , \cf4 right\cf0 ;\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  setOprands(
+\f1\b \cf2 int
+\f2\b0 \cf0  \cf3 left\cf0 , 
+\f1\b \cf2 int
+\f2\b0 \cf0  \cf3 right\cf0 ) \{\
+		
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 left\cf0  = \cf3 left\cf0 ;\
+		
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 right\cf0  = \cf3 right\cf0 ;\
+	\}\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 abstract
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  sum();\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 abstract
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  avg();\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  run() \{\
+		sum();\
+		avg();\
+	\}\
+\}\
+\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  CalculatorDecoPlus 
+\f1\b \cf2 extends
+\f2\b0 \cf0  Calculator\{\
+	\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  sum() \{\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "+ sum : "\cf0 + (
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 left\cf0 +
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 right\cf0 ));\
+	\}\
+	\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  avg() \{\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "+ avg : "\cf0 + (
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 left\cf0 +
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 right\cf0 )/2);\
+	\}\
+	\
+\}\
+\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  CalculatorDecoMinus 
+\f1\b \cf2 extends
+\f2\b0 \cf0  Calculator\{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  sum() \{\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "- sum : "\cf0 + (
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 left\cf0 +
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 right\cf0 ));\
+	\}\
+	\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  avg() \{\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "- avg : "\cf0 + (
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 left\cf0 +
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 right\cf0 )/2);\
+	\}\
+	\
+\}\
+\
+
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 class
+\f2\b0 \cf0  CalculatorDemo \{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 static
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		CalculatorDecoPlus \cf3 c1\cf0  = 
+\f1\b \cf2 new
+\f2\b0 \cf0  CalculatorDecoPlus();\
+		\cf3 c1\cf0 .setOprands(10, 20);\
+		\cf3 c1\cf0 .run();\
+		\
+		CalculatorDecoMinus \cf3 c2\cf0  = 
+\f1\b \cf2 new
+\f2\b0 \cf0  CalculatorDecoMinus();\
+		\cf3 c2\cf0 .setOprands(10, 20);\
+		\cf3 c2\cf0 .run();\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \
+- Calculator\'b6\'f3\'b4\'c2 class\'bf\'cd \'b1\'d7\'b0\'cd\'c0\'bb \'bb\'f3\'bc\'d3\'b9\'de\'b4\'c2 CalculatorDecoPlus, CDMinus\'b0\'a1 \'c0\'d6\'b4\'d9.\
+- Calculator \'b3\'bb\'bf\'a1 \'c3\'df\'bb\'f3 \'b8\'de\'bc\'d2\'b5\'e5\'c0\'ce sum, avg\'b0\'a1 \'c0\'d6\'b0\'ed \'b1\'d7\'b0\'cd\'c0\'bb \'bc\'f8\'c2\'f7\'c0\'fb\'c0\'b8\'b7\'ce \'c8\'a3\'c3\'e2\'c7\'cf\'b4\'c2 run \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'c0\'d6\'c0\'bd (\'c3\'df\'bb\'f3 X)\
+- CDP\'bf\'cd CDM \'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2, \'ba\'ce\'b8\'f0\'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 sum, avg\'b8\'a6 overriding\'c7\'d8\'bc\'ad \'c1\'a4\'c0\'c7\'c7\'cf\'b0\'ed \'c0\'d6\'c0\'bd\
+\
+(\'ba\'af\'b0\'e6 \'c8\'c4)\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 class
+\f2\b0 \cf0  CalculatorDemo \{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 static
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		Calculator \cf3 c1\cf0  = 
+\f1\b \cf2 new
+\f2\b0 \cf0  CalculatorDecoPlus();\
+		\cf3 c1\cf0 .setOprands(10, 20);\
+		\cf3 c1\cf0 .run();\
+		\
+		Calculator \cf3 c2\cf0  = 
+\f1\b \cf2 new
+\f2\b0 \cf0  CalculatorDecoMinus();\
+		\cf3 c2\cf0 .setOprands(10, 20);\
+		\cf3 c2\cf0 .run();\
+	\}\
+\
+\}
+\f0\fs40 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 - \'b0\'b0\'c0\'ba \'b5\'a5\'c0\'cc\'c5\'cd \'c5\'b8\'c0\'d4 (Calculator) \'b7\'ce \'c1\'a4\'c0\'c7\'c7\'d8\'c1\'d6\'be\'ee\'b5\'b5, \'b4\'d9\'c7\'fc\'bc\'ba\'bf\'a1 \'c0\'c7\'c7\'d8 \'bd\'c7\'c7\'e0\'b5\'c7\'b4\'c2 \'bf\'f8\'b8\'ae\'b0\'a1 \'b4\'d9\'b8\'a3\'b4\'d9.\
+\
+(\'b0\'b3\'bc\'b1)\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 class
+\f2\b0 \cf0  CalculatorDemo \{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 static
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  execute(Calculator \cf3 cal\cf0 ) \{\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "
+\f0 \'bd\'c7\'c7\'e0\'b0\'e1\'b0\'fa
+\f2 "\cf0 );\
+		\cf3 cal\cf0 .run();\
+	\}\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 static
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		Calculator \cf3 c1\cf0  = 
+\f1\b \cf2 new
+\f2\b0 \cf0  CalculatorDecoPlus();\
+		\cf3 c1\cf0 .setOprands(10, 20);\
+		\
+		Calculator \cf3 c2\cf0  = 
+\f1\b \cf2 new
+\f2\b0 \cf0  CalculatorDecoMinus();\
+		\cf3 c2\cf0 .setOprands(10, 20);\
+		\
+		
+\f5\i execute
+\f2\i0 (\cf3 c1\cf0 );\
+		
+\f5\i execute
+\f2\i0 (\cf3 c2\cf0 );\
+	\}\
+\
+\}
+\f0\fs40 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 - \'b4\'d9\'c7\'fc\'bc\'ba\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'c1\'f6 \'be\'ca\'b4\'c2\'b4\'d9\'b8\'e9, execute method\'b8\'a6 \'b5\'ce\'b9\'f8 \'b8\'b8\'b5\'e9\'be\'ee overloading\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'d8\'be\'df\'c7\'d1\'b4\'d9.\
+- \'b5\'ce \'b0\'b4\'c3\'bc\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd \'c5\'b8\'c0\'d4\'c0\'bb \'b0\'f8\'c5\'eb\'b5\'c8 \'ba\'ce\'b8\'f0\'c5\'ac\'b7\'a1\'bd\'ba Calculator\'b7\'ce \'c1\'f6\'c1\'a4\'c7\'d8 \'c0\'cc\'b7\'af\'c7\'d1 \'b9\'ae\'c1\'a6\'b8\'a6 \'c7\'d8\'b0\'e1\'c7\'d8\'c1\'d9 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+\
+
+\f4\b \ul * \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'bf\'cd \'b4\'d9\'c7\'fc\'bc\'ba
+\f0\b0 \ulnone \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf2 package
+\f2\b0 \cf0  java_tutorials.polymorphism;\
+\
+
+\f1\b \cf2 interface
+\f2\b0 \cf0  I\{\}\
+\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  C 
+\f1\b \cf2 implements
+\f2\b0 \cf0  I\{\}\
+\
+
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 class
+\f2\b0 \cf0  PolymorphismDemo2 \{\
+\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 static
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		I \cf3 \ul \ulc3 obj\cf0 \ulnone  = 
+\f1\b \cf2 new
+\f2\b0 \cf0  C();\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 - C\'b4\'c2 I\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d4\
+- \'be\'ee\'b6\'b0\'c7\'d1 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'be\'ee\'b6\'b0\'c7\'d1 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'cf\'b0\'ed \'c0\'d6\'b4\'d9\'b8\'e9, \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba\'c8\'ad \'b5\'c9 \'b6\'a7 \'b5\'a5\'c0\'cc\'c5\'cd\'c5\'b8\'c0\'d4\'c0\'bb \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b7\'ce \'c7\'d8\'c1\'d9 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf2 package
+\f2\b0 \cf0  java_tutorials.polymorphism;\
+\
+
+\f1\b \cf2 interface
+\f2\b0 \cf0  I2\{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  String A();\
+\}\
+\
+
+\f1\b \cf2 interface
+\f2\b0 \cf0  I3\{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  String B();\
+\}\
+\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  D 
+\f1\b \cf2 implements
+\f2\b0 \cf0  I2, I3\{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  String A() \{\
+		
+\f1\b \cf2 return
+\f2\b0 \cf0  \cf5 "A"\cf0 ;\
+	\}\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  String B() \{\
+		
+\f1\b \cf2 return
+\f2\b0 \cf0  \cf5 "B"\cf0 ;\
+	\}\
+\}\
+\
+
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 class
+\f2\b0 \cf0  PolymorphismDemo3 \{\
+\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 static
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		D \cf3 obj\cf0  = 
+\f1\b \cf2 new
+\f2\b0 \cf0  D();\
+        I2 \cf3 objI2\cf0  = 
+\f1\b \cf2 new
+\f2\b0 \cf0  D();\
+        I3 \cf3 objI3\cf0  = 
+\f1\b \cf2 new
+\f2\b0 \cf0  D();\
+         \
+        \cf3 obj\cf0 .A();\
+        \cf3 obj\cf0 .B();\
+         \
+        \cf3 objI2\cf0 .A();\
+        \cf6 //objI2.B();\cf0 \
+         \
+        \cf6 //objI3.A();\cf0 \
+        \cf3 objI3\cf0 .B();\
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 - interface I2\'bf\'cd I3\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d1 class D\'b4\'c2 A\'bf\'cd B\'b8\'a6 \'c1\'a4\'c0\'c7\'c7\'d8\'c1\'d8\'b4\'d9. \
+- obj : \'b5\'a5\'c0\'cc\'c5\'cd \'c5\'b8\'c0\'d4\'c0\'cc D\'c0\'cc\'b9\'c7\'b7\'ce \'b9\'ae\'c1\'a6\'be\'f8\'c0\'cc D\'c0\'c7 \'b8\'e2\'b9\'f6\'b5\'e9\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+- objI2 : \'b5\'a5\'c0\'cc\'c5\'cd \'c5\'b8\'c0\'d4\'c0\'cc I2\'c0\'cc\'b9\'c7\'b7\'ce \'b8\'b6\'c4\'a1 \'b8\'de\'bc\'d2\'b5\'e5 A\'b8\'b8\'c0\'bb \'b0\'a1\'c1\'f6\'b0\'ed \'c0\'d6\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba \'c0\'ce \'b0\'cd\'c3\'b3\'b7\'b3 \'b5\'bf\'c0\'db\'c7\'cf\'b0\'d4 \'b5\'c8\'b4\'d9. (B\'b4\'c2 \'c1\'b8\'c0\'e7\'c7\'cf\'c1\'f6 \'be\'ca\'b4\'c2 \'b0\'cd\'c0\'b8\'b7\'ce \'b0\'a3\'c1\'d6)\
+- objI3 : \'b5\'a5\'c0\'cc\'c5\'cd \'c5\'b8\'c0\'d4\'c0\'cc I3\'c0\'cc\'b9\'c7\'b7\'ce \'b8\'b6\'c4\'a1 \'b8\'de\'bc\'d2\'b5\'e5 B\'b8\'b8\'c0\'bb \'b0\'a1\'c1\'f6\'b0\'ed \'c0\'d6\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba \'c0\'ce \'b0\'cd\'c3\'b3\'b7\'b3 \'b5\'bf\'c0\'db\'c7\'cf\'b0\'d4 \'b5\'c8\'b4\'d9. (A\'b4\'c2 \'c1\'b8\'c0\'e7\'c7\'cf\'c1\'f6 \'be\'ca\'b4\'c2 \'b0\'cd\'c0\'b8\'b7\'ce \'b0\'a3\'c1\'d6)\
+\
+- \'b8\'b8\'be\'e0, \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'b0\'a1\'c1\'f8 \'b8\'f0\'b5\'e7 method\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d8\'be\'df \'c7\'d1\'b4\'d9\'b8\'e9, D obj \'c3\'b3\'b7\'b3 \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9 \'b5\'c7\'b0\'ed, \'c6\'af\'c1\'a4 \'b1\'e2\'b4\'c9\'b8\'b8 \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9 \'b5\'c8\'b4\'d9\'b8\'e9 interface\'b7\'ce \'bb\'e7\'bf\'eb\'c7\'d2 \'b1\'e2\'b4\'c9\'b8\'b8\'c0\'bb \'c1\'a4\'c0\'c7\'c7\'d8\'bc\'ad I2 obj \'c3\'b3\'b7\'b3 \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9 \'b5\'c8\'b4\'d9!\
+- \'bd\'ba\'b8\'b6\'c6\'ae\'c6\'f9\'c0\'bb \'be\'c6\'c0\'cc\'bf\'a1\'b0\'d4 \'a1\'ae\'b0\'d4\'c0\'d3\'b1\'e2\'be\'df\'a1\'af \'b6\'f3\'b4\'c2 interface\'b7\'ce \'c1\'a6\'b0\'f8\'c7\'cf\'b8\'e9, \'be\'c6\'c0\'cc\'b4\'c2 \'b1\'d7 \'b1\'e2\'b4\'c9\'bf\'a1\'b8\'b8 \'c1\'fd\'c1\'df\'c7\'d2 \'bc\'f6 \'c0\'d6\'b0\'ed, \'bf\'ec\'b8\'ae\'b4\'c2 \'be\'c6\'c0\'cc\'b0\'a1 \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9 \'be\'c8\'b5\'c7\'b4\'c2 \'b1\'e2\'b4\'c9 (\'c0\'fc\'c8\'ad, \'b9\'ae\'c0\'da \'b5\'ee) \'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'c1\'f6 \'be\'ca\'b0\'d4 \'b9\'e6\'c1\'f6\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+\
+- \'b9\'dd\'b4\'eb\'b7\'ce, \'c7\'cf\'b3\'aa\'c0\'c7 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'cf\'b4\'c2 \'bf\'a9\'b7\'af\'b0\'b3\'c0\'c7 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6, \'b0\'b0\'c0\'ba \'b5\'a5\'c0\'cc\'c5\'cd\'c5\'b8\'c0\'d4\'c0\'b8\'b7\'ce \'c0\'cc\'bf\'eb\'c7\'d2 \'bc\'f6\'b5\'b5 \'c0\'d6\'b4\'d9.\
+\
+(\'c7\'f6\'bd\'c7 \'bb\'e7\'c8\'b8 \'bf\'b9\'bd\'c3)\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf2 package
+\f2\b0 \cf0  java_tutorials.polymorphism;\
+\
+
+\f1\b \cf2 interface
+\f2\b0 \cf0  father\{\}\
+
+\f1\b \cf2 interface
+\f2\b0 \cf0  mother\{\}\
+
+\f1\b \cf2 interface
+\f2\b0 \cf0  programmer\{\
+    
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  coding();\
+\}\
+
+\f1\b \cf2 interface
+\f2\b0 \cf0  believer\{\}\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  Steve 
+\f1\b \cf2 implements
+\f2\b0 \cf0  father, programmer, believer\{\
+    
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  coding()\{\
+        System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "fast"\cf0 );\
+    \}\
+\}\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  Rachel 
+\f1\b \cf2 implements
+\f2\b0 \cf0  mother, programmer\{\
+    
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  coding()\{\
+        System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "elegance"\cf0 );\
+    \}\
+\}\
+
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 class
+\f2\b0 \cf0  WorkSpace\{\
+    
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 static
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf3 args\cf0 )\{\
+        programmer \cf3 employee1\cf0  = 
+\f1\b \cf2 new
+\f2\b0 \cf0  Steve();\
+        programmer \cf3 employee2\cf0  = 
+\f1\b \cf2 new
+\f2\b0 \cf0  Rachel();\
+         \
+        \cf3 employee1\cf0 .coding();\
+        \cf3 employee2\cf0 .coding();\
+    \}\
+\}
+\f0\fs40 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 >> fast, elegance\
+- \'c0\'ce\'b0\'a3\'c0\'ba \'b4\'d9\'be\'e7\'c7\'d1 \'bf\'aa\'c7\'d2\'c0\'bb \'c7\'d1\'b4\'d9\'a1\'a6\
+- \'c8\'b8\'bb\'e7\'bf\'a1\'bc\'ad\'b4\'c2 \'b1\'d7\'b5\'e9\'c0\'cc \'b9\'ab\'bd\'bc \'bf\'aa\'c7\'d2\'c0\'bb \'c7\'cf\'b0\'ed\'c0\'d6\'b4\'c2\'c1\'f6 \'be\'cb\'c7\'ca\'bf\'e4\'b0\'a1 \'be\'f8\'b4\'d9\'a1\'a6 \'b1\'d7\'b3\'c9 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b8\'d3\'c0\'ce \'bb\'e7\'bd\'c7\'b0\'fa, \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a1\'b8\'d3\'b4\'c2 \'c4\'da\'b5\'f9\'c0\'bb \'c7\'cf\'b8\'e9 \'b5\'c8\'b4\'d9\'b4\'c2 \'bb\'e7\'bd\'c7\'b8\'b8\'c0\'cc \'c1\'df\'bf\'e4\'c7\'cf\'b4\'d9.\
+- programmer interface\'b8\'a6 \'c5\'eb\'c7\'d8, \'b1\'d7\'b5\'e9\'c0\'c7 coding\'c0\'bb \'ba\'b8\'c0\'e5\'b9\'de\'c0\'bb \'bc\'f6 \'c0\'d6\'b0\'ed, \'bd\'ba\'c6\'bc\'ba\'ea\'bf\'cd \'b7\'b9\'c0\'cc\'c3\'bf\'c0\'ba \'b1\'d7\'b5\'e9\'c0\'c7 \'bb\'e7\'bb\'fd\'c8\'b0\'c0\'bb \'ba\'b8\'c0\'e5\'b9\'de\'c0\'bb \'bc\'f6 \'c0\'d6\'b4\'d9.\
+\
+}

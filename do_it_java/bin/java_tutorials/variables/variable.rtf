@@ -1,0 +1,145 @@
+{\rtf1\ansi\ansicpg949\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset129 AppleSDGothicNeo-Regular;\f1\fnil\fcharset129 AppleSDGothicNeo-Bold;\f2\fswiss\fcharset0 Helvetica;
+\f3\fswiss\fcharset0 Helvetica-Bold;\f4\fswiss\fcharset0 Helvetica-BoldOblique;\f5\fnil\fcharset129 NanumGothic;
+}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red106\green62\blue62;\red0\green0\blue192;
+\red63\green127\blue95;\red42\green0\blue255;\red41\green111\blue154;\red209\green233\blue245;}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c0\c0\c75294;
+\csgenericrgb\c24706\c49804\c37255;\csgenericrgb\c16471\c0\c100000;\cssrgb\c20000\c51373\c66667;\cssrgb\c85098\c92941\c96863;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11000\viewh19580\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs44 \cf0 ch3. variable \'ba\'af\'bc\'f6\
+\
+
+\f1\b \ul * \'ba\'af\'bc\'f6
+\f0\b0 \ulnone \
+- \'ba\'af\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 data\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 - \'bc\'fd\'c0\'da / \'b5\'a5\'c0\'cc\'c5\'cd \'b5\'ee\'c0\'bb \'b0\'a1\'b8\'a3\'c5\'b2\'b4\'d9\'a1\'a6 (\'b4\'e3\'b4\'c2\'b4\'d9 \'b6\'f3\'b0\'ed \'c0\'cc\'c7\'d8\'c7\'cf\'b8\'e9 \'c6\'ed\'c7\'d4)\
+- \'b4\'d9\'b8\'a5 \'b5\'a5\'c0\'cc\'c5\'cd\'b7\'ce \'b9\'d9\'b2\'dc \'bc\'f6 \'c0\'d6\'b4\'d9\'b4\'c2 \'c6\'af\'c2\'a1\'c0\'cc \'c0\'d6\'c0\'bd\
+- \'a1\'ae\'b4\'eb\'b8\'ed\'bb\'e7\'a1\'af\'bf\'cd \'ba\'f1\'bd\'c1\'c7\'d1 \'bf\'aa\'c7\'d2\'a1\'a6 \'b1\'d7, \'b1\'d7\'b3\'e0 \'b5\'ee \'b5\'ee\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf0 		
+\f3\b \cf2 int
+\f2\b0 \cf0  \cf3 a\cf0 ;\
+		\cf3 a\cf0  = 1;\
+		System.
+\f4\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf3 a\cf0 +1); \cf5 //2\cf0 \
+		\
+		\cf3 a\cf0  = 2;\
+		System.
+\f4\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf3 a\cf0 +1); \cf5 //3
+\f0\fs44 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+int a;\
+- int : \'b5\'a5\'c0\'cc\'c5\'cd \'c7\'fc\'bd\'c4 (\'bc\'fd\'c0\'da)\
+- a : \'ba\'af\'bc\'f6\'c0\'c7 \'c0\'cc\'b8\'a7 (\'be\'c6\'b9\'ab\'b0\'c5\'b3\'aa \'bb\'f3\'b0\'fc \'be\'f8\'b4\'d9.)\
+\
+a = 1;\
+- a \'b6\'f3\'b4\'c2 \'ba\'af\'bc\'f6\'bf\'a1 1\'c0\'bb \'b4\'eb\'c0\'d4\'a1\'a6\
+- \'c0\'cc\'c1\'a6\'ba\'ce\'c5\'cd a\'b4\'c2 1\'c0\'cc\'b6\'f3\'b4\'c2 \'b0\'aa\'c0\'bb \'b0\'a1\'b8\'a3\'c5\'b4\
+\
+a = 2;\
+- \'c0\'cc\'c1\'a6\'ba\'ce\'c5\'cd a\'b4\'c2 2\'b6\'f3\'b4\'c2 \'b0\'aa\'c0\'bb \'b0\'a1\'b8\'a3\'c5\'b4\
+\
+
+\f1\b \ul * \'c1\'a4\'bc\'f6\'bf\'cd \'bd\'c7\'bc\'f6
+\f0\b0 \ulnone \
+- \'c0\'da\'b9\'d9\'bf\'a1\'bc\'ad\'c0\'c7 \'bc\'fd\'c0\'da\'b4\'c2 \'c1\'a4\'bc\'f6\'bf\'cd \'bd\'c7\'bc\'f6\'b7\'ce \'b1\'b8\'ba\'d0\'b5\'c8\'b4\'d9.\
+- \'c1\'a4\'bc\'f6 : -3, -2, -1, 0, 1, 2, 3, \'a1\'a6\
+- \'bd\'c7\'bc\'f6 : -3.5, -2.1, -1.134, 0, 1.34, 2.5, 3.0 \'a1\'a6\
+- \'bd\'c7\'bc\'f6 : double\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf0 		
+\f3\b \cf2 double
+\f2\b0 \cf0  \cf3 a\cf0 ;\
+		\cf3 a\cf0  = 1.1;\
+		\
+		System.
+\f4\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf3 a\cf0 +1.1);
+\f0\fs44 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+- \'b8\'b8\'be\'e0 double \'c0\'da\'b8\'ae\'bf\'a1 int\'b8\'a6 \'b3\'d6\'c0\'b8\'b8\'e9 \'bf\'c0\'b7\'f9\'a1\'a6 \'bd\'c7\'c7\'e0\'b5\'c7\'c1\'f6 \'be\'ca\'b4\'c2\'b4\'d9.\
+\
+
+\f1\b \ul * \'b9\'ae\'c0\'da\'bf\'ad
+\f0\b0 \ulnone \
+- String (\'b4\'eb\'b9\'ae\'c0\'da \'c1\'d6\'c0\'c7)\
+- String first; first = \'a1\'b0coding\'a1\'b1;\'c0\'ba \'c7\'d1\'c1\'d9\'b7\'ce\
+	String first = \'a1\'b0coding\'a1\'b1;\'c0\'b8\'b7\'ce \'c7\'a5\'c7\'f6\'c7\'d8\'c1\'d9 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+- \'c7\'d1\'b9\'f8\'bf\'a1 \'bf\'a9\'b7\'af\'b0\'b3\'b8\'a6 \'c1\'a4\'c0\'c7\'c7\'d8\'c1\'d9 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf0 		String \cf3 a\cf0 ,\cf3 b\cf0 ;\
+		\cf3 a\cf0  = \cf6 "coding"\cf0 ;\
+		\cf3 b\cf0  = \cf6 "everybody"\cf0 ;\
+		System.
+\f4\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf3 a\cf0 +\cf3 b\cf0 );
+\f0\fs44 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+
+\f1\b \ul * \'ba\'af\'bc\'f6\'c0\'c7 \'c8\'bf\'bf\'eb
+\f0\b0 \ulnone \
+- \'ba\'af\'bc\'f6\'b0\'a1 \'be\'f8\'b4\'d9\'b8\'e9? \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf0 		System.
+\f4\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(100 + 10);\
+		System.
+\f4\i\b \cf4 out
+\f2\i0\b0 \cf0 .println((100+10)/10);\
+		System.
+\f4\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(((100+10)/10)-10);\
+		System.
+\f4\i\b \cf4 out
+\f2\i0\b0 \cf0 .println((((100+10)/10)-10)*10);
+\f0\fs44 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 - \'b8\'b8\'be\'e0 \'b3\'bb\'ba\'ce\'c0\'c7 \'bc\'fd\'c0\'da\'b8\'a6 \'b9\'d9\'b2\'d9\'be\'ee\'c1\'d6\'be\'ee\'be\'df \'c7\'d1\'b4\'d9\'b8\'e9\'a1\'a6\
+- \'c0\'ad \'b3\'bb\'bf\'eb\'c0\'cc \'b8\'c5\'bf\'ec \'ba\'b9\'c0\'e2\'c7\'cf\'b0\'ed \'bf\'a9\'b7\'af\'c1\'d9\'c0\'cc\'b6\'f3\'b8\'e9\'a1\'a6 \
+- \'b9\'f6\'b1\'d7 \'b9\'df\'bb\'fd\'c8\'ae\'b7\'fc\'c0\'cc \'b8\'c5\'bf\'ec \'b3\'f4\'b0\'ed, \'c0\'cf\'c0\'cf\'c8\'f7 \'c7\'d8\'c1\'d6\'be\'ee\'be\'df\'c7\'cf\'bf\'a9 \'ba\'f1\'c8\'bf\'c0\'b2\'c0\'fb\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf0 		
+\f3\b \cf2 int
+\f2\b0 \cf0  \cf3 a\cf0  = 100;\
+		System.
+\f4\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf3 a\cf0  + 10);\
+		System.
+\f4\i\b \cf4 out
+\f2\i0\b0 \cf0 .println((\cf3 a\cf0 +10)/10);\
+		System.
+\f4\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(((\cf3 a\cf0 +10)/10)-10);\
+		System.
+\f4\i\b \cf4 out
+\f2\i0\b0 \cf0 .println((((\cf3 a\cf0 +10)/10)-10)*10);
+\f0\fs44 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 - \'c1\'df\'ba\'b9\'c0\'c7 \'c1\'a6\'b0\'c5 : \'b0\'a1\'b5\'b6\'bc\'ba \'c7\'e2\'bb\'f3, \'c0\'af\'c1\'f6\'ba\'b8\'bc\'f6\'c0\'c7 \'bf\'eb\'c0\'cc\'bc\'ba\
+\
+
+\f1\b \ul * \'b1\'e2\'c5\'b8
+\f0\b0 \ulnone \
+- // \'b4\'c2 \'c1\'d6\'bc\'ae\'c0\'cc\'b4\'d9 ~ \'b5\'de\'b3\'bb\'bf\'eb\'c0\'ba \'c3\'e2\'b7\'c2\'b5\'c7\'c1\'f6 \'be\'ca\'b4\'c2\'b4\'d9.\
+- \'c0\'da\'b9\'d9\'c0\'c7 \'c7\'d1 \'c1\'d9\'c0\'ba ;\'b7\'ce \'b1\'b8\'ba\'d0\'b5\'c8\'b4\'d9\'a1\'a6 
+\f5\fs26\fsmilli13200 \cf7 \cb8 \expnd0\expndtw0\kerning0
+a = 2; System.out.println(a+1); //3\cb1 \
+
+\f0\fs44 \cf0 \kerning1\expnd0\expndtw0 \'c3\'b3\'b7\'b3 \'c7\'d1\'c1\'d9\'bf\'a1 \'bf\'a9\'b7\'af \'b1\'b8\'b9\'ae\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'b7\'c1 \'c7\'d2 \'b6\'a7 \'c0\'af\'bf\'eb\'c7\'cf\'b4\'d9.\
+}

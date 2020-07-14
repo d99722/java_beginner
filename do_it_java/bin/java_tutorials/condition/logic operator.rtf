@@ -1,0 +1,297 @@
+{\rtf1\ansi\ansicpg949\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset129 AppleSDGothicNeo-Regular;\f1\fnil\fcharset129 AppleSDGothicNeo-Bold;\f2\fswiss\fcharset0 Helvetica;
+\f3\fswiss\fcharset0 Helvetica-Bold;\f4\fswiss\fcharset0 Helvetica-BoldOblique;}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red0\green0\blue192;\red106\green62\blue62;
+\red42\green0\blue255;}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c0\c0\c75294;\csgenericrgb\c41569\c24314\c24314;
+\csgenericrgb\c16471\c0\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11000\viewh19580\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs44 \cf0 ch11. \'b3\'ed\'b8\'ae\'bf\'ac\'bb\'ea\'c0\'da\
+\
+
+\f1\b \ul * \'b3\'ed\'b8\'ae\'bf\'ac\'bb\'ea\'c0\'da\'b6\'f5?
+\f0\b0 \ulnone \
+- \'c5\'a9\'b0\'d4 and\'bf\'cd or\'b0\'a1 \'c0\'d6\'b4\'d9.\
+- \'c1\'c2\'c7\'d7\'b0\'fa \'bf\'ec\'c7\'d7\'bf\'a1\'b4\'c2 boolean\'c0\'cc \'bf\'c2\'b4\'d9.\
+- and : \'b5\'d1 \'b4\'d9 \'c2\'fc\'c0\'cc\'bf\'a9\'be\'df \'c2\'fc\'c0\'cc\'b5\'c8\'b4\'d9.\
+- or : \'b5\'d1 \'c1\'df \'c7\'cf\'b3\'aa\'b6\'f3\'b5\'b5 \'c2\'fc\'c0\'cc\'b6\'f3\'b8\'e9 \'c2\'fc\'c0\'cc\'b5\'c8\'b4\'d9.\
+\
+
+\f1\b \ul * && (and)
+\f0\b0 \ulnone \
+- \'c1\'c2\'c7\'d7\'b0\'fa \'bf\'ec\'c7\'d7\'c0\'cc \'b8\'f0\'b5\'ce \'c2\'fc\'c0\'cf \'b6\'a7 \'c2\'fc\'c0\'cc\'b5\'c8\'b4\'d9.\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf0 		
+\f3\b \cf2 if
+\f2\b0 \cf0  (
+\f3\b \cf2 true
+\f2\b0 \cf0  && 
+\f3\b \cf2 true
+\f2\b0 \cf0 ) \{\
+			System.
+\f4\i\b \cf3 out
+\f2\i0\b0 \cf0 .println(1);\
+		\} \
+		\
+		
+\f3\b \cf2 if
+\f2\b0 \cf0  (
+\f3\b \cf2 true
+\f2\b0 \cf0  && 
+\f3\b \cf2 false
+\f2\b0 \cf0 ) \ul \{\ulnone \
+\ul 			System.
+\f4\i\b \cf3 \ulc3 out
+\f2\i0\b0 \cf0 \ulc0 .println(2);\ulnone \
+\ul 		\}\ulnone  \
+		\
+		
+\f3\b \cf2 if
+\f2\b0 \cf0  (
+\f3\b \cf2 false
+\f2\b0 \cf0  && 
+\f3\b \cf2 \ul \ulc2 true
+\f2\b0 \cf0 \ulnone ) \ul \{\ulnone \
+\ul 			System.
+\f4\i\b \cf3 \ulc3 out
+\f2\i0\b0 \cf0 \ulc0 .println(3);\ulnone \
+\ul 		\}\ulnone  \
+		\
+		
+\f3\b \cf2 if
+\f2\b0 \cf0  (
+\f3\b \cf2 false
+\f2\b0 \cf0  && 
+\f3\b \cf2 \ul \ulc2 false
+\f2\b0 \cf0 \ulnone ) \ul \{\ulnone \
+\ul 			System.
+\f4\i\b \cf3 \ulc3 out
+\f2\i0\b0 \cf0 \ulc0 .println(4);\ulnone \
+\ul 		\}\ulnone \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs44 \cf0 >>> 1\'b8\'b8 \'c3\'e2\'b7\'c2\'b5\'ca\
+\
+(\'b1\'e2\'c1\'b8 \'c4\'da\'b5\'e5)\
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs32 \cf2 public
+\f2\b0 \cf0  
+\f3\b \cf2 class
+\f2\b0 \cf0  LoginDemo \{\
+\
+	
+\f3\b \cf2 public
+\f2\b0 \cf0  
+\f3\b \cf2 static
+\f2\b0 \cf0  
+\f3\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf4 args\cf0 ) \{\
+		String \cf4 id\cf0  = \cf4 args\cf0 [0];\
+		String \cf4 password\cf0  = \cf4 args\cf0 [1];\
+		
+\f3\b \cf2 if
+\f2\b0 \cf0  (\cf4 id\cf0 .equals(\cf5 "egoing"\cf0 )) \{\
+			
+\f3\b \cf2 if
+\f2\b0 \cf0  (\cf4 password\cf0 .equals(\cf5 "1111"\cf0 )) \{\
+				System.
+\f4\i\b \cf3 out
+\f2\i0\b0 \cf0 .println(\cf5 "right"\cf0 );\
+			\} 
+\f3\b \cf2 else
+\f2\b0 \cf0  \{\
+				System.
+\f4\i\b \cf3 out
+\f2\i0\b0 \cf0 .println(\cf5 "wrong"\cf0 );\
+			\}\
+		\} 
+\f3\b \cf2 else
+\f2\b0 \cf0  \{\
+			System.
+\f4\i\b \cf3 out
+\f2\i0\b0 \cf0 .println(\cf5 "wrong"\cf0 );\
+		\}\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs44 \cf0 \
+(&& \'bb\'e7\'bf\'eb)\
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs32 \cf2 public
+\f2\b0 \cf0  
+\f3\b \cf2 class
+\f2\b0 \cf0  LoginDemo3 \{\
+\
+	
+\f3\b \cf2 public
+\f2\b0 \cf0  
+\f3\b \cf2 static
+\f2\b0 \cf0  
+\f3\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf4 args\cf0 ) \{\
+		String \cf4 id\cf0  = \cf4 args\cf0 [0];\
+		String \cf4 password\cf0  = \cf4 args\cf0 [1];\
+		
+\f3\b \cf2 if
+\f2\b0 \cf0  (\cf4 id\cf0 .equals(\cf5 "egoing"\cf0 ) && \cf4 password\cf0 .equals(\cf5 "1111"\cf0 )) \{\
+			System.
+\f4\i\b \cf3 out
+\f2\i0\b0 \cf0 .println(\cf5 "right"\cf0 );\
+		\} 
+\f3\b \cf2 else
+\f2\b0 \cf0  \{\
+			System.
+\f4\i\b \cf3 out
+\f2\i0\b0 \cf0 .println(\cf5 "wrong"\cf0 );\
+		\}\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs44 \cf0 - \'c4\'da\'b5\'e5\'b8\'a6 \'b0\'a3\'b0\'e1\'c7\'cf\'b0\'d4 \'b8\'b8\'b5\'e9\'be\'ee \'c1\'d9 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+\
+
+\f1\b \ul * || (or)
+\f0\b0 \ulnone \
+- \'c1\'c2\'c7\'d7\'b0\'fa \'bf\'ec\'c7\'d7 \'b5\'d1 \'c1\'df \'c7\'cf\'b3\'aa\'b6\'f3\'b5\'b5 \'c2\'fc\'c0\'cc\'b8\'e9 \'c2\'fc\'c0\'cc \'b5\'c8\'b4\'d9.\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf0 		
+\f3\b \cf2 if
+\f2\b0 \cf0  (
+\f3\b \cf2 true
+\f2\b0 \cf0  || 
+\f3\b \cf2 \ul \ulc2 true
+\f2\b0 \cf0 \ulnone ) \{\
+			System.
+\f4\i\b \cf3 out
+\f2\i0\b0 \cf0 .println(1);\
+		\}\
+		\
+		
+\f3\b \cf2 if
+\f2\b0 \cf0  (
+\f3\b \cf2 true
+\f2\b0 \cf0  || 
+\f3\b \cf2 \ul \ulc2 false
+\f2\b0 \cf0 \ulnone ) \{\
+			System.
+\f4\i\b \cf3 out
+\f2\i0\b0 \cf0 .println(2);\
+		\}\
+		\
+		
+\f3\b \cf2 if
+\f2\b0 \cf0  (
+\f3\b \cf2 false
+\f2\b0 \cf0  || 
+\f3\b \cf2 true
+\f2\b0 \cf0 ) \{\
+			System.
+\f4\i\b \cf3 out
+\f2\i0\b0 \cf0 .println(3);\
+		\}\
+		\
+		
+\f3\b \cf2 if
+\f2\b0 \cf0  (
+\f3\b \cf2 false
+\f2\b0 \cf0  || 
+\f3\b \cf2 false
+\f2\b0 \cf0 ) \ul \{\ulnone \
+\ul 			System.
+\f4\i\b \cf3 \ulc3 out
+\f2\i0\b0 \cf0 \ulc0 .println(4);\ulnone \
+\ul 		\}
+\f0\fs44 \ulnone \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 >>> 1, 2, 3 \'c0\'cc \'c3\'e2\'b7\'c2\'b5\'ca\
+\
+(\'c0\'c0\'bf\'eb)\
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs32 \cf2 public
+\f2\b0 \cf0  
+\f3\b \cf2 class
+\f2\b0 \cf0  LoginDemo4 \{\
+\
+	
+\f3\b \cf2 public
+\f2\b0 \cf0  
+\f3\b \cf2 static
+\f2\b0 \cf0  
+\f3\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf4 args\cf0 ) \{\
+		String \cf4 id\cf0  = \cf4 args\cf0 [0];\
+		String \cf4 password\cf0  = \cf4 args\cf0 [1];\
+		
+\f3\b \cf2 if
+\f2\b0 \cf0  ((\cf4 id\cf0 .equals(\cf5 "egoing"\cf0 ) || \cf4 id\cf0 .equals(\cf5 "dgboy"\cf0 ) || \cf4 id\cf0 .equals(\cf5 "gang"\cf0 )) \
+				&& \cf4 password\cf0 .equals(\cf5 "1111"\cf0 )) \{\
+			System.
+\f4\i\b \cf3 out
+\f2\i0\b0 \cf0 .println(\cf5 "right"\cf0 );\
+		\} 
+\f3\b \cf2 else
+\f2\b0 \cf0  \{\
+			System.
+\f4\i\b \cf3 out
+\f2\i0\b0 \cf0 .println(\cf5 "wrong"\cf0 );\
+		\}\
+	\}\
+\}
+\f0\fs44 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+
+\f1\b \ul * ! (not)
+\f0\b0 \ulnone \
+- boolean\'c0\'c7 \'b0\'aa\'c0\'bb \'bf\'aa\'c0\'fc\'bd\'c3\'c5\'b4 : !true = false, !false = true\
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs32 \cf2 public
+\f2\b0 \cf0  
+\f3\b \cf2 class
+\f2\b0 \cf0  NotDemo \{\
+\
+	
+\f3\b \cf2 public
+\f2\b0 \cf0  
+\f3\b \cf2 static
+\f2\b0 \cf0  
+\f3\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf4 args\cf0 ) \{\
+		
+\f3\b \cf2 if
+\f2\b0 \cf0  (!
+\f3\b \cf2 true
+\f2\b0 \cf0 ) \ul \{\ulnone \
+\ul 			System.
+\f4\i\b \cf3 \ulc3 out
+\f2\i0\b0 \cf0 \ulc0 .println(1);\ulnone \
+\ul 		\}\ulnone \
+		
+\f3\b \cf2 if
+\f2\b0 \cf0  (!
+\f3\b \cf2 false
+\f2\b0 \cf0 ) \{\
+			System.
+\f4\i\b \cf3 out
+\f2\i0\b0 \cf0 .println(2);\
+		\}\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs44 \cf0 >>> 2 \'c3\'e2\'b7\'c2\'b5\'ca\
+\
+\
+\
+\
+}

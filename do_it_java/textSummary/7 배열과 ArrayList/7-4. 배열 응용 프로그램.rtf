@@ -1,0 +1,393 @@
+{\rtf1\ansi\ansicpg949\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset129 AppleSDGothicNeo-Regular;\f1\fnil\fcharset129 AppleSDGothicNeo-Bold;\f2\fswiss\fcharset0 Helvetica-Bold;
+\f3\fswiss\fcharset0 Helvetica;\f4\fswiss\fcharset0 Helvetica-BoldOblique;}
+{\colortbl;\red255\green255\blue255;\red191\green191\blue191;\red127\green0\blue85;\red0\green0\blue192;
+\red106\green62\blue62;\red63\green127\blue95;\red42\green0\blue255;}
+{\*\expandedcolortbl;;\csgray\c79525;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c0\c0\c75294;
+\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c24706\c49804\c37255;\csgenericrgb\c16471\c0\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww33400\viewh19580\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 7-4. \'b9\'e8\'bf\'ad \'c0\'c0\'bf\'eb \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\
+\
+- \'c1\'f6\'b1\'dd\'b1\'ee\'c1\'f6 \'b9\'e8\'bf\'ee ArrayList\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d8 \'c7\'d0\'bb\'fd \'bc\'ba\'c0\'fb \'c3\'e2\'b7\'c2 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'bb \'b1\'b8\'c7\'f6\'c7\'d8\'ba\'b8\'b1\'e2\
+- Student \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'cd Subject \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d1\'b4\'d9.\
+- \'be\'ee\'b6\'b2 \'c7\'d0\'bb\'fd\'c0\'cc 10\'b0\'fa\'b8\'f1\'c0\'bb \'bc\'f6\'b0\'ad\'c7\'d1\'b4\'d9\'b8\'e9 Subject \'c5\'ac\'b7\'a1\'bd\'ba\'c7\'fc\'c0\'bb \'c0\'da\'b7\'e1\'c7\'fc\'c0\'b8\'b7\'ce \'bc\'b1\'be\'f0\'c7\'d1 \'ba\'af\'bc\'f6\'b0\'a1 10\'b0\'b3 \'c7\'ca\'bf\'e4\'c7\'cf\'b4\'d9.\
+- \'be\'ee\'b6\'b2 \'c7\'d0\'bb\'fd\'c0\'ba 3\'b0\'fa\'b8\'f1\'c0\'bb, \'be\'ee\'b6\'b2 \'c7\'d0\'bb\'fd\'c0\'ba 5\'b0\'fa\'b8\'f1\'c0\'bb \'bc\'f6\'b0\'ad\'c7\'d2 \'bc\'f6\'b5\'b5 \'c0\'d6\'b4\'d9.\
+- \'c0\'cc\'b7\'af\'c7\'d1 \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 \'b9\'e8\'bf\'ad\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'bf\'a9 \'b1\'b8\'c7\'f6\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'c1\'c1\'b4\'d9.\
+- Subject \'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2 \'c2\'fc\'c1\'b6 \'c0\'da\'b7\'e1\'c7\'fc\'c0\'cc\'b9\'c7\'b7\'ce ArrayList\'b8\'a6 \'c8\'b0\'bf\'eb\'c7\'d8\'bc\'ad \'b1\'b8\'c7\'f6\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'c1\'c1\'b4\'d9.\
+\
+
+\f1\b * \'bf\'b9\'c1\'a6 \'bd\'c3\'b3\'aa\'b8\'ae\'bf\'c0
+\f0\b0 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth7900\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 - \'b5\'ce \'c7\'d0\'bb\'fd : 1001 Lee, 1002 Kim\
+- Lee\'b4\'c2 2\'b0\'fa\'b8\'f1 \'bc\'f6\'b0\'ad : \'b1\'b9\'be\'ee 100, \'bc\'f6\'c7\'d0 50\
+- Kim\'c0\'ba 3\'b0\'fa\'b8\'f1 \'bc\'f6\'b0\'ad : \'b1\'b9\'be\'ee 70, \'bc\'f6\'c7\'d0 85, \'bf\'b5\'be\'ee 100\
+- \'b0\'fa\'b8\'f1 \'bc\'ba\'c0\'fb\'b0\'fa \'c3\'d1\'c1\'a1 \'b0\'a2\'b0\'a2 \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2\cell \lastrow\row
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+
+\f1\b \ul @ Student \'c5\'ac\'b7\'a1\'bd\'ba \'b1\'b8\'c7\'f6\'c7\'cf\'b1\'e2
+\f0\b0 \ulnone \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf3 package
+\f3\b0 \cf0  arraylist;\
+
+\f2\b \cf3 import
+\f3\b0 \cf0  java.util.ArrayList;\
+\
+
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 class
+\f3\b0 \cf0  Student \{\
+	
+\f2\b \cf3 int
+\f3\b0 \cf0  \cf4 studentID\cf0 ;\
+	String \cf4 studentName\cf0 ;\
+	ArrayList<Subject> \cf4 subjectList\cf0 ;\
+	\
+	
+\f2\b \cf3 public
+\f3\b0 \cf0  Student(
+\f2\b \cf3 int
+\f3\b0 \cf0  \cf5 studentID\cf0 , String \cf5 studentName\cf0 ) \{\
+		
+\f2\b \cf3 this
+\f3\b0 \cf0 .\cf4 studentID\cf0  = \cf5 studentID\cf0 ;\
+		
+\f2\b \cf3 this
+\f3\b0 \cf0 .\cf4 studentName\cf0  = \cf5 studentName\cf0 ;\
+		\cf4 subjectList\cf0  = 
+\f2\b \cf3 new
+\f3\b0 \cf0  ArrayList<Subject>();		\cf6 // ArrayList 
+\f0 \'bc\'b1\'be\'f0\'c7\'cf\'b1\'e2
+\f3 \cf0 \
+	\}\
+	\
+	
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 void
+\f3\b0 \cf0  addSubject(String \cf5 name\cf0 , 
+\f2\b \cf3 int
+\f3\b0 \cf0  \cf5 score\cf0 ) \{\
+		Subject \cf5 subject\cf0  = 
+\f2\b \cf3 new
+\f3\b0 \cf0  Subject();	\cf6 //Subject 
+\f0 \'bb\'fd\'bc\'ba\'c7\'cf\'b1\'e2
+\f3 \cf0 \
+		\cf5 subject\cf0 .setName(\cf5 name\cf0 );				\cf6 //
+\f0 \'b0\'fa\'b8\'f1\'c0\'cc\'b8\'a7
+\f3  
+\f0 \'c3\'df\'b0\'a1\'c7\'cf\'b1\'e2
+\f3 \cf0 \
+		\cf5 subject\cf0 .setScorePoint(\cf5 score\cf0 );		\cf6 // 
+\f0 \'c1\'a1\'bc\'f6
+\f3  
+\f0 \'c3\'df\'b0\'a1\'c7\'cf\'b1\'e2
+\f3 \cf0 \
+		\cf4 subjectList\cf0 .add(\cf5 subject\cf0 );			\cf6 // 
+\f0 \'b9\'e8\'bf\'ad\'bf\'a1
+\f3  
+\f0 \'c0\'fa\'c0\'e5\'c7\'cf\'b1\'e2
+\f3 \cf0 \
+	\}\
+	\
+	
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 void
+\f3\b0 \cf0  showStudentInfo() \{\
+		
+\f2\b \cf3 int
+\f3\b0 \cf0  \cf5 total\cf0  = 0;\
+		
+\f2\b \cf3 for
+\f3\b0 \cf0 (Subject \cf5 s\cf0  : \cf4 subjectList\cf0 ) \{\
+			\cf5 total\cf0  += \cf5 s\cf0 .getScorePoint();		\cf6 //
+\f0 \'c3\'d1\'c1\'a1
+\f3  
+\f0 \'b4\'f5\'c7\'cf\'b1\'e2
+\f3 \cf0 \
+			System.
+\f4\i\b \cf4 out
+\f3\i0\b0 \cf0 .println(\cf7 "
+\f0 \'c7\'d0\'bb\'fd
+\f3  "\cf0 +\cf4 studentName\cf0 +\cf7 "
+\f0 \'c0\'c7
+\f3  "\cf0 +\cf5 s\cf0 .getName()+\cf7 " 
+\f0 \'b0\'fa\'b8\'f1
+\f3  
+\f0 \'bc\'ba\'c0\'fb\'c0\'ba
+\f3  "\cf0 +\cf5 s\cf0 .getScorePoint()+\cf7 "
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 ."\cf0 );\
+		\}\
+		System.
+\f4\i\b \cf4 out
+\f3\i0\b0 \cf0 .println(\cf7 "
+\f0 \'c7\'d0\'bb\'fd
+\f3  "\cf0 +\cf4 studentName\cf0 +\cf7 "
+\f0 \'c0\'c7
+\f3  
+\f0 \'c3\'d1\'c1\'a1\'c0\'ba
+\f3  "\cf0 +\cf5 total\cf0 +\cf7 "
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 ."\cf0 );\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 - \'c7\'d1 \'c7\'d0\'bb\'fd\'c0\'cc \'bc\'f6\'b0\'ad\'c7\'cf\'b4\'c2 \'b0\'fa\'b8\'f1\'c0\'ba \'bf\'a9\'b7\'af \'b0\'b3 \'c0\'d6\'c0\'bb \'bc\'f6 \'c0\'d6\'c0\'b8\'b9\'c7\'b7\'ce, Subject \'c5\'ac\'b7\'a1\'bd\'ba\'c7\'fc\'c0\'b8\'b7\'ce ArrayList\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d8\'c1\'d8\'b4\'d9.\
+	: subjectList\'bf\'a1 \'c7\'d0\'bb\'fd\'c0\'cc \'bc\'f6\'b0\'ad\'c7\'cf\'b4\'c2 \'b0\'fa\'b8\'f1\'c0\'bb \'c1\'a5\'be\'c6\'c7\'d1\'b4\'d9.\
+- \'c7\'d0\'bb\'fd\'c0\'c7 \'bc\'f6\'b0\'ad \'b0\'fa\'b8\'f1\'c0\'bb \'c7\'cf\'b3\'aa\'be\'bf \'c3\'df\'b0\'a1\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8 addSubject() \'b8\'de\'bc\'ad\'b5\'e5\'b8\'a6 \'b8\'b8\'b5\'e7\'b4\'d9.\
+	: \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b7\'ce \'b3\'d1\'be\'ee\'bf\'c2 \'b0\'fa\'b8\'f1 \'c0\'cc\'b8\'a7\'b0\'fa \'c1\'a1\'bc\'f6\'b8\'a6 \'b0\'a1\'c1\'f6\'b0\'ed Subject \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d1\'b4\'d9.\
+	: \'bb\'fd\'bc\'ba\'c7\'d1 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba\'b4\'c2 subjectList\'bf\'a1 \'c3\'df\'b0\'a1\'c7\'d1\'b4\'d9.\
+	: \'b1\'d7 \'b0\'e1\'b0\'fa, \'c7\'d0\'bb\'fd\'c0\'c7 \'bc\'f6\'b0\'ad \'b0\'fa\'b8\'f1 \'c1\'a4\'ba\'b8\'b4\'c2 subjectList\'bf\'a1 \'c0\'fa\'c0\'e5\'b5\'c8\'b4\'d9.\
+- showStudentInfo() \'b8\'de\'bc\'ad\'b5\'e5\'bf\'a1\'bc\'ad \'bc\'ba\'c0\'fb\'b0\'fa \'c3\'d1\'c1\'a1\'c0\'bb \'c3\'e2\'b7\'c2\'c7\'d1\'b4\'d9.\
+- \'c7\'e2\'bb\'f3\'b5\'c8 for\'b9\'ae\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'bf\'a9 subjectList \'b9\'e8\'bf\'ad \'b3\'bb\'bf\'eb\'c0\'bb \'c3\'e2\'b7\'c2\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+\
+
+\f1\b \ul @ Subject \'c5\'ac\'b7\'a1\'bd\'ba \'b1\'b8\'c7\'f6\'c7\'cf\'b1\'e2
+\f0\b0 \ulnone \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf3 package
+\f3\b0 \cf0  arraylist;\
+\
+
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 class
+\f3\b0 \cf0  Subject \{\
+	
+\f2\b \cf3 private
+\f3\b0 \cf0  String \cf4 name\cf0 ;\
+	
+\f2\b \cf3 private
+\f3\b0 \cf0  
+\f2\b \cf3 int
+\f3\b0 \cf0  \cf4 scorePoint\cf0 ;\
+	\
+	
+\f2\b \cf3 public
+\f3\b0 \cf0  String getName() \{\
+		
+\f2\b \cf3 return
+\f3\b0 \cf0  \cf4 name\cf0 ;\
+	\}\
+	
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 void
+\f3\b0 \cf0  setName(String \cf5 name\cf0 ) \{\
+		
+\f2\b \cf3 this
+\f3\b0 \cf0 .\cf4 name\cf0 =\cf5 name\cf0 ;\
+	\}\
+	
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 int
+\f3\b0 \cf0  getScorePoint() \{\
+		
+\f2\b \cf3 return
+\f3\b0 \cf0  \cf4 scorePoint\cf0 ;\
+	\}\
+	
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 void
+\f3\b0 \cf0  setScorePoint(
+\f2\b \cf3 int
+\f3\b0 \cf0  \cf5 scorePoint\cf0 ) \{\
+		
+\f2\b \cf3 this
+\f3\b0 \cf0 .\cf4 scorePoint\cf0  = \cf5 scorePoint\cf0 ;\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 - Subject \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'b8\'e2\'b9\'f6 \'ba\'af\'bc\'f6\'b4\'c2 \'b0\'fa\'b8\'f1 \'c0\'cc\'b8\'a7\'b0\'fa \'bc\'ba\'c0\'fb \'b5\'ce \'b0\'a1\'c1\'f6\'c0\'cc\'b4\'d9.\
+- \'b3\'aa\'b8\'d3\'c1\'f6\'b4\'c2 name\'b0\'fa socrePoint \'b8\'e2\'b9\'f6 \'ba\'af\'bc\'f6\'c0\'c7 get(), set() \'b8\'de\'bc\'ad\'b5\'e5\'c0\'cc\'b4\'d9.\
+\
+
+\f1\b \ul @ \'c5\'d7\'bd\'ba\'c6\'ae \'c5\'ac\'b7\'a1\'bd\'ba \'b1\'b8\'c7\'f6 \'c8\'c4 \'b0\'e1\'b0\'fa \'c8\'ae\'c0\'ce\'c7\'cf\'b1\'e2
+\f0\b0 \ulnone \
+- \'c7\'d0\'bb\'fd \'b5\'ce \'b8\'ed \'bb\'fd\'bc\'ba, \'b0\'a2 \'c7\'d0\'bb\'fd\'c0\'c7 \'b0\'fa\'b8\'f1\'ba\'b0 \'bc\'ba\'c0\'fb\'b0\'fa \'c3\'d1\'c1\'a1 \'c3\'e2\'b7\'c2\'c7\'cf\'b1\'e2\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf3 package
+\f3\b0 \cf0  arraylist;\
+\
+
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 class
+\f3\b0 \cf0  StudentTest \{\
+\
+	
+\f2\b \cf3 public
+\f3\b0 \cf0  
+\f2\b \cf3 static
+\f3\b0 \cf0  
+\f2\b \cf3 void
+\f3\b0 \cf0  main(String[] \cf5 args\cf0 ) \{\
+		Student \cf5 studentLee\cf0  = 
+\f2\b \cf3 new
+\f3\b0 \cf0  Student(1001, \cf7 "Lee"\cf0 );\
+		\cf5 studentLee\cf0 .addSubject(\cf7 "
+\f0 \'b1\'b9\'be\'ee
+\f3 "\cf0 , 100);\
+		\cf5 studentLee\cf0 .addSubject(\cf7 "
+\f0 \'bc\'f6\'c7\'d0
+\f3 "\cf0 , 50);\
+		\
+		Student \cf5 studentKim\cf0  = 
+\f2\b \cf3 new
+\f3\b0 \cf0  Student(1002, \cf7 "Kim"\cf0 );\
+		\cf5 studentKim\cf0 .addSubject(\cf7 "
+\f0 \'b1\'b9\'be\'ee
+\f3 "\cf0 , 70);\
+		\cf5 studentKim\cf0 .addSubject(\cf7 "
+\f0 \'bc\'f6\'c7\'d0
+\f3 "\cf0 , 85);\
+		\cf5 studentKim\cf0 .addSubject(\cf7 "
+\f0 \'bf\'b5\'be\'ee
+\f3 "\cf0 , 100);\
+		\
+		\cf5 studentLee\cf0 .showStudentInfo();\
+		System.
+\f4\i\b \cf4 out
+\f3\i0\b0 \cf0 .println(\cf7 "=============="\cf0 );\
+		\cf5 studentKim\cf0 .showStudentInfo();\
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 >>\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf0 \'c7\'d0\'bb\'fd
+\f3  Lee
+\f0 \'c0\'c7
+\f3  
+\f0 \'b1\'b9\'be\'ee
+\f3  
+\f0 \'b0\'fa\'b8\'f1
+\f3  
+\f0 \'bc\'ba\'c0\'fb\'c0\'ba
+\f3  100
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'c7\'d0\'bb\'fd
+\f3  Lee
+\f0 \'c0\'c7
+\f3  
+\f0 \'bc\'f6\'c7\'d0
+\f3  
+\f0 \'b0\'fa\'b8\'f1
+\f3  
+\f0 \'bc\'ba\'c0\'fb\'c0\'ba
+\f3  50
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'c7\'d0\'bb\'fd
+\f3  Lee
+\f0 \'c0\'c7
+\f3  
+\f0 \'c3\'d1\'c1\'a1\'c0\'ba
+\f3  150
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+==============\
+
+\f0 \'c7\'d0\'bb\'fd
+\f3  Kim
+\f0 \'c0\'c7
+\f3  
+\f0 \'b1\'b9\'be\'ee
+\f3  
+\f0 \'b0\'fa\'b8\'f1
+\f3  
+\f0 \'bc\'ba\'c0\'fb\'c0\'ba
+\f3  70
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'c7\'d0\'bb\'fd
+\f3  Kim
+\f0 \'c0\'c7
+\f3  
+\f0 \'bc\'f6\'c7\'d0
+\f3  
+\f0 \'b0\'fa\'b8\'f1
+\f3  
+\f0 \'bc\'ba\'c0\'fb\'c0\'ba
+\f3  85
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'c7\'d0\'bb\'fd
+\f3  Kim
+\f0 \'c0\'c7
+\f3  
+\f0 \'bf\'b5\'be\'ee
+\f3  
+\f0 \'b0\'fa\'b8\'f1
+\f3  
+\f0 \'bc\'ba\'c0\'fb\'c0\'ba
+\f3  100
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'c7\'d0\'bb\'fd
+\f3  Kim
+\f0 \'c0\'c7
+\f3  
+\f0 \'c3\'d1\'c1\'a1\'c0\'ba
+\f3  255
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \
+- studentLee \'bb\'fd\'bc\'ba\'a1\'a6\
+	: addSubject() \'b8\'de\'bc\'ad\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'bf\'a9 \'bc\'f6\'b0\'ad\'c1\'df\'c0\'ce \'b0\'fa\'b8\'f1\'c0\'bb studentLee\'c0\'c7 subjectList\'bf\'a1 \'c3\'df\'b0\'a1\'c7\'d1\'b4\'d9.\
+- studentKim \'bb\'fd\'bc\'ba\'a1\'a6\
+	: \'b8\'b6\'c2\'f9\'b0\'a1\'c1\'f6!\
+- showStudentInfo() \'b8\'de\'bc\'ad\'b5\'e5\'b8\'a6 \'c5\'eb\'c7\'d8 \'bc\'ba\'c0\'fb\'b0\'fa \'c3\'d1\'c1\'a1\'c0\'bb \'c3\'e2\'b7\'c2\'c7\'d1\'b4\'d9.\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

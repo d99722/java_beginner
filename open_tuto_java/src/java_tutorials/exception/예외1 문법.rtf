@@ -1,0 +1,529 @@
+{\rtf1\ansi\ansicpg949\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset129 AppleSDGothicNeo-Regular;\f1\fnil\fcharset129 AppleSDGothicNeo-Bold;\f2\fswiss\fcharset0 Helvetica-Bold;
+\f3\fswiss\fcharset0 Helvetica;\f4\fswiss\fcharset0 Helvetica-BoldOblique;}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red0\green0\blue192;\red106\green62\blue62;
+\red42\green0\blue255;\red255\green0\blue0;\red0\green104\blue218;}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c0\c0\c75294;\csgenericrgb\c41569\c24314\c24314;
+\csgenericrgb\c16471\c0\c100000;\csgenericrgb\c100000\c0\c0;\csgenericrgb\c0\c40784\c85490;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11000\viewh19580\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 ch33. \'bf\'b9\'bf\'dc1 - \'b9\'ae\'b9\'fd\
+- \'b0\'fc\'bd\'c9\'c0\'cc \'b6\'b3\'be\'ee\'c1\'fc\'a1\'a6 \
+- \'c7\'cf\'c1\'f6\'b8\'b8 \'c1\'f6\'b1\'dd\'b1\'ee\'c1\'f6\'b4\'c2 \'bc\'ba\'b0\'f8\'c7\'cf\'b4\'c2 \'b9\'fd\'c0\'bb \'b9\'e8\'bf\'fc\'b4\'d9\'b8\'e9, \'bf\'b9\'bf\'dc\'bf\'cd \'ba\'b8\'be\'c8\'c0\'ba \'bd\'c7\'c6\'d0\'c7\'cf\'c1\'f6 \'be\'ca\'b4\'c2 \'b9\'fd\'c0\'bb \'b9\'e8\'bf\'ee\'b4\'d9\'b0\'ed \'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'d9. ~ \'c7\'d5\'b1\'e2\'b5\'b5\'bf\'a1\'bc\'ad \'c3\'b3\'c0\'bd \'b9\'e8\'bf\'ec\'b4\'c2 \'a1\'ae\'b3\'ab\'b9\'fd\'a1\'af\
+- \'bd\'c7\'c6\'d0\'bf\'a1 \'b4\'eb\'c7\'d1 \'b5\'ce\'b7\'c1\'bf\'f2\'c0\'bb \'be\'ef\'c1\'a6\'c7\'cf\'b0\'ed, \'bd\'ba\'bd\'ba\'b7\'ce \'b0\'fc\'b8\'ae\'c7\'d2 \'bc\'f6 \'c0\'d6\'b0\'d4 \'b5\'c8\'b4\'d9.\
+\
+
+\f1\b \ul * \'bf\'b9\'bf\'dc\'b6\'f5?
+\f0\b0 \ulnone \
+- \'bf\'c0\'b7\'f9, error, \'bf\'b9\'bf\'dc \'a1\'a6 \'bf\'c0\'b7\'f9\'b4\'c2 \'bf\'b9\'bf\'dc\'c0\'c7 \'c0\'cf\'c1\'be\'c0\'cc\'b6\'f3\'b0\'ed \'bb\'fd\'b0\'a2\'c7\'cf\'b8\'e9 \'b5\'c8\'b4\'d9!\
+- application\'c0\'bb \'b8\'b8\'b5\'ea\'bf\'a1 \'c0\'d6\'be\'ee\'bc\'ad, \'bf\'ec\'b8\'ae\'c0\'c7 \'b1\'e2\'c8\'b9\'b0\'fa\'b4\'c2 \'b4\'d9\'b8\'a3\'b0\'d4 \'b9\'df\'bb\'fd\'c7\'cf\'b4\'c2 \'b9\'ae\'c1\'a6\'b5\'e9\'c0\'bb \'c6\'f7\'b0\'fd\'c0\'fb\'c0\'b8\'b7\'ce java\'bf\'a1\'bc\'ad\'b4\'c2 \'bf\'b9\'bf\'dc(exception)\'b6\'f3\'b0\'ed \'ba\'ce\'b8\'a5\'b4\'d9.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf2 package
+\f3\b0 \cf0  java_tutorials.exception;\
+\
+
+\f2\b \cf2 class
+\f3\b0 \cf0  Calculator\{\
+	
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 left\cf0 , \cf3 right\cf0 ;\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  setOprands(
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf4 left\cf0 , 
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf4 right\cf0 ) \{\
+		
+\f2\b \cf2 this
+\f3\b0 \cf0 .\cf3 left\cf0  = \cf4 left\cf0 ;\
+		
+\f2\b \cf2 this
+\f3\b0 \cf0 .\cf3 right\cf0  = \cf4 right\cf0 ;\
+	\}\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  divide() \{\
+		System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf5 "
+\f0 \'b0\'e8\'bb\'ea\'b0\'e1\'b0\'fa\'b4\'c2
+\f3  "\cf0 );\
+		System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(
+\f2\b \cf2 this
+\f3\b0 \cf0 .\cf3 left\cf0 /
+\f2\b \cf2 this
+\f3\b0 \cf0 .\cf3 right\cf0 );\
+		System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf5 " 
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 ."\cf0 );\
+	\}\
+\}\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  CalculatorDemo \{\
+\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf4 args\cf0 ) \{\
+		Calculator \cf4 c1\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Calculator();\
+		\cf4 c1\cf0 .setOprands(10,0);\
+		\cf4 c1\cf0 .divide();\
+\
+	\}\
+\
+\}\
+>>>\
+\pard\pardeftab720\partightenfactor0
+\cf6 Exception in thread "main" 
+\f0 \cf0 \'b0\'e8\'bb\'ea\'b0\'e1\'b0\'fa\'b4\'c2
+\f3  \
+\cf7 \ul \ulc7 java.lang.ArithmeticException\cf6 \ulnone : / by zero\cf0 \
+\cf6 	at java_tutorials.exception.Calculator.divide(\cf7 \ul \ulc7 CalculatorDemo.java:11\cf6 \ulnone )\cf0 \
+\cf6 	at java_tutorials.exception.CalculatorDemo.main(\cf7 \ul \ulc7 CalculatorDemo.java:21\cf6 \ulnone )\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 - \'a1\'b0\'b0\'e8\'bb\'ea\'b0\'e1\'b0\'fa\'b4\'c2 \'a1\'b0\'c3\'e2\'b7\'c2\
+- 10\'c0\'bb 0\'c0\'b8\'b7\'ce \'b3\'aa\'b4\'ae \'a1\'a6 java\'b4\'c2 error\'b8\'a6 \'b9\'df\'bb\'fd\'bd\'c3\'c5\'b4. (\'bd\'c7\'c7\'e0 \'c1\'df\'c1\'f6)\
+- ArithmeticException : / by zero\
+- main\'c0\'fd (21\'b9\'f8\'c2\'b0 \'c1\'d9) \'bf\'a1\'bc\'ad \'bf\'a1\'b7\'af \'b9\'df\'bb\'fd (\'bb\'e7\'bf\'eb\'c0\'da\'bf\'cd \'b9\'d0\'c1\'a2\'c7\'d1 \'c8\'a3\'c3\'e2\'c0\'da)\
+- divde method (11\'b9\'f8\'c2\'b0 \'c1\'d9) \'bf\'a1\'bc\'ad \'bf\'a1\'b7\'af \'b9\'df\'bb\'fd (\'bf\'c0\'b7\'f9\'c0\'c7 \'c1\'f8\'bf\'f8\'c1\'f6)\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs32 \cf0 		
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf5 "
+\f0 \'b0\'e8\'bb\'ea\'b0\'e1\'b0\'fa\'b4\'c2
+\f3  "\cf0 );\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(
+\f2\b \cf2 this
+\f3\b0 \cf0 .\cf3 left\cf0 /
+\f2\b \cf2 this
+\f3\b0 \cf0 .\cf3 right\cf0 );\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf5 " 
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 ."\cf0 );\
+		\} 
+\f2\b \cf2 catch
+\f3\b0 \cf0  (Exception \cf4 e\cf0 ) \{\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf5 "
+\f0 \'bf\'c0\'b7\'f9\'b0\'a1
+\f3  
+\f0 \'b9\'df\'bb\'fd\'c7\'df\'bd\'c0\'b4\'cf\'b4\'d9
+\f3  : "\cf0 +\cf4 e\cf0 .getMessage());\
+		\}
+\f0\fs40 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 >>> 
+\fs32 \'b0\'e8\'bb\'ea\'b0\'e1\'b0\'fa\'b4\'c2
+\f3  
+\f0 \'bf\'c0\'b7\'f9\'b0\'a1
+\f3  
+\f0 \'b9\'df\'bb\'fd\'c7\'df\'bd\'c0\'b4\'cf\'b4\'d9
+\f3  : / by zero\
+
+\f0\fs40 \
+
+\f1\b \ul * try / catch
+\f0\b0 \ulnone \
+- try : \'c0\'cc \'ba\'ce\'ba\'d0\'bf\'a1\'bc\'ad \'b9\'ae\'c1\'a6\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'d2 \'b0\'cd\'c0\'bb \'bf\'b9\'c3\'f8\'c7\'d2 \'b6\'a7, \'b1\'d7 \'ba\'ce\'ba\'d0\'c0\'bb try\'b7\'ce \'b9\'ad\'be\'ee\'c1\'dc\
+- catch : try\'b8\'a6 \'c0\'db\'b5\'bf\'bd\'c3\'c5\'b0\'b4\'d9 \'bf\'c0\'b7\'f9\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'cf\'b8\'e9 catch\'c0\'fd\'b7\'ce \'b3\'d1\'be\'ee\'b0\'a8\
+- Exception e : \'bf\'a1\'b7\'af\'bf\'a1 \'b4\'eb\'c7\'d1 \'c1\'a4\'ba\'b8\'b0\'a1 \'b4\'e3\'b1\'e4 \'b0\'b4\'c3\'bc\'b8\'a6 e\'bf\'a1 \'b4\'e3\'b0\'ed, \'b1\'d7 \'b0\'b4\'c3\'bc\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'c5\'b8\'c0\'d4\'c0\'ba Exception\'c0\'cc\'b4\'d9. ~ Exception\'b3\'bb\'bf\'a1\'b4\'c2 getMessage()\'b6\'f3\'b4\'c2 \'b8\'de\'bc\'d2\'b5\'e5\'b0\'a1 \'c6\'f7\'c7\'d4\'b5\'c7\'be\'ee \'c0\'d6\'b4\'d9\'a1\'a6 e\'b6\'f3\'b4\'c2 \'ba\'af\'bc\'f6\'bf\'a1 \'bf\'a1\'b7\'af\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'d1 \'c0\'cc\'c0\'af\'b8\'a6 \'b8\'ae\'c5\'cf\'c7\'d8\'c1\'dc.\
+\
+try\{\
+	\'bf\'b9\'bf\'dc\'c0\'c7 \'b9\'df\'bb\'fd\'c0\'cc \'bf\'b9\'bb\'f3\'b5\'c7\'b4\'c2 \'b7\'ce\'c1\'f7\
+\} catch (\'bf\'b9\'bf\'dc\'c5\'ac\'b7\'a1\'bd\'ba \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba) \{\
+	\'bf\'b9\'bf\'dc\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'df\'c0\'bb \'b6\'a7 \'bd\'c7\'c7\'e0\'b5\'c7\'b4\'c2 \'b7\'ce\'c1\'f7\
+\}\
+\
+
+\f1\b \ul * \'b5\'de\'bc\'f6\'bd\'c0\'c0\'c7 \'b9\'e6\'b9\'fd
+\f0\b0 \ulnone \
+- \'b5\'de\'bc\'f6\'bd\'c0\'c0\'bb \'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf java\'b0\'a1 \'b0\'f8\'bd\'c4\'c0\'fb\'c0\'b8\'b7\'ce \'c1\'a6\'b0\'f8\'c7\'cf\'b4\'c2 \'b9\'e6\'b9\'fd\'b5\'e9\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs32 \cf0 		
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf5 "
+\f0 \'b0\'e8\'bb\'ea\'b0\'e1\'b0\'fa\'b4\'c2
+\f3  "\cf0 );\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(
+\f2\b \cf2 this
+\f3\b0 \cf0 .\cf3 left\cf0 /
+\f2\b \cf2 this
+\f3\b0 \cf0 .\cf3 right\cf0 );\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf5 " 
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 ."\cf0 );\
+		\} 
+\f2\b \cf2 catch
+\f3\b0 \cf0  (Exception \cf4 e\cf0 ) \{\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf5 "\\n\\ne.getMessage()\\n"\cf0 +\cf4 e\cf0 .getMessage());\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf5 "\\n\\ne.toString()\\n"\cf0 +\cf4 e\cf0 .toString());\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf5 "\\n\\ne.printStackTrace()"\cf0 );\
+			\cf4 e\cf0 .printStackTrace();\
+		\}\
+>>>
+\f0\fs40 \
+
+\fs32 \'b0\'e8\'bb\'ea\'b0\'e1\'b0\'fa\'b4\'c2
+\f3  \
+e.getMessage()\
+/ by zero\
+\
+e.toString()\
+\pard\pardeftab720\partightenfactor0
+\cf7 \ul \ulc7 java.lang.ArithmeticException\cf0 \ulnone : / by zero\
+\
+e.printStackTrace()\
+\cf7 \ul \ulc7 java.lang.ArithmeticException\cf6 \ulnone : / by zero\cf0 \
+\cf6 	at java_tutorials.exception.Calculator.divide(\cf7 \ul \ulc7 CalculatorDemo.java:13\cf6 \ulnone )\cf0 \
+\cf6 	at java_tutorials.exception.CalculatorDemo.main(\cf7 \ul \ulc7 CalculatorDemo.java:29\cf6 \ulnone )\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \
+- getMessage() : \'bf\'a1\'b7\'af \'b9\'df\'bb\'fd \'c0\'cc\'c0\'af\
+- toString() : \'c1\'b6\'b1\'dd \'b4\'f5 \'c0\'da\'bc\'bc\'c7\'d1 \'c0\'cc\'c0\'af (\'be\'ee\'b6\'b2\'c7\'fc\'c5\'c2\'c0\'c7 exception\'c0\'cc \'b9\'df\'bb\'fd\'c7\'d1\'c1\'f6)\
+- printStackTrace() : \'b3\'bb\'ba\'ce\'c0\'fb\'c0\'b8\'b7\'ce \'c8\'ad\'b8\'e9\'bf\'a1 \'bf\'a1\'b7\'af\'bb\'f3\'c8\'b2 \'c3\'e2\'b7\'c2\
+- \'c0\'a7\'bf\'a1\'bc\'ad \'b9\'d8\'c0\'b8\'b7\'ce \'b0\'a5\'bc\'f6\'b7\'cf \'b4\'f5 \'bb\'f3\'bc\'bc\'c7\'d1 \'c1\'a4\'ba\'b8 \'c1\'a6\'b0\'f8 (\'b1\'e2\'c8\'a3\'bf\'a1 \'b5\'fb\'b6\'f3 \'bb\'e7\'bf\'eb)\
+\
+- try \'bd\'c7\'c7\'e0 \'c1\'df error\'b0\'a1 \'b9\'df\'bb\'fd, catch\'be\'c8\'c0\'c7 \'b1\'b8\'b9\'ae\'c0\'cc \'bd\'c7\'c7\'e0\'b5\'c7\'b8\'e9 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'bb \'c1\'df\'c1\'f6 \'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'be\'c6\'b4\'cf\'b6\'f3 \'b1\'d7 \'b4\'d9\'c0\'bd \'c1\'d9\'b7\'ce \'c0\'cc\'be\'ee\'bc\'ad \'b0\'e8\'bc\'d3 \'bd\'c7\'c7\'e0\'c7\'d1\'b4\'d9.\
+\
+
+\f1\b \ul * \'b4\'d9\'be\'e7\'c7\'d1 \'bf\'b9\'bf\'dc\'b5\'e9
+\f0\b0 \ulnone \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf2 package
+\f3\b0 \cf0  java_tutorials.exception;\
+\
+
+\f2\b \cf2 class
+\f3\b0 \cf0  A\{\
+	
+\f2\b \cf2 private
+\f3\b0 \cf0  
+\f2\b \cf2 int
+\f3\b0 \cf0 [] \cf3 arr\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  
+\f2\b \cf2 int
+\f3\b0 \cf0 [3];\
+	A() \{\
+		\cf3 arr\cf0 [0]=0;\
+		\cf3 arr\cf0 [1]=10;\
+		\cf3 arr\cf0 [2]=20;\
+	\}\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  z(
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf4 first\cf0 , 
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf4 second\cf0 ) \{\
+		System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf3 arr\cf0 [\cf4 first\cf0 ]/\cf3 arr\cf0 [\cf4 second\cf0 ]);\
+	\}\
+\}\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  ExceptionDemo1 \{\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf4 args\cf0 ) \{\
+		A \cf4 a\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  A();\
+		\cf4 a\cf0 .z(10, 1);\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 >>>\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs32 \cf6 Exception in thread "main" \cf7 \ul \ulc7 java.lang.ArrayIndexOutOfBoundsException\cf6 \ulnone : 10\cf0 \
+\cf6 	at java_tutorials.exception.A.z(\cf7 \ul \ulc7 ExceptionDemo1.java:11\cf6 \ulnone )\cf0 \
+\cf6 	at java_tutorials.exception.ExceptionDemo1.main(\cf7 \ul \ulc7 ExceptionDemo1.java:18\cf6 \ulnone )\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \
+- 3\'ba\'b8\'b4\'d9 \'c5\'ab \'c0\'ce\'b5\'a6\'bd\'cc\'c0\'bb \'c7\'df\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 ArrayIndexOutOfBoundsException \'b9\'df\'bb\'fd (\'b9\'e8\'bf\'ad\'c0\'cc \'b0\'a1\'c1\'f8 \'c0\'ce\'b5\'a6\'bd\'cc\'c0\'c7 \'b0\'e6\'b0\'e8\'b8\'a6 \'b3\'d1\'be\'ee\'b0\'ac\'b4\'d9.)\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs32 \cf0 		\cf4 a\cf0 .z(1, 0);
+\f0\fs40 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 >> ArithmeticExcpetion \'b9\'df\'bb\'fd\
+- \'b5\'ce\'b0\'a1\'c1\'f6\'c0\'c7 \'bf\'b9\'bf\'dc\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'d9\'a1\'a6\
+\
+(\'c7\'d8\'b0\'e1)\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs32 \cf0 	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  z(
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf4 first\cf0 , 
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf4 second\cf0 ) \{\
+		
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf3 arr\cf0 [\cf4 first\cf0 ]/\cf3 arr\cf0 [\cf4 second\cf0 ]);\
+		\} 
+\f2\b \cf2 catch
+\f3\b0 \cf0 (Exception \cf4 e\cf0 ) \{\
+			\cf4 e\cf0 .printStackTrace();\
+		\}\
+	\}
+\f0\fs40 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 - getMessage\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9, \'b3\'ca\'b9\'ab \'b4\'dc\'bc\'f8\'c7\'d8 \'bf\'c0\'b7\'f9\'b8\'a6 \'c6\'c4\'be\'c7\'c7\'cf\'b1\'e2 \'c8\'fb\'b5\'e9\'b4\'d9. \'c0\'cc\'b7\'b1 \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 printStackTrace\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9 \'b5\'c8\'b4\'d9.\
+- \'c0\'cc\'b7\'b1 \'bd\'c4\'c0\'b8\'b7\'ce \'c3\'b3\'b8\'ae\'c7\'d8\'c1\'d6\'b8\'e9, \'be\'ee\'b6\'b0\'c7\'d1 \'c7\'fc\'bd\'c4\'c0\'c7 \'bf\'c0\'b7\'f9\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'cf\'b4\'f8\'c1\'f6 \'bb\'f3\'b0\'fc\'be\'f8\'c0\'cc \'bd\'c7\'c7\'e0\'bd\'c3\'c5\'b3 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+\
+- \'b1\'d7\'b7\'b8\'b4\'d9\'b8\'e9, \'bf\'b9\'bf\'dc\'c7\'d7\'b8\'f1\'ba\'b0\'b7\'ce \'c3\'b3\'b8\'ae\'b8\'a6 \'c7\'d8\'c1\'d6\'b0\'ed \'bd\'cd\'c0\'bb \'b6\'a9 \'be\'ee\'b6\'bb\'b0\'d4 \'c7\'d8\'be\'df\'c7\'cf\'b4\'c2\'b0\'a1?	: \'c1\'b6\'b0\'c7\'b9\'ae \'c3\'b3\'b7\'b3 catch\'b8\'a6 \'bf\'a9\'b7\'af\'b0\'b3\'b7\'ce \'b3\'aa\'b4\'a9\'be\'ee\'c1\'d6\'b8\'e9 \'b5\'c8\'b4\'d9.\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs32 \cf0 	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  z(
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf4 first\cf0 , 
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf4 second\cf0 ) \{\
+		
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf3 arr\cf0 [\cf4 first\cf0 ]/\cf3 arr\cf0 [\cf4 second\cf0 ]);\
+		\} 
+\f2\b \cf2 catch
+\f3\b0 \cf0 (ArithmeticException \cf4 e\cf0 ) \{\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf5 "ArithmeticException"\cf0 );\
+		\} 
+\f2\b \cf2 catch
+\f3\b0 \cf0 (ArrayIndexOutOfBoundsException \cf4 e\cf0 ) \{\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf5 "ArrayIndexOutOfBoundsException"\cf0 );\
+		\}\
+	\}
+\f0\fs40 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 - \'b9\'df\'bb\'fd\'c7\'d1 \'bf\'c0\'b7\'f9\'b0\'a1 \'b9\'ab\'be\'f9\'c0\'ce\'b0\'a1\'bf\'a1 \'b5\'fb\'b6\'f3 \'b4\'d9\'b8\'a5 \'bd\'c7\'c7\'e0\'b0\'e1\'b0\'fa\'b8\'a6 \'b0\'a1\'c1\'f6\'b0\'d4 \'b5\'c9 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs32 \cf0 		
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf3 arr\cf0 [\cf4 first\cf0 ]/\cf3 arr\cf0 [\cf4 second\cf0 ]);\
+		\} 
+\f2\b \cf2 catch
+\f3\b0 \cf0 (ArithmeticException \cf4 e\cf0 ) \{\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf5 "ArithmeticException"\cf0 );\
+		\} 
+\f2\b \cf2 catch
+\f3\b0 \cf0 (ArrayIndexOutOfBoundsException \cf4 e\cf0 ) \{\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf5 "ArrayIndexOutOfBoundsException"\cf0 );\
+		\} 
+\f2\b \cf2 catch
+\f3\b0 \cf0 (\ul Excpetion\ulnone  \cf4 e\cf0 ) \{\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf5 "other"\cf0 );\
+		\}
+\f0\fs40 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 - \'b8\'b6\'c1\'f6\'b8\'b7 \'c1\'d9 : else\'c3\'b3\'b7\'b3 \'c3\'b3\'b8\'ae\'b5\'b5 \'b0\'a1\'b4\'c9\'c7\'cf\'b4\'d9. \'b8\'b8\'be\'e0 \'c0\'cc\'b0\'cd\'c0\'bb try \'b9\'d9\'b7\'ce \'b4\'d9\'c0\'bd\'bf\'a1 \'c0\'d4\'b7\'c2\'c7\'d1\'b4\'d9\'b8\'e9, \'b9\'d8\'bf\'a1 \'b4\'d9\'b8\'a5 \'bf\'b9\'bf\'dc\'b5\'e9\'c0\'ba \'c3\'b3\'b8\'ae\'b5\'c7\'c1\'f6 \'be\'ca\'b4\'c2\'b4\'d9. (\'b8\'f0\'b5\'e7 \'bf\'b9\'bf\'dc\'b8\'a6 \'c6\'f7\'c7\'d4\'c7\'cf\'b0\'ed \'c0\'d6\'b1\'e2 \'b6\'a7\'b9\'ae)\
+\
+
+\f1\b \ul * finally
+\f0\b0 \ulnone \
+try \{\
+	\'bf\'b9\'bf\'dc\'c0\'c7 \'b9\'df\'bb\'fd\'c0\'cc \'bf\'b9\'bb\'f3\'b5\'c7\'b4\'c2 \'b7\'ce\'c1\'f7\
+\} catch (\'bf\'b9\'bf\'dc\'c5\'ac\'b7\'a1\'bd\'ba \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba) \{\
+	\'bf\'b9\'bf\'dc\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'df\'c0\'bb \'b6\'a7 \'bd\'c7\'c7\'e0\'b5\'c7\'b4\'c2 \'b7\'ce\'c1\'f7\
+\} finally \{\
+	\'bf\'b9\'bf\'dc\'bf\'a9\'ba\'ce\'bf\'cd \'b0\'fc\'b0\'e8\'be\'f8\'c0\'cc \'bd\'c7\'c7\'e0\'b5\'c7\'b4\'c2 \'b7\'ce\'c1\'f7\
+\}\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf2 package
+\f3\b0 \cf0  java_tutorials.exception;\
+\
+
+\f2\b \cf2 class
+\f3\b0 \cf0  A\{\
+	
+\f2\b \cf2 private
+\f3\b0 \cf0  
+\f2\b \cf2 int
+\f3\b0 \cf0 [] \cf3 arr\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  
+\f2\b \cf2 int
+\f3\b0 \cf0 [3];\
+	A() \{\
+		\cf3 arr\cf0 [0]=0;\
+		\cf3 arr\cf0 [1]=10;\
+		\cf3 arr\cf0 [2]=20;\
+	\}\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  z(
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf4 first\cf0 , 
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf4 second\cf0 ) \{\
+		
+\f2\b \cf2 try
+\f3\b0 \cf0  \{\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf3 arr\cf0 [\cf4 first\cf0 ]/\cf3 arr\cf0 [\cf4 second\cf0 ]);\
+		\} 
+\f2\b \cf2 catch
+\f3\b0 \cf0 (ArithmeticException \cf4 e\cf0 ) \{\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf5 "ArithmeticException"\cf0 );\
+		\} 
+\f2\b \cf2 catch
+\f3\b0 \cf0 (ArrayIndexOutOfBoundsException \cf4 e\cf0 ) \{\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf5 "ArrayIndexOutOfBoundsException"\cf0 );\
+		\} 
+\f2\b \cf2 catch
+\f3\b0 \cf0 (Exception \cf4 e\cf0 ) \{\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf5 "other"\cf0 );\
+		\} 
+\f2\b \cf2 finally
+\f3\b0 \cf0  \{\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf5 "finally"\cf0 );\
+		\}\
+	\}\
+\}\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  ExceptionDemo1 \{\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf4 args\cf0 ) \{\
+		A \cf4 a\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  A();\
+		\cf4 a\cf0 .z(10, 0);\
+		\cf4 a\cf0 .z(1, 0);\
+		\cf4 a\cf0 .z(2, 1);\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 >>>\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs32 \cf7 \ul \ulc7 ArrayIndexOutOfBoundsException\cf0 \ulnone \
+finally\
+\cf7 \ul \ulc7 ArithmeticException\cf0 \ulnone \
+finally\
+2\
+finally\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \
+- \'c1\'a4\'bb\'f3\'c0\'fb\'c0\'cc\'b0\'c7, \'ba\'f1\'c1\'a4\'bb\'f3\'c0\'fb\'c0\'cc\'b0\'c7 \'bb\'f3\'b0\'fc\'be\'f8\'c0\'cc finally\'b4\'c2 \'bd\'c7\'c7\'e0\'b5\'c8\'b4\'d9.\
+- \'b1\'d7\'b7\'b8\'b4\'d9\'b8\'e9 \'be\'f0\'c1\'a6\'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2\'b0\'a1? : ex, \'b5\'a5\'c0\'cc\'c5\'cd\'ba\'a3\'c0\'cc\'bd\'ba : \'c1\'f8\'c7\'e0\'c0\'cc \'b5\'c7\'be\'fa\'b4\'f8 \'be\'c8\'b5\'c7\'be\'fa\'b4\'f8 \'b0\'a3\'bf\'a1 \'c1\'a2\'bc\'d3\'c0\'bb \'b2\'f7\'be\'ee\'c1\'d6\'be\'ee\'be\'df\'c7\'d4. \
+\
+\
+\
+\
+\
+\
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="test/" kind="src" path="do_it_java/src"/>
+	<classpathentry kind="src" path="do_it_java/src/test"/>
+	<classpathentry kind="src" path="open_tuto_java/src"/>
+	<classpathentry kind="src" path="open_tuto_java1/Data_and_operation"/>
+	<classpathentry kind="src" path="open_tuto_java1/HelloWorld"/>
+	<classpathentry kind="src" path="open_tuto_java1/java-flow-control"/>
+	<classpathentry kind="src" path="open_tuto_java1/MyApp"/>
+	<classpathentry kind="src" path="open_tuto_java1/Programming"/>
+	<classpathentry kind="src" path="open_tuto_java1/ProjectMethod"/>
+	<classpathentry kind="src" path="open_tuto_java1/ProjectOOP"/>
+	<classpathentry kind="output" path="do_it_java/bin"/>
+</classpath>

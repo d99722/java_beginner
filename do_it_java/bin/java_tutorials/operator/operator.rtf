@@ -1,0 +1,541 @@
+{\rtf1\ansi\ansicpg949\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset129 AppleSDGothicNeo-Regular;\f1\fnil\fcharset129 AppleSDGothicNeo-Bold;\f2\fswiss\fcharset0 Helvetica;
+\f3\fswiss\fcharset0 Helvetica-BoldOblique;\f4\fswiss\fcharset0 Helvetica-Bold;\f5\fnil\fcharset129 NanumGothicExtraBold;
+\f6\fnil\fcharset129 NanumGothic;\f7\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red106\green62\blue62;\red42\green0\blue255;\red0\green0\blue192;
+\red127\green0\blue85;\red63\green127\blue95;\red83\green83\blue83;\red234\green234\blue234;\red193\green193\blue193;
+}
+{\*\expandedcolortbl;;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c16471\c0\c100000;\csgenericrgb\c0\c0\c75294;
+\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c24706\c49804\c37255;\cssrgb\c40000\c40000\c40000;\cssrgb\c93333\c93333\c93333;\cssrgb\c80000\c80000\c80000;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11000\viewh19580\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs44 \cf0 ch8. \'bf\'ac\'bb\'ea\'c0\'da operator\
+\
+
+\f1\b \ul * \'bf\'ac\'bb\'ea\'c0\'da\'c0\'c7 \'c1\'be\'b7\'f9
+\f0\b0 \ulnone \
+- \'b4\'eb\'c0\'d4\'bf\'ac\'bb\'ea\'c0\'da, \'bb\'ea\'bc\'fa\'bf\'ac\'bb\'ea\'c0\'da, \'ba\'f1\'b1\'b3\'bf\'ac\'bb\'ea\'c0\'da, \'b3\'ed\'b8\'ae\'bf\'ac\'bb\'ea\'c0\'da \'b5\'ee\'c0\'cc \'c0\'d6\'b4\'d9.\
+\
+
+\f1\b \ul * \'bb\'ea\'bc\'fa\'bf\'ac\'bb\'ea\'c0\'da
+\f0\b0 \ulnone \
+- \'bb\'ea\'bc\'fa (Arithmetic) \'a1\'a6 \'bc\'f6\'c7\'d0\'c0\'fb\'c0\'ce \'b0\'e8\'bb\'ea\'bf\'a1 \'bb\'e7\'bf\'eb\'b5\'c7\'b4\'c2 \'bf\'ac\'bb\'ea\'c0\'da\'c0\'cc\'b4\'d9.\
+- \'b4\'f5\'c7\'cf\'b1\'e2 : +, \'bb\'a9\'b1\'e2 : -\'b4\'c2 \'b1\'e2\'c1\'b8\'b0\'fa \'b0\'b0\'b4\'d9.\
+- \'b0\'f6\'c7\'cf\'b1\'e2 : *\
+- \'b3\'aa\'b4\'a9\'b1\'e2 : / \
+- \'b3\'aa\'b8\'d3\'c1\'f6 : %\
+\
+
+\f1\b \ul * +\'bf\'ac\'bb\'ea\'c0\'da
+\f0\b0 \ulnone \
+- \'bc\'fd\'c0\'da \'bb\'d3 \'be\'c6\'b4\'cf\'b6\'f3 \'b9\'ae\'c0\'da\'b8\'a6 \'b0\'e1\'c7\'d5\'c7\'d2 \'b6\'a7\'b5\'b5 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf0 		String \cf2 firstString\cf0  = \cf3 "This is"\cf0 ;\
+		String \cf2 secondString\cf0  = \cf3 " a concatenated string"\cf0 ;\
+		String \cf2 thirdString\cf0  = \cf2 firstString\cf0  + \cf2 secondString\cf0 ;\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf2 thirdString\cf0 );
+\f0\fs44 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 >>> This is a concatenated string\
+\
+
+\f1\b \ul * \'b3\'aa\'b4\'b0\'bc\'c0
+\f0\b0 \ulnone \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf0 \
+		
+\f4\b \cf5 int
+\f2\b0 \cf0  \cf2 a\cf0  = 10;\
+		
+\f4\b \cf5 int
+\f2\b0 \cf0  \cf2 b\cf0  = 3;\
+		\
+		
+\f4\b \cf5 float
+\f2\b0 \cf0  \cf2 c\cf0  = 10.0F;\
+		
+\f4\b \cf5 float
+\f2\b0 \cf0  \cf2 d\cf0  = 3.0F;\
+		\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf2 a\cf0 /\cf2 b\cf0 );\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf2 c\cf0 /\cf2 d\cf0 );\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf2 a\cf0 /\cf2 d\cf0 );\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs44 \cf0 \
+1. a/b\'b4\'c2 3.3333 \'c0\'cc\'c1\'f6\'b8\'b8, int\'c7\'fc\'c0\'b8\'b7\'ce \'c3\'e2\'b7\'c2\'b5\'c7\'b9\'c7\'b7\'ce 3\'c0\'cc \'b3\'aa\'bf\'c2\'b4\'d9. \'c0\'cc \'b0\'fa\'c1\'a4\'bf\'a1\'bc\'ad \'b5\'a5\'c0\'cc\'c5\'cd \'bc\'d5\'bd\'c7\'c0\'cc \'b9\'df\'bb\'fd\'c7\'d1\'b4\'d9.\
+2. c/d\'b4\'c2 \'b8\'f0\'b5\'ce \'bd\'c7\'bc\'f6\'c0\'cc\'b9\'c7\'b7\'ce \'b0\'e1\'b0\'fa\'b0\'aa\'b5\'b5 \'b9\'ae\'c1\'a6 \'be\'f8\'c0\'cc \'bd\'c7\'bc\'f6\'b7\'ce \'c0\'df! \'b3\'aa\'bf\'c2\'b4\'d9. \'b5\'a5\'c0\'cc\'c5\'cd \'bc\'d5\'bd\'c7\'c0\'cc \'b9\'df\'bb\'fd\'c7\'cf\'c1\'f6 \'be\'ca\'b4\'c2\'b4\'d9.\
+3. a/d \'a1\'a6 \'c0\'da\'b9\'d9\'b4\'c2 \'c7\'fc\'c0\'cc \'b4\'d9\'b8\'a3\'b9\'c7\'b7\'ce \'c7\'fc\'ba\'af\'c8\'af\'c0\'bb \'c7\'d8\'c1\'d8\'b4\'d9\'a1\'a6 \'c0\'cc \'b6\'a7 \'b4\'f5 \'b3\'d0\'c0\'ba \'bc\'f6\'b8\'a6 \'c7\'a5\'c7\'f6\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'c7\'fc\'c0\'b8\'b7\'ce \'b9\'d9\'b2\'d9\'be\'ee \'c1\'d6\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1, int a = 10\'c0\'cc float 10.0F\'b7\'ce \'b9\'d9\'b2\'ef\'b4\'d9 \'a1\'a6 \'b5\'d1\'b4\'d9 \'bd\'c7\'bc\'f6\'c0\'cc\'b9\'c7\'b7\'ce \'b5\'a5\'c0\'cc\'c5\'cd\'bc\'d5\'bd\'c7\'c0\'cc \'b9\'df\'bb\'fd\'c7\'cf\'c1\'f6 \'be\'ca\'b4\'c2\'b4\'d9.\
+\
+
+\f1\b \ul * \'b4\'dc\'c7\'d7 \'bf\'ac\'bb\'ea\'c0\'da
+\f0\b0 \ulnone \
+- \'c1\'f6\'b1\'dd\'b1\'ee\'c1\'f6 \'bb\'ec\'c6\'ec \'ba\'bb \'b0\'cd\'b5\'e9\'c0\'ba \'c0\'cc\'c7\'d7 \'bf\'ac\'bb\'ea\'c0\'da (infix operator) \'bf\'b4\'b4\'d9.\
+	: \'c1\'c2\'c7\'d7\'b0\'fa \'bf\'ec\'c7\'d7\'c0\'bb \'b0\'b0\'c0\'cc \'b0\'a1\'c1\'f6\'b0\'ed \'c0\'d6\'c0\'bd \'a1\'a6 1 + 2\
+- \'b4\'dc\'c7\'d7\'bf\'ac\'bb\'ea\'c0\'da\'c0\'c7 \'c1\'be\'b7\'f9\
+	+ : \'be\'e7\'bc\'f6\'b8\'a6 \'c7\'a5\'c7\'f6\'c7\'d8\'c1\'dc (\'bd\'c7\'c1\'a6 \'bb\'e7\'bf\'eb\'c7\'d2 \'c7\'ca\'bf\'e4 \'be\'f8\'c0\'bd)\
+	- : \'c0\'bd\'bc\'f6\'b8\'a6 \'c7\'a5\'c7\'f6\'c7\'d8\'c1\'dc (\'b8\'c6\'b6\'f4\'bf\'a1 \'b5\'fb\'b6\'f3 \'c0\'cc\'c7\'d7/\'b4\'dc\'c7\'d7)\
+	++ : \'c1\'f5\'b0\'a1\'bf\'ac\'bb\'ea\'c0\'da \'a1\'a6 \'c7\'d7\'c0\'c7 \'b0\'aa\'c0\'bb 1\'be\'bf \'c1\'f5\'b0\'a1 \'bd\'c3\'c5\'b2\'b4\'d9.\
+	-- : \'b0\'a8\'bc\'d2\'bf\'ac\'bb\'ea\'c0\'da \'a1\'a6 \'c7\'d7\'c0\'c7 \'b0\'aa\'c0\'bb 1\'be\'bf \'b0\'a8\'bc\'d2 \'bd\'c3\'c5\'b2\'b4\'d9.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf0 		
+\f4\b \cf5 int
+\f2\b0 \cf0  \cf2 i\cf0  = 3;\
+		\cf2 i\cf0 ++;\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf2 i\cf0 ); \cf6 // 4\cf0 \
+		++\cf2 i\cf0 ;\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf2 i\cf0 ); \cf6 // 5\cf0 \
+		\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(++\cf2 i\cf0 ); \cf6 // 6\cf0 \
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf2 i\cf0 ++); \cf6 // 6\cf0 \
+		\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf2 i\cf0 ); \cf6 // 7
+\f0\fs44 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+- ++\'c0\'c7 \'c0\'a7\'c4\'a1\'bf\'a1 \'b5\'fb\'b6\'f3 \'b0\'aa\'c0\'cc \'b9\'dd\'bf\'b5\'b5\'c7\'b4\'c2 \'bd\'c3\'b1\'e2\'b0\'a1 \'b4\'de\'b6\'f3\'c1\'f8\'b4\'d9.\
+	++i \'b4\'c2 \'b9\'d9\'b7\'ce \'b4\'f5\'c7\'d8\'c1\'f6\'b0\'ed, i++\'b4\'c2 \'b4\'d9\'c0\'bd\'bf\'a1 \'b4\'f5\'c7\'d8\'c1\'f8\'b4\'d9.\
+\
+
+\f1\b \ul * \'bf\'ac\'bb\'ea\'c0\'c7 \'bc\'f8\'bc\'ad
+\f0\b0 \ulnone \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clcbpat8 \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clcbpat8 \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt\clvertalbase \clcbpat8 \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f5\b\fs26\fsmilli13200 \cf7 \expnd0\expndtw0\kerning0
+\'bf\'ec\'bc\'b1\'bc\'f8\'c0\'a7\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 \'bf\'ac\'bb\'ea\'c0\'da\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 \'b0\'e1\'c7\'d5\'b9\'e6\'c7\'e2\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmgf \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmgf \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f6\b0 \cf7 1\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 [ ]
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 \'a1\'e6\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 ()
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 .
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmgf \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmgf \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 2\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 ++
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 \'a1\'e7\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 --
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 +(
+\f0 \'be\'e7\'bc\'f6
+\f7 ) -(
+\f0 \'c0\'bd\'bc\'f6
+\f7 )
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 ~
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 !
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 (type)
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 new
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 3\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 * / %
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 \'a1\'e6\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmgf \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmgf \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 4\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 +(
+\f0 \'b4\'f5\'c7\'cf\'b1\'e2
+\f7 ) -(
+\f0 \'bb\'a9\'b1\'e2
+\f7 )
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 \'a1\'e6\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 +(
+\f0 \'b9\'ae\'c0\'da
+\f7  
+\f0 \'b0\'e1\'c7\'d5
+\f7  
+\f0 \'bf\'ac\'bb\'ea\'c0\'da
+\f7 )
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmgf \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmgf \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 5\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 <<
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 \'a1\'e6\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 >>
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 >>>
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmgf \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmgf \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 6\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 < <=
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 \'a1\'e6\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 > >=
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 instanceof
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmgf \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmgf \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 7\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 ==
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 \'a1\'e6\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 !=
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmgf \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmgf \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 8\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 &
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 \'a1\'e6\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 &
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmgf \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmgf \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 9\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 ^
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 \'a1\'e6\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 ^
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmgf \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmgf \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 10\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 |
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 \'a1\'e6\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 |
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 11\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 &&
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 \'a1\'e6\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 12\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 ||
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 \'a1\'e6\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 13\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 ? :
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 \'a1\'e7\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvmgf \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmgf \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 14\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 =
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 \'a1\'e7\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth6167\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvmrg \clvertalt\clvertalbase \clshdrawnil \clwWidth2976\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf9 \clbrdrl\brdrs\brdrw20\brdrcf9 \clbrdrb\brdrs\brdrw20\brdrcf9 \clbrdrr\brdrs\brdrw20\brdrcf9 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\fs24 \cf7 *= /= += -= %=\
+<<= >>= >>>=\
+&= ^= |=
+\f6\fs26\fsmilli13200 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs44 \cf0 \kerning1\expnd0\expndtw0 - \'c4\'c4\'c7\'bb\'c5\'cd\'b4\'c2 \'c0\'a7\'c0\'c7 \'c7\'a5\'bf\'a1 \'c0\'d6\'b4\'c2 \'bc\'f8\'bc\'ad\'bf\'a1 \'b5\'fb\'b6\'f3 \'b0\'e8\'bb\'ea\'c7\'d1\'b4\'d9.\
+\
+\
+}

@@ -1,0 +1,467 @@
+{\rtf1\ansi\ansicpg949\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset129 AppleSDGothicNeo-Regular;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fswiss\fcharset0 Helvetica;
+\f3\fswiss\fcharset0 Helvetica-BoldOblique;\f4\fnil\fcharset129 AppleSDGothicNeo-Bold;}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red106\green62\blue62;\red0\green0\blue192;
+}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c0\c0\c75294;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11000\viewh19580\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 ch31. interface \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\
+- \'b0\'f8\'c7\'d0\'bf\'a1\'bc\'ad \'b1\'b2\'c0\'e5\'c8\'f7 \'b1\'a4\'b9\'fc\'c0\'a7\'c7\'cf\'b0\'d4 \'bb\'e7\'bf\'eb\'c7\'d1\'b4\'d9.\
+- abstract, final\'b0\'fa \'c7\'d4\'b2\'b2 \'b4\'eb\'c7\'a5\'c0\'fb\'c0\'ce \'b1\'d4\'c1\'a6\
+- \'be\'ee\'b6\'b2 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'c0\'d6\'b0\'ed, \'b1\'d7 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'c6\'af\'c1\'a4\'c7\'d1 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d1\'b4\'d9\'b8\'e9, \'b1\'d7 \'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2 \'b9\'dd\'b5\'e5\'bd\'c3 \'b1\'d7 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'bf\'a1 \'c6\'f7\'c7\'d4\'b5\'c7\'be\'ee\'c0\'d6\'b4\'c2 method\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'cf\'b5\'b5\'b7\'cf \'b0\'ad\'c1\'a6\'c7\'cf\'b4\'c2 \'b0\'cd : interface\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+
+\f1\b\fs32 \cf2 package
+\f2\b0 \cf0  java_tutorials.interfaces.example1;\
+\
+
+\f1\b \cf2 interface
+\f2\b0 \cf0  I \{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  z();\
+\}\
+\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  A 
+\f1\b \cf2 implements
+\f2\b0 \cf0  I \{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  z() \{\}\
+\}
+\f0\fs40 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 - class A implements I : \'c5\'ac\'b7\'a1\'bd\'ba A\'b4\'c2 I\'b6\'f3\'b0\'ed \'c7\'cf\'b4\'c2 interface\'b8\'a6 \'a1\'ae\'b1\'b8\'c7\'f6\'a1\'af\'c7\'d1\'b4\'d9.\
+- interface I\'c0\'c7 \'b8\'e2\'b9\'f6\'c0\'ce z \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c5\'ac\'b7\'a1\'bd\'ba A\'b0\'a1 \'b9\'dd\'b5\'e5\'bd\'c3 \'b1\'b8\'c7\'f6\'c7\'d8\'be\'df\'c7\'d1\'b4\'d9.\
+\
+- \'b0\'b3\'b9\'df\'c1\'df\'c0\'ce \'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'b8\'a6 \'c6\'f7\'c7\'d4\'c7\'d1 \'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'b8\'a6 \'b8\'b8\'b5\'e9 \'b6\'a7, \'b0\'a1\'c2\'a5 dummy\'b0\'aa\'c0\'bb \'c1\'a4\'c7\'d8\'c1\'e0\'bc\'ad \'b0\'b3\'b9\'df\'c7\'d1\'b4\'d9\'b0\'ed \'b0\'a1\'c1\'a4 (\'b0\'e8\'bb\'ea\'b1\'e2 \'b0\'b3\'b9\'df\'c6\'c0, \'bb\'e7\'bf\'eb\'c0\'da \'b0\'b3\'b9\'df\'c6\'c0)\
+- \'c0\'cc\'c8\'c4 \'b0\'e8\'bb\'ea\'b1\'e2 \'c7\'c1\'b7\'ce\'c1\'a7\'c6\'ae\'b0\'a1 \'b3\'a1\'b3\'aa\'b8\'e9, \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'c2\'ca\'bf\'a1 \'b1\'b8\'c7\'f6\
+\
+(\'bb\'e7\'bf\'eb\'c0\'da \'b0\'b3\'b9\'df \'c6\'c0)\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf2 package
+\f2\b0 \cf0  java_tutorials.interfaces.example1;\
+\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  CalculatorDummy\{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  setOprands (
+\f1\b \cf2 int
+\f2\b0 \cf0  \cf3 first\cf0 , 
+\f1\b \cf2 int
+\f2\b0 \cf0  \cf3 second\cf0 , 
+\f1\b \cf2 int
+\f2\b0 \cf0  \cf3 third\cf0 ) \{\}\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 int
+\f2\b0 \cf0  sum() \{\
+		
+\f1\b \cf2 return
+\f2\b0 \cf0  60;\
+	\}\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 int
+\f2\b0 \cf0  avg() \{\
+		
+\f1\b \cf2 return
+\f2\b0 \cf0  20;\
+	\}\
+\}\
+\
+
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 class
+\f2\b0 \cf0  CalculatorConsumer \{\
+\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 static
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		CalculatorDummy \cf3 c\cf0  = 
+\f1\b \cf2 new
+\f2\b0 \cf0  CalculatorDummy();\
+		\cf3 c\cf0 .setOprands(10, 20, 30);\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf3 c\cf0 .sum()+\cf3 c\cf0 .avg());\
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \
+(\'b0\'e8\'bb\'ea\'b1\'e2 \'b0\'b3\'b9\'df \'c6\'c0)\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf2 package
+\f2\b0 \cf0  java_tutorials.interfaces.example1;\
+\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  Calculator \{\
+	
+\f1\b \cf2 int
+\f2\b0 \cf0  \cf4 left\cf0 , \cf4 right\cf0 ;\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  setOprands(
+\f1\b \cf2 int
+\f2\b0 \cf0  \cf3 left\cf0 , 
+\f1\b \cf2 int
+\f2\b0 \cf0  \cf3 right\cf0 ) \{\
+		
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 left\cf0  = \cf3 left\cf0 ;\
+		
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 right\cf0  = \cf3 right\cf0 ;\
+	\}\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  sum() \{\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 left\cf0  + 
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 right\cf0 );\
+	\}\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  avg() \{\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println((
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 left\cf0 +
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 right\cf0 )/2);\
+	\}\
+\}
+\f0\fs40 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+- \'b5\'ce \'b0\'b3\'b9\'df \'c6\'c0\'c0\'c7 \'bb\'fd\'b0\'a2\'c0\'cc \'b4\'de\'b6\'fa\'b4\'d9\'b8\'e9? : \'bb\'e7\'bf\'eb\'c0\'da \'b0\'b3\'b9\'df\'c6\'c0\'c0\'ba \'c0\'ce\'bc\'f6\'b0\'a1 3\'b0\'b3\'c0\'cf \'b0\'cd\'c0\'b8\'b7\'ce \'bf\'b9\'bb\'f3\'c7\'cf\'b0\'ed, \'b0\'e8\'bb\'ea\'b1\'e2 \'b0\'b3\'b9\'df\'c6\'c0\'c0\'ba \'c0\'ce\'bc\'f6\'b0\'a1 2\'b0\'b3\'b7\'ce \'c1\'a6\'c0\'db\'c7\'d4.\
+- \'bd\'c7\'c6\'d0\'c0\'c7 \'bf\'f8\'c0\'ce : \'c0\'df\'b8\'f8\'b5\'c8 \'c4\'bf\'b9\'c2\'b4\'cf\'c4\'c9\'c0\'cc\'bc\'c7!\
+- \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'c5\'eb\'c7\'d8 \'c0\'cc\'b7\'af\'c7\'d1 \'b9\'ae\'c1\'a6\'b8\'a6 \'c7\'d8\'b0\'e1\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+\
+(\'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d8 \'b5\'ce \'c6\'c0\'c0\'cc \'be\'e0\'bc\'d3\'c7\'cf\'b1\'e2)\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf2 package
+\f2\b0 \cf0  java_tutorials.interfaces.example1;\
+\
+
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 interface
+\f2\b0 \cf0  Calculatable \{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  setOprands(
+\f1\b \cf2 int
+\f2\b0 \cf0  \cf3 first\cf0 , 
+\f1\b \cf2 int
+\f2\b0 \cf0  \cf3 second\cf0 , 
+\f1\b \cf2 int
+\f2\b0 \cf0  \cf3 third\cf0 );\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 int
+\f2\b0 \cf0  sum();\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 int
+\f2\b0 \cf0  avg();\
+\}
+\f0\fs40 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+(\'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'c8\'b0\'bf\'eb\'c7\'d1 \'bb\'e7\'bf\'eb\'c0\'da \'b0\'b3\'b9\'df \'c6\'c0)\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf2 package
+\f2\b0 \cf0  java_tutorials.interfaces.example1;\
+\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  CalculatorDummy 
+\f1\b \cf2 implements
+\f2\b0 \cf0  Calculatable\{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  setOprands (
+\f1\b \cf2 int
+\f2\b0 \cf0  \cf3 first\cf0 , 
+\f1\b \cf2 int
+\f2\b0 \cf0  \cf3 second\cf0 , 
+\f1\b \cf2 int
+\f2\b0 \cf0  \cf3 third\cf0 ) \{\}\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 int
+\f2\b0 \cf0  sum() \{\
+		
+\f1\b \cf2 return
+\f2\b0 \cf0  60;\
+	\}\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 int
+\f2\b0 \cf0  avg() \{\
+		
+\f1\b \cf2 return
+\f2\b0 \cf0  20;\
+	\}\
+\}\
+\
+
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 class
+\f2\b0 \cf0  CalculatorConsumer \{\
+\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 static
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		CalculatorDummy \cf3 c\cf0  = 
+\f1\b \cf2 new
+\f2\b0 \cf0  CalculatorDummy();\
+		\cf3 c\cf0 .setOprands(10, 20, 30);\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf3 c\cf0 .sum()+\cf3 c\cf0 .avg());\
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 - interface\'bf\'cd \'b4\'d9\'b8\'a5 \'c7\'fc\'bd\'c4\'c0\'b8\'b7\'ce \'c4\'da\'b5\'e5\'b8\'a6 \'c2\'a5\'b8\'e9 error\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'cf\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'be\'e0\'bc\'d3\'c0\'bb \'c1\'f6\'c5\'b3 \'bc\'f6 \'c0\'d6\'b0\'d4\'b5\'ca.\
+- \'b0\'e8\'bb\'ea\'b1\'e2\'b0\'a1 \'b0\'b3\'b9\'df \'bf\'cf\'b7\'e1\'b5\'c7\'b8\'e9, dummy\'b8\'a6 \'bb\'a9\'b0\'ed \'b9\'d9\'b7\'ce \'bd\'c7\'c7\'e0\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+\
+(\'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'c8\'b0\'bf\'eb\'c7\'d1 \'b0\'e8\'bb\'ea\'b1\'e2 \'b0\'b3\'b9\'df \'c6\'c0)\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf2 package
+\f2\b0 \cf0  java_tutorials.interfaces.example1;\
+\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  Calculator 
+\f1\b \cf2 implements
+\f2\b0 \cf0  Calculatable\{\
+	
+\f1\b \cf2 int
+\f2\b0 \cf0  \cf4 first\cf0 , \cf4 second\cf0 , \cf4 third\cf0 ;\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  setOprands(
+\f1\b \cf2 int
+\f2\b0 \cf0  \cf3 first\cf0 , 
+\f1\b \cf2 int
+\f2\b0 \cf0  \cf3 second\cf0 , 
+\f1\b \cf2 int
+\f2\b0 \cf0  \cf3 third\cf0 ) \{\
+		
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 first\cf0  = \cf3 first\cf0 ;\
+		
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 second\cf0  = \cf3 second\cf0 ;\
+		
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 third\cf0  = \cf3 third\cf0 ;\
+	\}\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 int
+\f2\b0 \cf0  sum() \{\
+		
+\f1\b \cf2 return
+\f2\b0 \cf0  
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 first\cf0 +
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 second\cf0 +
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 third\cf0 ;\
+	\}\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 int
+\f2\b0 \cf0  avg() \{\
+		
+\f1\b \cf2 return
+\f2\b0 \cf0  (
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 first\cf0 +
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 second\cf0 +
+\f1\b \cf2 this
+\f2\b0 \cf0 .\cf4 third\cf0 )/3;\
+	\}\
+\}
+\f0\fs40 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 - \'b8\'b6\'c2\'f9\'b0\'a1\'c1\'f6\'b7\'ce \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'bf\'a1 \'b8\'c2\'c3\'df\'be\'ee \'b8\'b8\'b5\'e9\'b0\'ed, \'bb\'e7\'bf\'eb\'c0\'da \'b0\'b3\'b9\'df\'c6\'c0\'c0\'cc \'b1\'d7\'bf\'a1 \'b8\'c2\'c3\'e7 \'b0\'b3\'b9\'df\'c7\'d2 \'b0\'cd\'c0\'b8\'b7\'ce \'b1\'e2\'b4\'eb\
+\
+
+\f4\b \ul * \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'c0\'c7 \'b1\'d4\'c4\'a2
+\f0\b0 \ulnone \
+- \'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d1\'b4\'d9.\
+- \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b4\'c2, \'b1\'b8\'c7\'f6\'c7\'d1 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'be\'ee\'b6\'bb\'b0\'d4 \'c1\'b6\'c0\'db\'c7\'d2 \'b0\'cd\'c0\'ce\'b0\'a1\'b8\'a6 \'b1\'d4\'c1\'a4\'c7\'d1\'b4\'d9.\
+- \'b5\'fb\'b6\'f3\'bc\'ad, interface\'c0\'c7 method\'b4\'c2 \'b9\'dd\'b5\'e5\'bd\'c3 \'bf\'dc\'ba\'ce\'bf\'a1\'bc\'ad \'c1\'a6\'be\'ee\'c7\'d2 \'bc\'f6 \'c0\'d5\'b4\'c2 \'b0\'a1\'c0\'e5 \'b0\'b3\'b9\'e6\'c0\'fb\'c0\'ce \'c1\'a2\'b1\'d9 \'c1\'a6\'be\'ee\'c0\'da\'c0\'ce public\'c0\'b8\'b7\'ce \'c7\'d8\'be\'df\'c7\'d1\'b4\'d9. (\'bb\'fd\'b7\'ab\'c7\'cf\'b8\'e9 default\'b0\'a1 \'be\'c6\'b4\'d1 public\'c0\'cc \'b5\'c8\'b4\'d9.)\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf2 package
+\f2\b0 \cf0  java_tutorials.interfaces.example2;\
+\
+
+\f1\b \cf2 interface
+\f2\b0 \cf0  I1\{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  x();\
+\}\
+\
+
+\f1\b \cf2 interface
+\f2\b0 \cf0  I2\{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  z();\
+\}\
+\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  A 
+\f1\b \cf2 implements
+\f2\b0 \cf0  I1, I2 \{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  x() \{\}\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  z() \{\}\
+\}
+\f0\fs40 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 - \'c7\'cf\'b3\'aa\'c0\'c7 \'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2 \'ba\'b9\'bc\'f6\'b0\'b3\'c0\'c7 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+- \'b5\'ce \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'bb \'b9\'dd\'b5\'e5\'bd\'c3 \'b1\'b8\'c7\'f6\'c7\'d8\'be\'df\'c7\'d1\'b4\'d9.\
+- \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'c7\'cf\'b3\'aa\'c0\'c7 \'ba\'ce\'b8\'f0\'c5\'ac\'b7\'a1\'bd\'ba\'b8\'b8\'c0\'bb \'bb\'f3\'bc\'d3\'b9\'de\'c0\'bb \'bc\'f6 \'c0\'d6\'b4\'c2 \'c1\'a1\'b0\'fa\'b4\'c2 \'b1\'b8\'ba\'b0\'b5\'c8\'b4\'d9.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf2 package
+\f2\b0 \cf0  java_tutorials.interfaces.example2;\
+\
+
+\f1\b \cf2 interface
+\f2\b0 \cf0  I3\{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  X();\
+\}\
+\
+
+\f1\b \cf2 interface
+\f2\b0 \cf0  I4 
+\f1\b \cf2 extends
+\f2\b0 \cf0  I3\{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  z();\
+\}\
+\
+
+\f1\b \cf2 class
+\f2\b0 \cf0  \ul B\ulnone  
+\f1\b \cf2 implements
+\f2\b0 \cf0  I4\{\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  x() \{\}\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  z() \{\}\
+\}
+\f0\fs40 \
+- \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b5\'b5 \'bb\'f3\'bc\'d3\'c0\'cc \'b5\'c8\'b4\'d9.\
+- \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'bb\'f3\'bc\'d3\'b0\'fa \'b8\'b6\'c2\'f9\'b0\'a1\'c1\'f6\'b7\'ce \'ba\'ce\'b8\'f0\'b0\'a1 \'b0\'a1\'c1\'f8 \'bf\'e4\'bc\'d2\'b5\'e9\'c0\'bb \'c6\'f7\'c7\'d4\'c7\'cf\'b0\'d4\'b5\'c8\'b4\'d9.\
+- \'b5\'fb\'b6\'f3\'bc\'ad \'bb\'f3\'bc\'d3\'c0\'bb \'c7\'d1 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d1 \'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2, \'ba\'ce\'b8\'f0\'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'bf\'cd \'c0\'da\'bd\'c4 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'c0\'c7 \'b3\'bb\'bf\'eb\'c0\'bb \'b8\'f0\'b5\'ce \'b1\'b8\'c7\'f6\'c7\'d8\'be\'df\'c7\'d1\'b4\'d9.\
+\
+
+\f4\b \ul * abstract VS interface
+\f0\b0 \ulnone \
+- \'b5\'ce \'b1\'e2\'b4\'c9\'c0\'bb \'b9\'d0\'c1\'a2\'c7\'cf\'b8\'e9\'bc\'ad \'be\'e0\'b0\'a3\'c0\'c7 \'b4\'d9\'b8\'a5 \'c1\'a1\'c0\'bb \'b0\'a1\'c1\'f6\'b0\'ed \'c0\'d6\'b4\'d9.\
+- abstract : \'c0\'cf\'b9\'dd\'c0\'fb\'c0\'ce \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'cd \'b4\'d9\'b8\'a6 \'b0\'cd\'c0\'cc \'be\'f8\'b4\'d9 \'a1\'a6 \'bb\'e7\'bf\'eb\'c0\'bb \'c7\'cf\'b7\'c1\'b8\'e9 \'bb\'f3\'bc\'d3\'c0\'bb \'c7\'d8 \'bb\'e7\'bf\'eb\'c7\'d8\'be\'df\'b8\'b8 \'c7\'cf\'b4\'c2 \'c1\'a1\'c0\'bb \'c1\'a6\'bf\'dc\'c7\'cf\'b8\'e9 \'c0\'cf\'b9\'dd\'c0\'fb\'c0\'ce \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'cd \'b0\'b0\'b4\'d9. \'b5\'fb\'b6\'f3\'bc\'ad \'c3\'df\'bb\'f3\'b8\'de\'bc\'d2\'b5\'e5\'b5\'b5 \'c0\'d6\'c1\'f6\'b8\'b8 \'b3\'bb\'bf\'eb\'c0\'cc \'c1\'a4\'c7\'d8\'c1\'f8 \'c0\'cf\'b9\'dd \'b8\'de\'bc\'d2\'b5\'e5\'b5\'b5 \'b0\'b0\'c0\'cc \'b0\'f8\'c1\'b8\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+- interface : abstract\'bf\'cd \'b4\'de\'b8\'ae, \'b1\'b8\'c3\'bc\'c0\'fb\'c0\'ce \'b3\'bb\'bf\'eb\'c0\'bb \'b0\'a1\'c1\'f8 method\'b8\'a6 \'c6\'f7\'c7\'d4\'bd\'c3\'c5\'b0\'b8\'e9 \'be\'c8\'b5\'c8\'b4\'d9. (\'ba\'bb\'c3\'bc\'b0\'a1 \'be\'f8\'b4\'c2 method\'b8\'b8\'c0\'cc \'b5\'e9\'be\'ee\'c0\'d6\'b4\'d9.)\
+\
+\
+\
+}

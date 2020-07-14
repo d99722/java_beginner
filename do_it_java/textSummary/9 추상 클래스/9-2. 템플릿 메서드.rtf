@@ -1,0 +1,388 @@
+{\rtf1\ansi\ansicpg949\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset129 AppleSDGothicNeo-Regular;\f1\fnil\fcharset129 AppleSDGothicNeo-Bold;\f2\fswiss\fcharset0 Helvetica-Bold;
+\f3\fswiss\fcharset0 Helvetica;\f4\fswiss\fcharset0 Helvetica-BoldOblique;}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red0\green0\blue192;\red42\green0\blue255;
+\red100\green100\blue100;\red106\green62\blue62;}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c0\c0\c75294;\csgenericrgb\c16471\c0\c100000;
+\csgenericrgb\c39216\c39216\c39216;\csgenericrgb\c41569\c24314\c24314;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww23240\viewh19580\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 9-2. \'c5\'db\'c7\'c3\'b8\'b4 \'b8\'de\'bc\'ad\'b5\'e5\
+\
+
+\f1\b \ul @ \'c3\'df\'bb\'f3 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'cd \'c5\'db\'c7\'c3\'b8\'b4 \'b8\'de\'bc\'ad\'b5\'e5
+\f0\b0 \ulnone \
+- \'c3\'df\'bb\'f3 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'c8\'b0\'bf\'eb\'c7\'d1 \'bf\'b9\'b7\'ce \'c5\'db\'c7\'c3\'b8\'b4 \'b8\'de\'bc\'ad\'b5\'e5\'b8\'a6 \'be\'cb\'be\'c6\'ba\'b8\'c0\'da.\
+- \'a1\'ae\'c5\'db\'c7\'c3\'b8\'b4\'a1\'af : \'c6\'b2, \'b0\'df\'ba\'bb \'a1\'a6 \'c6\'b2\'c0\'cc \'c0\'d6\'b4\'c2 \'b8\'de\'bc\'ad\'b5\'e5!\
+- 5\'c0\'e5\'bf\'a1\'bc\'ad \'bc\'d2\'b0\'b3\'c7\'d1 \'bd\'cc\'b1\'db\'c5\'e6 \'c6\'d0\'c5\'cf\'b0\'fa \'b0\'b0\'c0\'ba \'b5\'f0\'c0\'da\'c0\'ce \'c6\'d0\'c5\'cf\'c0\'cc\'b4\'d9.\
+- \'c5\'db\'c7\'c3\'b8\'b4 \'b8\'de\'bc\'ad\'b5\'e5\'b4\'c2 \'c3\'df\'bb\'f3 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'bf\'a9 \'b1\'b8\'c7\'f6\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf2 package
+\f3\b0 \cf0  template;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 abstract
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  Car \{\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 abstract
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  drive();\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 abstract
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  stop();\
+	\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  startCar() \{\
+		System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf4 "
+\f0 \'bd\'c3\'b5\'bf\'c0\'bb
+\f3  
+\f0 \'c4\'d5\'b4\'cf\'b4\'d9
+\f3 ."\cf0 );\
+	\}\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  turnOff() \{\
+		System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf4 "
+\f0 \'bd\'c3\'b5\'bf\'c0\'bb
+\f3  
+\f0 \'b2\'fc\'b4\'cf\'b4\'d9
+\f3 ."\cf0 );\
+	\}\
+	\
+	
+\f2\b \cf2 final
+\f3\b0 \cf0  
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  run() \{\
+		startCar();\
+		drive();\
+		stop();\
+		turnOff();\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 - Car \'c5\'ac\'b7\'a1\'bd\'ba \'a1\'a6 drive()\'bf\'cd stop() \'c3\'df\'bb\'f3\'b8\'de\'bc\'ad\'b5\'e5\'bf\'cd 3\'b0\'b3\'c0\'c7 \'b1\'b8\'c7\'f6\'b5\'c8 \'b8\'de\'bc\'ad\'b5\'e5 startCar(), turnOff(), run()\'c0\'bb \'b0\'a1\'c1\'f6\'b0\'ed \'c0\'d6\'b4\'d9.\
+- \'bd\'c3\'b5\'bf\'c4\'d1\'b4\'c2 \'b9\'fd\'c0\'ba \'b8\'f0\'b5\'e7 \'c2\'f7\'b0\'a1 \'b5\'bf\'c0\'cf\'c7\'cf\'b9\'c7\'b7\'ce startCar()\'bf\'cd turnOff()\'b4\'c2 \'b9\'cc\'b8\'ae \'c4\'da\'b5\'e5\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d8\'b5\'d0\'b4\'d9.\
+- \'c7\'cf\'c1\'f6\'b8\'b8 drive(), stop()\'c0\'ba \'c2\'f7\'c1\'be\'bf\'a1 \'b5\'fb\'b6\'f3 \'b4\'d9\'b8\'a5 \'b9\'e6\'bd\'c4\'c0\'b8\'b7\'ce \'bf\'f2\'c1\'f7\'c0\'cf \'bc\'f6 \'c0\'d6\'b4\'d9 \'a1\'a6 \'b5\'fb\'b6\'f3\'bc\'ad \'c3\'df\'bb\'f3\'b8\'de\'bc\'ad\'b5\'e5\'b7\'ce \'b1\'b8\'c7\'f6\'c7\'d1\'b4\'d9.\
+- 15~20\'c7\'e0\'bf\'a1 \'b1\'b8\'c7\'f6\'b5\'c8 run() \'b8\'de\'bc\'ad\'b5\'e5 \'a1\'a6 \'c0\'da\'b5\'bf\'c2\'f7\'b0\'a1 \'b4\'de\'b8\'ae\'b4\'c2 \'b9\'e6\'b9\'fd\'c0\'bb \'bc\'f8\'bc\'ad\'b4\'eb\'b7\'ce \'b1\'b8\'c7\'f6\
+- Car \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'f3\'bc\'d3\'b9\'de\'c0\'b8\'b8\'e9, \'be\'ee\'b6\'b2 \'c0\'da\'b5\'bf\'c2\'f7\'b5\'e7 \'b8\'f0\'b5\'ce \'c0\'cc \'bc\'f8\'bc\'ad\'b4\'eb\'b7\'ce \'b5\'bf\'c0\'cf\'c7\'d1 \'b9\'e6\'bd\'c4\'c0\'b8\'b7\'ce \'b4\'de\'b8\'ae\'b0\'d4 \'b5\'c8\'b4\'d9.\
+\
+- Car \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'f3\'bc\'d3\'b9\'de\'b4\'c2 AICar, ManualCar \'c5\'ac\'b7\'a1\'bd\'ba\
+- \'c3\'df\'bb\'f3\'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'f3\'bc\'d3\'b9\'de\'be\'d2\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1, \'b1\'b8\'c7\'f6\'b5\'c7\'c1\'f6 \'be\'ca\'c0\'ba \'c3\'df\'bb\'f3 \'b8\'de\'bc\'ad\'b5\'e5\'b8\'a6 \'b8\'b6\'c0\'fa \'b1\'b8\'c7\'f6\'c7\'d8\'be\'df\'c7\'d1\'b4\'d9.\
+- AICar \'a1\'a6 \'bd\'c3\'b5\'bf\'c0\'bb \'c4\'d2 \'c0\'cc\'c8\'c4 \'c0\'da\'b5\'bf\'c2\'f7\'b0\'a1 \'be\'cb\'be\'c6\'bc\'ad \'c1\'d6\'c7\'e0\'c0\'bb \'c7\'d1\'b4\'d9.\
+- ManualCar \'a1\'a6 \'bb\'e7\'b6\'f7\'c0\'cc \'bd\'c3\'b5\'bf\'c0\'bb \'c4\'d1\'b0\'ed \'c7\'da\'b5\'e9\'b5\'b5 \'c1\'b6\'c0\'db\'c7\'d1\'b4\'d9.\
+- \'c1\'ef, \'c0\'da\'b5\'bf\'c2\'f7 \'c1\'be\'b7\'f9\'bf\'a1 \'b5\'fb\'b6\'f3 \'b1\'b8\'c7\'f6 \'b3\'bb\'bf\'eb\'c0\'cc \'b4\'de\'b6\'f3\'c1\'f6\'b4\'c2 \'ba\'ce\'ba\'d0\'c0\'ba \'c3\'df\'bb\'f3 \'b8\'de\'bc\'ad\'b5\'e5\'b7\'ce \'b8\'b8\'b5\'e9\'b0\'ed, \'b0\'f8\'c5\'eb\'c0\'b8\'b7\'ce \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'ad\'b5\'e5\'b4\'c2 \'c3\'df\'bb\'f3 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1 \'b1\'b8\'c7\'f6\'c7\'cf\'bf\'a9 \'bb\'f3\'bc\'d3\'b9\'de\'be\'c6 \'bb\'e7\'bf\'eb\'c7\'d1\'b4\'d9.\
+\
+(AICar)\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf2 package
+\f3\b0 \cf0  template;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  AICar 
+\f2\b \cf2 extends
+\f3\b0 \cf0  Car\{\
+	\cf5 @Override\cf0 \
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  drive() \{\
+		System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf4 "
+\f0 \'c0\'da\'c0\'b2
+\f3  
+\f0 \'c1\'d6\'c7\'e0\'c7\'d5\'b4\'cf\'b4\'d9
+\f3 ."\cf0 );\
+		System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf4 "
+\f0 \'c0\'da\'b5\'bf\'c2\'f7\'b0\'a1
+\f3  
+\f0 \'be\'cb\'be\'c6\'bc\'ad
+\f3  
+\f0 \'b9\'e6\'c7\'e2\'c0\'bb
+\f3  
+\f0 \'c0\'fc\'c8\'af\'c7\'d5\'b4\'cf\'b4\'d9
+\f3 ."\cf0 );\
+	\}\
+	\
+	\cf5 @Override\cf0 \
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  stop() \{\
+		System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf4 "
+\f0 \'bd\'ba\'bd\'ba\'b7\'ce
+\f3  
+\f0 \'b8\'d8\'c3\'e4\'b4\'cf\'b4\'d9
+\f3 ."\cf0 );\
+	\}\
+	\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 - Car \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'f3\'bc\'d3\'b9\'de\'be\'d2\'b0\'ed, drive()\'bf\'cd stop() \'c3\'df\'bb\'f3 \'b8\'de\'bc\'ad\'b5\'e5\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'df\'b4\'d9.\
+- \'c0\'da\'c0\'b2\'c1\'d6\'c7\'e0\'c0\'bb \'c7\'cf\'b0\'ed, \'b9\'e6\'c7\'e2\'b5\'b5 \'be\'cb\'be\'c6\'bc\'ad \'b9\'d9\'b2\'db\'b4\'d9 \'a1\'a6 \'bd\'c3\'b5\'bf\'c0\'bb \'c4\'d1\'b0\'ed \'b2\'f4\'b4\'c2 \'c0\'cf\'b8\'b8 \'c7\'cf\'b8\'e9 \'b5\'c8\'b4\'d9.\
+\
+(ManualCar)\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf2 package
+\f3\b0 \cf0  template;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  ManualCar 
+\f2\b \cf2 extends
+\f3\b0 \cf0  Car\{\
+	\cf5 @Override\cf0 \
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  drive() \{\
+		System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf4 "
+\f0 \'bb\'e7\'b6\'f7\'c0\'cc
+\f3  
+\f0 \'bf\'ee\'c0\'fc\'c7\'d5\'b4\'cf\'b4\'d9
+\f3 ."\cf0 );\
+		System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf4 "
+\f0 \'bb\'e7\'b6\'f7\'c0\'cc
+\f3  
+\f0 \'c7\'da\'b5\'e9\'c0\'bb
+\f3  
+\f0 \'c1\'b6\'c0\'db\'c7\'d5\'b4\'cf\'b4\'d9
+\f3 ."\cf0 );\
+	\}\
+	\cf5 @Override\cf0 \
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  stop() \{\
+		System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf4 "
+\f0 \'ba\'ea\'b7\'b9\'c0\'cc\'c5\'a9\'b7\'ce
+\f3  
+\f0 \'c1\'a4\'c1\'f6\'c7\'d5\'b4\'cf\'b4\'d9
+\f3 ."\cf0 );\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 - \'c0\'a7\'bf\'cd \'b0\'b0\'b4\'d9!\
+\
+(\'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5 \'b1\'b8\'c7\'f6)\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf2 package
+\f3\b0 \cf0  template;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  CarTest \{\
+\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf6 args\cf0 ) \{\
+		System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf4 "=== 
+\f0 \'c0\'da\'c0\'b2
+\f3  
+\f0 \'c1\'d6\'c7\'e0\'c7\'cf\'b4\'c2
+\f3  
+\f0 \'c0\'da\'b5\'bf\'c2\'f7
+\f3  ==="\cf0 );\
+		Car \cf6 myCar\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  AICar();\
+		\cf6 myCar\cf0 .run();\
+		\
+		System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf4 "=== 
+\f0 \'bb\'e7\'b6\'f7\'c0\'cc
+\f3  
+\f0 \'bf\'ee\'c0\'fc\'c7\'cf\'b4\'c2
+\f3  
+\f0 \'c0\'da\'b5\'bf\'c2\'f7
+\f3  ==="\cf0 );\
+		Car \cf6 hisCar\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  ManualCar();\
+		\cf6 hisCar\cf0 .run();\
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 >>\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs32 \cf0 === 
+\f0 \'c0\'da\'c0\'b2
+\f3  
+\f0 \'c1\'d6\'c7\'e0\'c7\'cf\'b4\'c2
+\f3  
+\f0 \'c0\'da\'b5\'bf\'c2\'f7
+\f3  ===\
+
+\f0 \'bd\'c3\'b5\'bf\'c0\'bb
+\f3  
+\f0 \'c4\'d5\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'c0\'da\'c0\'b2
+\f3  
+\f0 \'c1\'d6\'c7\'e0\'c7\'d5\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'c0\'da\'b5\'bf\'c2\'f7\'b0\'a1
+\f3  
+\f0 \'be\'cb\'be\'c6\'bc\'ad
+\f3  
+\f0 \'b9\'e6\'c7\'e2\'c0\'bb
+\f3  
+\f0 \'c0\'fc\'c8\'af\'c7\'d5\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'bd\'ba\'bd\'ba\'b7\'ce
+\f3  
+\f0 \'b8\'d8\'c3\'e4\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'bd\'c3\'b5\'bf\'c0\'bb
+\f3  
+\f0 \'b2\'fc\'b4\'cf\'b4\'d9
+\f3 .\
+=== 
+\f0 \'bb\'e7\'b6\'f7\'c0\'cc
+\f3  
+\f0 \'bf\'ee\'c0\'fc\'c7\'cf\'b4\'c2
+\f3  
+\f0 \'c0\'da\'b5\'bf\'c2\'f7
+\f3  ===\
+
+\f0 \'bd\'c3\'b5\'bf\'c0\'bb
+\f3  
+\f0 \'c4\'d5\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'bb\'e7\'b6\'f7\'c0\'cc
+\f3  
+\f0 \'bf\'ee\'c0\'fc\'c7\'d5\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'bb\'e7\'b6\'f7\'c0\'cc
+\f3  
+\f0 \'c7\'da\'b5\'e9\'c0\'bb
+\f3  
+\f0 \'c1\'b6\'c0\'db\'c7\'d5\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'ba\'ea\'b7\'b9\'c0\'cc\'c5\'a9\'b7\'ce
+\f3  
+\f0 \'c1\'a4\'c1\'f6\'c7\'d5\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'bd\'c3\'b5\'bf\'c0\'bb
+\f3  
+\f0 \'b2\'fc\'b4\'cf\'b4\'d9
+\f3 .\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \
+
+\f1\b \ul @ \'c5\'db\'c7\'c3\'b8\'b4 \'b8\'de\'bc\'ad\'b5\'e5\'c0\'c7 \'bf\'aa\'c7\'d2
+\f0\b0 \ulnone \
+- CarTest\'bf\'a1\'bc\'ad \'b5\'ce \'b0\'b3\'c0\'c7 \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba(myCar, hisCar)\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'df\'b4\'d9.\
+- \'b1\'d7\'b8\'ae\'b0\'ed run()\'c0\'bb \'c8\'a3\'c3\'e2\'c7\'df\'b4\'d9\'a1\'a6 run()\'c0\'ba Car\'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1 \'c0\'cc\'b9\'cc \'b1\'b8\'c7\'f6\'b5\'c8 \'b8\'de\'bc\'ad\'b5\'e5\'c0\'cc\'b4\'d9. \'a1\'a6 \'c2\'f7\'b0\'a1 \'be\'ee\'b6\'bb\'b0\'d4 \'b4\'de\'b7\'c1\'be\'df \'c7\'cf\'b4\'c2\'b0\'a1\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d4\
+- \'c0\'cc\'b7\'b8\'b0\'d4 \'c5\'db\'c7\'c3\'b8\'b4 \'b8\'de\'bc\'ad\'b5\'e5\'c0\'c7 \'bf\'aa\'c7\'d2\'c0\'ba, \'b8\'de\'bc\'ad\'b5\'e5 \'bd\'c7\'c7\'e0 \'bc\'f8\'bc\'ad\'bf\'cd \'bd\'c3\'b3\'aa\'b8\'ae\'bf\'c0\'b8\'a6 \'c1\'a4\'c0\'c7\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc\'b4\'d9.\
+- \'c5\'db\'c7\'c3\'b8\'b4\'bf\'a1\'bc\'ad \'c8\'a3\'c3\'e2\'c7\'cf\'b4\'c2 \'b8\'de\'bc\'ad\'b5\'e5\'b0\'a1 \'c3\'df\'bb\'f3 \'b8\'de\'bc\'ad\'b5\'e5\'b6\'f3\'b8\'e9, \'c2\'f7\'c1\'be\'bf\'a1 \'b5\'fb\'b6\'f3 \'b1\'b8\'c7\'f6 \'b3\'bb\'bf\'eb\'c0\'cc \'b9\'d9\'b2\'f0 \'bc\'f6\'b4\'c2 \'c0\'d6\'b4\'d9.\
+	: AICar\'bf\'cd ManualCar \'c0\'db\'b5\'bf \'b9\'e6\'bd\'c4\'c0\'c7 \'c0\'cf\'ba\'ce\'b0\'a1 \'b4\'d9\'b8\'a5 \'b0\'cd\'c3\'b3\'b7\'b3!\
+- \'c7\'cf\'c1\'f6\'b8\'b8, \'bd\'c3\'b5\'bf\'c0\'bb \'c4\'d1\'b0\'ed, \'b4\'de\'b8\'ae\'b0\'ed \'a1\'a6 \'c0\'c7 \'bd\'c3\'b3\'aa\'b8\'ae\'bf\'c0\'b4\'c2 \'ba\'af\'c7\'cf\'c1\'f6 \'be\'ca\'b4\'c2\'b4\'d9.\
+- \'c0\'cc\'b7\'b1 \'b8\'de\'bc\'ad\'b5\'e5\'b8\'a6 \'c5\'db\'c7\'c3\'b8\'b4 \'b8\'de\'bc\'ad\'b5\'e5\'b7\'ce \'c1\'a4\'c0\'c7\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc\'b4\'d9.\
+- \'bd\'c7\'c7\'e0\'bc\'f8\'bc\'ad, \'c1\'ef \'bd\'c3\'b3\'aa\'b8\'ae\'bf\'c0\'b8\'a6 \'c1\'a4\'c0\'c7\'c7\'d1 \'b8\'de\'bc\'ad\'b5\'e5!\
+- \'bb\'f3\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'f3\'bc\'d3\'b9\'de\'c0\'ba \'c7\'cf\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1\'bc\'ad \'c5\'db\'c7\'c3\'b8\'b4 \'b8\'de\'bc\'ad\'b5\'e5\'b8\'a6 \'c0\'e7\'c1\'a4\'c0\'c7\'c7\'cf\'b8\'e9 \'be\'c8 \'b5\'c8\'b4\'d9\'b4\'c2 \'b0\'cd\'c0\'cc\'b4\'d9.\
+\
+- \'b1\'d7\'b7\'a1\'bc\'ad, \'c5\'db\'c7\'c3\'b8\'b4 \'b8\'de\'bc\'ad\'b5\'e5\'b4\'c2 final \'bf\'b9\'be\'e0\'be\'ee\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d8 \'bc\'b1\'be\'f0\'c7\'d1\'b4\'d9.\
+- \'b8\'de\'bc\'ad\'b5\'e5 \'be\'d5\'bf\'a1 final\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9, \'bb\'f3\'bc\'d3\'b9\'de\'c0\'ba \'c7\'cf\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'b8\'de\'bc\'ad\'b5\'e5\'b8\'a6 \'c0\'e7\'c1\'a4\'c0\'c7\'c7\'d2 \'bc\'f6 \'be\'f8\'b4\'d9.\
+- \'c5\'db\'c7\'c3\'b8\'b4 \'b8\'de\'bc\'ad\'b5\'e5\'b4\'c2 \'b7\'ce\'c1\'f7 \'c8\'e5\'b8\'a7\'c0\'cc \'c0\'cc\'b9\'cc \'c1\'a4\'c7\'d8\'c1\'ae \'c0\'d6\'b4\'c2 \'c7\'c1\'b7\'b9\'c0\'d3\'bf\'f6\'c5\'a9\'bf\'a1\'bc\'ad \'b8\'b9\'c0\'cc \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b1\'e2\'ba\'bb \'b1\'b8\'c7\'f6 \'b9\'e6\'b9\'fd\'c0\'cc\'b4\'d9.\
+\
+- \'c3\'df\'bb\'f3 \'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2 \'c7\'cf\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1\'bc\'ad\'b5\'b5 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'c4\'da\'b5\'e5\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d1\'b4\'d9.\
+- \'c0\'cf\'b9\'dd \'b8\'de\'bc\'ad\'b5\'e5\'b4\'c2 \'c7\'cf\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1\'bc\'ad \'c0\'e7\'c1\'a4\'c0\'c7\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+- start()\'bf\'cd turnOff()\'b5\'b5 \'c3\'df\'b0\'a1 \'b1\'e2\'b4\'c9\'c0\'cc \'c7\'ca\'bf\'e4\'c7\'cf\'b4\'d9\'b8\'e9 \'c7\'cf\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1\'bc\'ad \'c0\'e7\'c1\'a4\'c0\'c7\'c7\'d8\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9 \'b5\'c8\'b4\'d9.\
+- \'c7\'cf\'c1\'f6\'b8\'b8 \'c5\'db\'c7\'c3\'b8\'b4 \'b8\'de\'bc\'ad\'b5\'e5\'b4\'c2 \'b7\'ce\'c1\'f7 \'c8\'e5\'b8\'a7\'c0\'bb \'c1\'a4\'c0\'c7\'c7\'cf\'b4\'c2 \'bf\'aa\'c7\'d2\'c0\'cc\'b4\'d9\'a1\'a6\
+	: \'c0\'cc \'c8\'e5\'b8\'a7\'c0\'ba \'b8\'f0\'b5\'e7 \'c7\'cf\'c0\'a7 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'b0\'f8\'c5\'eb\'c0\'b8\'b7\'ce \'bb\'e7\'bf\'eb\'c7\'cf\'b0\'ed \'c4\'da\'b5\'e5\'b8\'a6 \'ba\'af\'b0\'e6\'c7\'cf\'b8\'e9 \'be\'c8\'b5\'c7\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 final\'b7\'ce \'bc\'b1\'be\'f0\'c7\'d1\'b4\'d9.\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

@@ -1,0 +1,501 @@
+{\rtf1\ansi\ansicpg949\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset129 AppleSDGothicNeo-Regular;\f1\fnil\fcharset129 AppleSDGothicNeo-Bold;\f2\fswiss\fcharset0 Helvetica-Bold;
+\f3\fswiss\fcharset0 Helvetica;\f4\fswiss\fcharset0 Helvetica-BoldOblique;}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red106\green62\blue62;\red42\green0\blue255;
+\red0\green0\blue192;\red100\green100\blue100;\red63\green127\blue95;}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c16471\c0\c100000;
+\csgenericrgb\c0\c0\c75294;\csgenericrgb\c39216\c39216\c39216;\csgenericrgb\c24706\c49804\c37255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12300\viewh19880\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 12-4. Set \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\
+\
+- \'bc\'f8\'bc\'ad\'bf\'cd \'bb\'f3\'b0\'fc\'be\'f8\'c0\'cc \'c1\'df\'ba\'b9\'c0\'bb \'c7\'e3\'bf\'eb\'c7\'cf\'c1\'f6 \'be\'ca\'b4\'c2 \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 Set \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d1 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d1\'b4\'d9.\
+- \'bf\'b9\'b8\'a6\'b5\'e9\'be\'ee \'c1\'d6\'b9\'ce\'b5\'ee\'b7\'cf\'b9\'f8\'c8\'a3, \'bb\'e7\'b9\'f8, \'c8\'a8\'bc\'ee\'c7\'ce \'c1\'d6\'b9\'ae \'b9\'f8\'c8\'a3 \'b5\'ee\'c0\'cc \'c0\'d6\'b4\'d9.\
+\
+
+\f1\b \ul @ HashSet \'c5\'ac\'b7\'a1\'bd\'ba
+\f0\b0 \ulnone \
+- HashSet \'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2 \'c1\'fd\'c7\'d5 \'c0\'da\'b7\'e1 \'b1\'b8\'c1\'b6\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'cf\'b8\'e7, \'c1\'df\'ba\'b9\'c0\'bb \'c7\'e3\'bf\'eb\'c7\'cf\'c1\'f6 \'be\'ca\'b4\'c2\'b4\'d9.\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf2 package
+\f3\b0 \cf0  collection.hashset;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.HashSet;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  HashSetTest \{\
+\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		HashSet<String> \cf3 hashSet\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  HashSet<String>();\
+		\cf3 hashSet\cf0 .add(
+\f2\b \cf2 new
+\f3\b0 \cf0  String(\cf4 "
+\f0 \'c0\'d3\'b0\'e6\'bc\'f8
+\f3 "\cf0 ));\
+		\cf3 hashSet\cf0 .add(
+\f2\b \cf2 new
+\f3\b0 \cf0  String(\cf4 "
+\f0 \'b9\'da\'c7\'f6\'c1\'a4
+\f3 "\cf0 ));\
+		\cf3 hashSet\cf0 .add(
+\f2\b \cf2 new
+\f3\b0 \cf0  String(\cf4 "
+\f0 \'c8\'ab\'bf\'ac\'c0\'c7
+\f3 "\cf0 ));\
+		\cf3 hashSet\cf0 .add(
+\f2\b \cf2 new
+\f3\b0 \cf0  String(\cf4 "
+\f0 \'b0\'ad\'b0\'a8\'c2\'f9
+\f3 "\cf0 ));\
+		\cf3 hashSet\cf0 .add(
+\f2\b \cf2 new
+\f3\b0 \cf0  String(\cf4 "
+\f0 \'b0\'ad\'b0\'a8\'c2\'f9
+\f3 "\cf0 ));\
+		\
+		System.
+\f4\i\b \cf5 out
+\f3\i0\b0 \cf0 .println(\cf3 hashSet\cf0 );\
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 >>\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs32 \cf0 [
+\f0 \'c0\'d3\'b0\'e6\'bc\'f8
+\f3 , 
+\f0 \'c8\'ab\'bf\'ac\'c0\'c7
+\f3 , 
+\f0 \'b9\'da\'c7\'f6\'c1\'a4
+\f3 , 
+\f0 \'b0\'ad\'b0\'a8\'c2\'f9
+\f3 ]\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 - \'b0\'b0\'c0\'ba \'c0\'da\'b7\'e1\'b4\'c2 \'c1\'df\'ba\'b9\'b5\'c7\'be\'ee \'c3\'e2\'b7\'c2\'b5\'c7\'c1\'f6 \'be\'ca\'b4\'c2\'b4\'d9.\
+- \'c0\'da\'b7\'e1\'b0\'a1 \'c3\'df\'b0\'a1\'b5\'c8 \'bc\'f8\'bc\'ad\'bf\'cd \'bb\'f3\'b0\'fc\'be\'f8\'c0\'cc \'c3\'e2\'b7\'c2\'b5\'c8\'b4\'d9.\
+\
+
+\f1\b * HashSet\'b8\'a6 \'c8\'b0\'bf\'eb\'c7\'d8 \'c8\'b8\'bf\'f8 \'b0\'fc\'b8\'ae \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5 \'b1\'b8\'c7\'f6\'c7\'cf\'b1\'e2
+\f0\b0 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf2 package
+\f3\b0 \cf0  collection.hashset;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.HashSet;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.Iterator;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  collection.Member;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  MemberHashSet \{\
+	
+\f2\b \cf2 private
+\f3\b0 \cf0  HashSet<Member> \cf5 hashSet\cf0 ;\
+	\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  MemberHashSet() \{\
+		\cf5 hashSet\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  HashSet<Member>();\
+	\}\
+	\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  addMember(Member \cf3 member\cf0 ) \{\
+		\cf5 hashSet\cf0 .add(\cf3 member\cf0 );\
+	\}\
+	\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 boolean
+\f3\b0 \cf0  removeMember(
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 memberId\cf0 ) \{\
+		Iterator<Member> \cf3 ir\cf0  = \cf5 hashSet\cf0 .iterator();\
+		\
+		
+\f2\b \cf2 while
+\f3\b0 \cf0  (\cf3 ir\cf0 .hasNext()) \{\
+			Member \cf3 member\cf0  = \cf3 ir\cf0 .next();\
+			
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 tempId\cf0  = \cf3 member\cf0 .getMemberId();\
+			
+\f2\b \cf2 if
+\f3\b0 \cf0 (\cf3 tempId\cf0 ==\cf3 memberId\cf0 ) \{\
+				\cf5 hashSet\cf0 .remove(\cf3 member\cf0 );\
+				
+\f2\b \cf2 return
+\f3\b0 \cf0  
+\f2\b \cf2 true
+\f3\b0 \cf0 ;\
+			\}\
+		\}\
+		System.
+\f4\i\b \cf5 out
+\f3\i0\b0 \cf0 .println(\cf3 memberId\cf0 +\cf4 "
+\f0 \'b0\'a1
+\f3  
+\f0 \'c1\'b8\'c0\'e7\'c7\'cf\'c1\'f6
+\f3  
+\f0 \'be\'ca\'bd\'c0\'b4\'cf\'b4\'d9
+\f3 ."\cf0 );\
+		
+\f2\b \cf2 return
+\f3\b0 \cf0  
+\f2\b \cf2 false
+\f3\b0 \cf0 ;\
+	\}\
+	\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  showAllMember() \{\
+		
+\f2\b \cf2 for
+\f3\b0 \cf0 (Member \cf3 member\cf0  : \cf5 hashSet\cf0 ) \{\
+			System.
+\f4\i\b \cf5 out
+\f3\i0\b0 \cf0 .println(\cf3 member\cf0 );\
+		\}\
+		System.
+\f4\i\b \cf5 out
+\f3\i0\b0 \cf0 .println();\
+	\}\
+	\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 - ArrayList\'bf\'a1\'bc\'ad\'b4\'c2 get(i)\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d8, i\'b9\'f8\'c2\'b0\'bf\'a1 \'c7\'d8\'b4\'e7\'c7\'cf\'b4\'c2 \'c7\'d7\'b8\'f1\'c0\'bb \'bb\'e8\'c1\'a6\'c7\'df\'b4\'d9.\
+- HashSet\'bf\'a1\'bc\'ad\'b4\'c2 \'c7\'d8\'b4\'e7\'c7\'cf\'b4\'c2 \'be\'c6\'c0\'cc\'b5\'f0\'b8\'a6 \'b0\'a1\'c1\'f8 \'c8\'b8\'bf\'f8\'c0\'bb \'c3\'a3\'b1\'e2 \'c0\'a7\'c7\'d8 Iterator\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e7, \'b8\'b8\'be\'e0 \'b0\'b0\'b4\'d9\'b8\'e9 remove() \'b8\'de\'bc\'ad\'b5\'e5\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'bf\'a9 \'c7\'d8\'b4\'e7\'c7\'cf\'b4\'c2 \'c8\'b8\'bf\'f8\'c0\'bb \'bb\'e8\'c1\'a6\'c7\'d1\'b4\'d9.\
+\
+(test)\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf2 package
+\f3\b0 \cf0  collection.hashset;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  collection.Member;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  MemberHashSetTest \{\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		MemberHashSet \cf3 memberHashSet\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  MemberHashSet();\
+		\
+		Member \cf3 memberLee\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Member(1001, \cf4 "
+\f0 \'c0\'cc\'c1\'f6\'bf\'f8
+\f3 "\cf0 );\
+		Member \cf3 memberSon\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Member(1002, \cf4 "
+\f0 \'bc\'d5\'b9\'ce\'b1\'b9
+\f3 "\cf0 );\
+		Member \cf3 memberPark\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Member(1003, \cf4 "
+\f0 \'b9\'da\'bc\'ad\'c8\'cd
+\f3 "\cf0 );\
+		\
+		\cf3 memberHashSet\cf0 .addMember(\cf3 memberLee\cf0 );\
+		\cf3 memberHashSet\cf0 .addMember(\cf3 memberSon\cf0 );\
+		\cf3 memberHashSet\cf0 .addMember(\cf3 memberPark\cf0 );\
+		\cf3 memberHashSet\cf0 .showAllMember();\
+		\
+		Member \cf3 memberHong\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Member(1003, \cf4 "
+\f0 \'c8\'ab\'b1\'e6\'b5\'bf
+\f3 "\cf0 );\
+		\cf3 memberHashSet\cf0 .addMember(\cf3 memberHong\cf0 );\
+		\cf3 memberHashSet\cf0 .showAllMember();\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 >>\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf0 \'c0\'cc\'c1\'f6\'bf\'f8\'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  1001
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'b9\'da\'bc\'ad\'c8\'cd\'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  1003
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'bc\'d5\'b9\'ce\'b1\'b9\'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  1002
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+\
+
+\f0 \'c0\'cc\'c1\'f6\'bf\'f8\'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  1001
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'c8\'ab\'b1\'e6\'b5\'bf\'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  1003
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'b9\'da\'bc\'ad\'c8\'cd\'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  1003
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'bc\'d5\'b9\'ce\'b1\'b9\'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  1002
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+\
+
+\f0\fs40 - \'c0\'cc\'bb\'f3\'c7\'cf\'b0\'d4, \'b0\'b0\'c0\'ba \'be\'c6\'c0\'cc\'b5\'f0\'b8\'a6 \'b0\'a1\'c1\'f8 (1003) \'b9\'da\'bc\'ad\'c8\'cd, \'c8\'ab\'b1\'e6\'b5\'bf\'c0\'cc \'b5\'bf\'bd\'c3\'bf\'a1 \'c3\'df\'b0\'a1\'b5\'c7\'be\'fa\'b4\'d9.\
+- \'b0\'b4\'c3\'bc\'b0\'a1 \'b5\'bf\'c0\'cf\'c7\'d1 \'b0\'cd\'c0\'d3\'c0\'bb \'b1\'b8\'c7\'f6\'c7\'d8\'b3\'bb\'be\'df\'c7\'d1\'b4\'d9.\
+- equals, hashCode\'b8\'a6 \'c0\'e7\'c1\'a4\'c0\'c7\'c7\'d1\'b4\'d9.\
+(Member \'c6\'c4\'c0\'cf\'bf\'a1 \'c3\'df\'b0\'a1\'c7\'d8\'c1\'d6\'b1\'e2)\
+
+\f3\fs32 	\cf6 @Override\cf0 \
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 int
+\f3\b0 \cf0  hashCode() \{\
+		
+\f2\b \cf2 return
+\f3\b0 \cf0  \cf5 memberId\cf0 ;	\cf7 // hashCode() 
+\f0 \'b8\'de\'bc\'ad\'b5\'e5\'b0\'a1
+\f3  
+\f0 \'c8\'b8\'bf\'f8
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b8\'a6
+\f3  
+\f0 \'b9\'dd\'c8\'af\'c7\'cf\'b5\'b5\'b7\'cf
+\f3  
+\f0 \'c0\'e7\'c1\'a4\'c0\'c7
+\f3 \cf0 \
+	\}\
+\
+	\cf6 @Override\cf0 \
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 boolean
+\f3\b0 \cf0  equals(Object \cf3 obj\cf0 ) \{\
+		
+\f2\b \cf2 if
+\f3\b0 \cf0 (\cf3 obj\cf0  
+\f2\b \cf2 instanceof
+\f3\b0 \cf0  Member) \{\
+			Member \cf3 member\cf0  = (Member)\cf3 obj\cf0 ;\
+			
+\f2\b \cf2 if
+\f3\b0 \cf0 (
+\f2\b \cf2 this
+\f3\b0 \cf0 .\cf5 memberId\cf0  == \cf3 member\cf0 .\cf5 memberId\cf0 ) \{\
+				
+\f2\b \cf2 return
+\f3\b0 \cf0  
+\f2\b \cf2 true
+\f3\b0 \cf0 ;\
+			\} 
+\f2\b \cf2 else
+\f3\b0 \cf0  \{\
+				
+\f2\b \cf2 return
+\f3\b0 \cf0  
+\f2\b \cf2 false
+\f3\b0 \cf0 ;\
+			\}\
+		\}\
+		
+\f2\b \cf2 return
+\f3\b0 \cf0  
+\f2\b \cf2 false
+\f3\b0 \cf0 ;\
+\
+	\}
+\f0\fs40 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 - \'c0\'cc\'c8\'c4 \'b4\'d9\'bd\'c3 \'bd\'c7\'c7\'e0\'c7\'cf\'b8\'e9, 1003\'c0\'b8\'b7\'ce \'c1\'df\'ba\'b9\'b5\'c8 \'b0\'cd\'c0\'cc \'c3\'b3\'b8\'ae\'b5\'c8\'b4\'d9.\
+\
+
+\f1\b \ul @ TreeSet \'c5\'ac\'b7\'a1\'bd\'ba
+\f0\b0 \ulnone \
+- Tree\'b7\'ce \'bd\'c3\'c0\'db\'c7\'cf\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2, \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c3\'df\'b0\'a1\'c7\'d1 \'c8\'c4 \'b0\'e1\'b0\'fa\'b8\'a6 \'c3\'e2\'b7\'c2\'c7\'cf\'b8\'e9 \'b0\'e1\'b0\'fa \'b0\'aa\'c0\'cc \'c1\'a4\'b7\'c4\'b5\'c8\'b4\'d9.\
+- TreeSet\'c0\'ba \'c0\'da\'b7\'e1\'c0\'c7 \'c1\'df\'ba\'b9\'c0\'bb \'c7\'e3\'bf\'eb\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9\'bc\'ad \'c3\'e2\'b7\'c2 \'b0\'e1\'b0\'fa \'b0\'aa\'c0\'bb \'c1\'a4\'b7\'c4\'c7\'cf\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'cc\'b4\'d9.\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs32 \cf2 package
+\f3\b0 \cf0  collection.treeset;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.TreeSet;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  TreeSetTest \{\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		TreeSet<String> \cf3 treeSet\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  TreeSet<String>();\
+		\cf3 treeSet\cf0 .add(\cf4 "
+\f0 \'c8\'ab\'b1\'e6\'b5\'bf
+\f3 "\cf0 );\
+		\cf3 treeSet\cf0 .add(\cf4 "
+\f0 \'b0\'ad\'b0\'a8\'c2\'f9
+\f3 "\cf0 );\
+		\cf3 treeSet\cf0 .add(\cf4 "
+\f0 \'c0\'cc\'bc\'f8\'bd\'c5
+\f3 "\cf0 );\
+		\
+		
+\f2\b \cf2 for
+\f3\b0 \cf0 (String \cf3 str\cf0  : \cf3 treeSet\cf0 ) \{\
+			System.
+\f4\i\b \cf5 out
+\f3\i0\b0 \cf0 .println(\cf3 str\cf0 );\
+		\}\
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 >>\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf0 \'b0\'ad\'b0\'a8\'c2\'f9
+\f3 \
+
+\f0 \'c0\'cc\'bc\'f8\'bd\'c5
+\f3 \
+
+\f0 \'c8\'ab\'b1\'e6\'b5\'bf
+\f3 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 - \'c1\'a4\'b7\'c4\'b5\'c7\'be\'ee \'c3\'e2\'b7\'c2\'b5\'c8\'b4\'d9\'a1\'a6 \'b1\'d7 \'b9\'e6\'b9\'fd\'c0\'ba? : \'c0\'cc\'c1\'f8 \'c5\'bd\'bb\'f6 \'c6\'ae\'b8\'ae (Binary Search Tree)\
+\
+* TreeSet\'c0\'bb \'c8\'b0\'bf\'eb\'c7\'d8 \'c8\'b8\'bf\'f8 \'b0\'fc\'b8\'ae \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5 \'b1\'b8\'c7\'f6\'c7\'cf\'b1\'e2\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

@@ -1,0 +1,871 @@
+{\rtf1\ansi\ansicpg949\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset129 AppleSDGothicNeo-Regular;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fswiss\fcharset0 Helvetica;
+\f3\fswiss\fcharset0 Helvetica-BoldOblique;\f4\fswiss\fcharset0 Helvetica-Oblique;}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red106\green62\blue62;\red0\green0\blue192;
+\red42\green0\blue255;\red127\green0\blue85;\red106\green62\blue62;\red0\green0\blue192;\red42\green0\blue255;
+\red63\green127\blue95;}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c0\c0\c75294;
+\csgenericrgb\c16471\c0\c100000;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c0\c0\c75294;\csgenericrgb\c16471\c0\c100000;
+\csgenericrgb\c24706\c49804\c37255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11000\viewh19580\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 ch6. \'b3\'aa\'c0\'c7 \'be\'db \'b8\'b8\'b5\'e9\'b1\'e2\
+\
+* \'bd\'c3\'b0\'a3\'c0\'c7 \'bc\'f8\'bc\'ad\'bf\'a1 \'b5\'fb\'b8\'a5 \'c3\'e2\'b7\'c2\'b8\'b8\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'d1 \'c4\'da\'b5\'e5\'a1\'a6\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 class
+\f2\b0 \cf0  AccountingApp \{\
+\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 static
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "Value of supply : "\cf0 +12345.0);\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "VAT : "\cf0 +(12345.0*0.1));\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "Total : "\cf0 +(12345.0+10000*0.1));\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "Expense : "\cf0 +(12345.0*0.3));\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "Income : "\cf0 +(12345.0-12345.0*0.3));\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "Dividend : "\cf0 +(12345.0-12345.0*0.3) * 0.5 );\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "Dividend : "\cf0 +(12345.0-12345.0*0.3) * 0.3 );\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "Dividend : "\cf0 +(12345.0-12345.0*0.3) * 0.2 );\
+\
+	\}\
+\
+\}\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 -Command + F\'b8\'a6 \'c5\'eb\'c7\'d8 \'c7\'d8\'b4\'e7 \'ba\'af\'bc\'f6\'b0\'a1 \'b9\'d9\'b2\'ee\'b8\'e9 \'b8\'f0\'b5\'ce \'b9\'d9\'b2\'d9\'be\'ee\'c1\'d6\'be\'ee\'be\'df\'c7\'d4\
+\
+* \'ba\'af\'bc\'f6\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d1 \'c4\'da\'b5\'e5\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 class
+\f2\b0 \cf0  AccountingApp \{\
+\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 static
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		\
+		
+\f1\b \cf2 double
+\f2\b0 \cf0  \cf3 valueOfSupply\cf0  = 10000.0;\
+		
+\f1\b \cf2 double
+\f2\b0 \cf0  \cf3 vatRate\cf0  = 0.1;\
+		
+\f1\b \cf2 double
+\f2\b0 \cf0  \cf3 expenseRate\cf0  = 0.3;\
+		
+\f1\b \cf2 double
+\f2\b0 \cf0  \cf3 vat\cf0  = \cf3 valueOfSupply\cf0 *\cf3 vatRate\cf0 ;\
+		
+\f1\b \cf2 double
+\f2\b0 \cf0  \cf3 total\cf0  = \cf3 valueOfSupply\cf0 +\cf3 vat\cf0 ;\
+		
+\f1\b \cf2 double
+\f2\b0 \cf0  \cf3 expense\cf0  = \cf3 valueOfSupply\cf0 *\cf3 expenseRate\cf0 ;\
+		
+\f1\b \cf2 double
+\f2\b0 \cf0  \cf3 income\cf0  = \cf3 valueOfSupply\cf0 -\cf3 expense\cf0 ;\
+		
+\f1\b \cf2 double
+\f2\b0 \cf0  \cf3 dividend1\cf0  = \cf3 income\cf0  * 0.5;\
+		
+\f1\b \cf2 double
+\f2\b0 \cf0  \cf3 devidend2\cf0  = \cf3 income\cf0  * 0.3;\
+		
+\f1\b \cf2 double
+\f2\b0 \cf0  \cf3 devidend3\cf0  = \cf3 income\cf0  * 0.2;\
+		\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "Value of supply : "\cf0 +\cf3 valueOfSupply\cf0 );\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "VAT : "\cf0 +\cf3 vat\cf0 );\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "Total : "\cf0 +\cf3 total\cf0 );\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "Expense : "\cf0 +\cf3 expense\cf0 );\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "Income : "\cf0 +\cf3 income\cf0 );\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "Dividend : "\cf0 +\cf3 dividend1\cf0  );\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "Dividend : "\cf0 +\cf3 devidend2\cf0  );\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "Dividend : "\cf0 +\cf3 devidend3\cf0  );\
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 \
+- \'ba\'af\'bc\'f6\'b0\'a1 \'b9\'d9\'b2\'ee\'b8\'e9 valueOfSupply\'c0\'c7 \'c4\'da\'b5\'e5\'b8\'a6 \'bc\'f6\'c1\'a4\'c7\'d8\'c1\'d6\'be\'ee\'be\'df\'c7\'d4\
+\
+* \'ba\'af\'bc\'f6\'b8\'a6 \'c1\'f7\'c1\'a2 \'c0\'d4\'b7\'c2\'b9\'de\'b4\'c2 \'c4\'da\'b5\'e5\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 class
+\f2\b0 \cf0  AccountingApp \{\
+\
+	
+\f1\b \cf2 public
+\f2\b0 \cf0  
+\f1\b \cf2 static
+\f2\b0 \cf0  
+\f1\b \cf2 void
+\f2\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		\
+		
+\f1\b \cf2 double
+\f2\b0 \cf0  \cf3 valueOfSupply\cf0  = Double.
+\f4\i parseDouble
+\f2\i0 (\cf3 args\cf0 [0]);\
+		
+\f1\b \cf2 double
+\f2\b0 \cf0  \cf3 vatRate\cf0  = 0.1;\
+		
+\f1\b \cf2 double
+\f2\b0 \cf0  \cf3 expenseRate\cf0  = 0.3;\
+		
+\f1\b \cf2 double
+\f2\b0 \cf0  \cf3 vat\cf0  = \cf3 valueOfSupply\cf0 *\cf3 vatRate\cf0 ;\
+		
+\f1\b \cf2 double
+\f2\b0 \cf0  \cf3 total\cf0  = \cf3 valueOfSupply\cf0 +\cf3 vat\cf0 ;\
+		
+\f1\b \cf2 double
+\f2\b0 \cf0  \cf3 expense\cf0  = \cf3 valueOfSupply\cf0 *\cf3 expenseRate\cf0 ;\
+		
+\f1\b \cf2 double
+\f2\b0 \cf0  \cf3 income\cf0  = \cf3 valueOfSupply\cf0 -\cf3 expense\cf0 ;\
+		
+\f1\b \cf2 double
+\f2\b0 \cf0  \cf3 dividend1\cf0  = \cf3 income\cf0  * 0.5;\
+		
+\f1\b \cf2 double
+\f2\b0 \cf0  \cf3 dividend2\cf0  = \cf3 income\cf0  * 0.3;\
+		
+\f1\b \cf2 double
+\f2\b0 \cf0  \cf3 dividend3\cf0  = \cf3 income\cf0  * 0.2;\
+		\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "VAT : "\cf0 +\cf3 vat\cf0 );\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "Value of supply : "\cf0 +\cf3 valueOfSupply\cf0 );\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "Total : "\cf0 +\cf3 total\cf0 );\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "Expense : "\cf0 +\cf3 expense\cf0 );\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "Income : "\cf0 +\cf3 income\cf0 );\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "Dividend : "\cf0 +\cf3 dividend1\cf0  );\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "Dividend : "\cf0 +\cf3 devidend2\cf0  );\
+		System.
+\f3\i\b \cf4 out
+\f2\i0\b0 \cf0 .println(\cf5 "Dividend : "\cf0 +\cf3 devidend3\cf0  );\
+\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 - Run configurations - Arguments\'bf\'a1\'bc\'ad \'ba\'af\'bc\'f6\'b0\'aa\'c0\'bb \'c1\'f6\'c1\'a4\'c7\'d8\'c1\'d9 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+- \'ba\'af\'bc\'f6 : args[0]\
+- \'c0\'cc \'b6\'a7, args\'b8\'a6 double\'c7\'fc\'c0\'b8\'b7\'ce \'ba\'af\'c8\'af\'c7\'cf\'b4\'c2 \'b9\'fd\'c0\'bb \'b1\'b8\'b1\'db\'b8\'b5\'c7\'cf\'bf\'a9 \'c3\'a3\'be\'c6\'c1\'d8\'b4\'d9. : Double.parseDouble(args[0])\
+- Eclipse \'be\'f8\'c0\'cc \'ba\'af\'bc\'f6\'b0\'aa \'c0\'d4\'b7\'c2 \'bd\'c7\'c7\'e0\
+	: java \'c6\'c4\'c0\'cf\'b8\'ed \'ba\'af\'bc\'f6\'b0\'aa\
+\
+** \'be\'d5\'c0\'b8\'b7\'ce \'b9\'e8\'bf\'ef \'b0\'cd\'b5\'e9\
+\
+* \'c1\'b6\'b0\'c7\'b9\'ae if
+\f2\fs32 \
+\pard\pardeftab720\partightenfactor0
+\cf0 		
+\f1\b \cf6 double
+\f2\b0 \cf0  \cf7 dividend1\cf0 ;\
+		
+\f1\b \cf6 double
+\f2\b0 \cf0  \cf7 dividend2\cf0 ;\
+		
+\f1\b \cf6 double
+\f2\b0 \cf0  \cf7 dividend3\cf0 ;\
+		\
+		
+\f1\b \cf6 if
+\f2\b0 \cf0 (\cf7 income\cf0 >10000.0) \{\
+			\cf7 dividend1\cf0  = \cf7 income\cf0  * 0.5;\
+			\cf7 dividend2\cf0  = \cf7 income\cf0  * 0.3;\
+			\cf7 dividend3\cf0  = \cf7 income\cf0  * 0.2;\
+		\} 
+\f1\b \cf6 else
+\f2\b0 \cf0  \{\
+			\cf7 dividend1\cf0  = \cf7 income\cf0  * 1;\
+			\cf7 dividend2\cf0  = \cf7 income\cf0  * 0;\
+			\cf7 dividend3\cf0  = \cf7 income\cf0  * 0;\
+		\}		\
+
+\f0\fs48 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 * \'b9\'e8\'bf\'ad\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf0 		
+\f1\b \cf6 double
+\f2\b0 \cf0 [] \cf7 dividendRates\cf0  = 
+\f1\b \cf6 new
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0 [3];\
+		\cf7 dividendRates\cf0 [0] = 0.5;\
+		\cf7 dividendRates\cf0 [1] = 0.3;\
+		\cf7 dividendRates\cf0 [2] = 0.2;\
+		\
+		
+\f1\b \cf6 double
+\f2\b0 \cf0  \cf7 dividend1\cf0  = \cf7 income\cf0  * \cf7 dividendRates\cf0 [0];\
+		
+\f1\b \cf6 double
+\f2\b0 \cf0  \cf7 dividend2\cf0  = \cf7 income\cf0  * \cf7 dividendRates\cf0 [1];\
+		
+\f1\b \cf6 double
+\f2\b0 \cf0  \cf7 dividend3\cf0  = \cf7 income\cf0  * \cf7 dividendRates\cf0 [2];\
+
+\f0\fs48 - \'bc\'ad\'b7\'ce \'bf\'ac\'b0\'fc\'b5\'c8 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b8\'f0\'be\'c6\'c1\'d6\'b4\'c2 \'bc\'f6\'b4\'dc\
+double[] #\'b9\'e8\'bf\'ad\'b5\'a5\'c0\'cc\'c5\'cd\'c5\'b8\'c0\'d4 dividendRates #\'ba\'af\'bc\'f6\'b8\'ed\
+= new #\'bb\'fd\'bc\'ba double[3]; #3\'b0\'f8\'b0\'a3 \'b9\'e8\'bf\'ad\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+* \'b9\'dd\'ba\'b9\'b9\'ae\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf0 		
+\f1\b \cf6 double
+\f2\b0 \cf0 [] \cf7 dividendRates\cf0  = 
+\f1\b \cf6 new
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0 [3];\
+		\cf7 dividendRates\cf0 [0] = 0.5;\
+		\cf7 dividendRates\cf0 [1] = 0.3;\
+		\cf7 dividendRates\cf0 [2] = 0.2;\
+		\
+		
+\f1\b \cf6 int
+\f2\b0 \cf0  \cf7 i\cf0  = 0;\
+		
+\f1\b \cf6 while
+\f2\b0 \cf0 (\cf7 i\cf0  < \cf7 dividendRates\cf0 .\cf8 length\cf0 ) \{\
+			System.
+\f3\i\b \cf8 out
+\f2\i0\b0 \cf0 .println(\cf9 "Dividend : "\cf0 +(\cf7 income\cf0 *\cf7 dividendRates\cf0 [\cf7 i\cf0 ]));\
+			\cf7 i\cf0  = \cf7 i\cf0  + 1;
+\f0\fs48 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 - \'b9\'dd\'ba\'b9\'b5\'c7\'b4\'c2 \'b9\'ae\'c0\'e5\'c0\'bb \'bd\'b1\'b0\'d4 \'be\'b5 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+\
+* method\
+- \'bc\'ad\'b7\'ce \'bf\'ac\'b0\'fc\'b5\'c8 \'c4\'da\'b5\'e5\'b8\'a6 grouping\'c7\'d8\'bc\'ad \'c0\'cc\'b8\'a7\'c0\'bb \'ba\'d9\'c0\'ce \'c1\'a4\'b8\'ae \'c1\'a4\'b5\'b7\'c0\'c7 \'bb\'f3\'c0\'da\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 class
+\f2\b0 \cf0  MethodApp \{\
+\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0  
+\f4\i \cf8 valueOfSupply
+\f2\i0 \cf0 ;\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0  
+\f4\i \cf8 vatRate
+\f2\i0 \cf0 ;\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0  
+\f4\i \cf8 expenseRate
+\f2\i0 \cf0 ;\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 void
+\f2\b0 \cf0  main(String[] \cf7 args\cf0 ) \{\
+		\
+		
+\f4\i \cf8 valueOfSupply
+\f2\i0 \cf0  = 13000.0;\
+		
+\f4\i \cf8 vatRate
+\f2\i0 \cf0  = 0.1;\
+		
+\f4\i \cf8 expenseRate
+\f2\i0 \cf0  = 0.3;\
+		
+\f4\i print
+\f2\i0 ();\
+\
+	\}\
+\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 void
+\f2\b0 \cf0  print() \{\
+		System.
+\f3\i\b \cf8 out
+\f2\i0\b0 \cf0 .println(\cf9 "VAT : "\cf0 + 
+\f4\i getVAT
+\f2\i0 ());\
+		System.
+\f3\i\b \cf8 out
+\f2\i0\b0 \cf0 .println(\cf9 "Value of supply : "\cf0 +
+\f4\i \cf8 valueOfSupply
+\f2\i0 \cf0 );\
+		System.
+\f3\i\b \cf8 out
+\f2\i0\b0 \cf0 .println(\cf9 "Total : "\cf0 + 
+\f4\i getTotal
+\f2\i0 ());\
+		System.
+\f3\i\b \cf8 out
+\f2\i0\b0 \cf0 .println(\cf9 "Expense : "\cf0 +
+\f4\i getExpense
+\f2\i0 ());\
+		System.
+\f3\i\b \cf8 out
+\f2\i0\b0 \cf0 .println(\cf9 "Income : "\cf0 +
+\f4\i getIncome
+\f2\i0 ());\
+		System.
+\f3\i\b \cf8 out
+\f2\i0\b0 \cf0 .println(\cf9 "Dividend : "\cf0 +
+\f4\i getDividend1
+\f2\i0 ());\
+		System.
+\f3\i\b \cf8 out
+\f2\i0\b0 \cf0 .println(\cf9 "Dividend : "\cf0 +
+\f4\i getDividend2
+\f2\i0 ());\
+		System.
+\f3\i\b \cf8 out
+\f2\i0\b0 \cf0 .println(\cf9 "Dividend : "\cf0 +
+\f4\i getDividend3
+\f2\i0 ());\
+	\}\
+\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0  getDividend1() \{\
+		
+\f1\b \cf6 return
+\f2\b0 \cf0  
+\f4\i getIncome
+\f2\i0 () * 0.5;\
+	\}\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0  getDividend2() \{\
+		
+\f1\b \cf6 return
+\f2\b0 \cf0  
+\f4\i getIncome
+\f2\i0 () * 0.3;\
+	\}\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0  getDividend3() \{\
+		
+\f1\b \cf6 return
+\f2\b0 \cf0  
+\f4\i getIncome
+\f2\i0 () * 0.2;\
+	\}\
+\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0  getIncome() \{\
+		
+\f1\b \cf6 return
+\f2\b0 \cf0  
+\f4\i \cf8 valueOfSupply
+\f2\i0 \cf0 -
+\f4\i getExpense
+\f2\i0 ();\
+	\}\
+\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0  getExpense() \{\
+		
+\f1\b \cf6 return
+\f2\b0 \cf0  
+\f4\i \cf8 valueOfSupply
+\f2\i0 \cf0 *
+\f4\i \cf8 expenseRate
+\f2\i0 \cf0 ;\
+	\}\
+\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0  getTotal() \{\
+		
+\f1\b \cf6 return
+\f2\b0 \cf0  
+\f4\i \cf8 valueOfSupply
+\f2\i0 \cf0  + 
+\f4\i getVAT
+\f2\i0 ();\
+	\}\
+\
+	
+\f1\b \cf6 private
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0  getVAT() \{\
+		
+\f1\b \cf6 return
+\f2\b0 \cf0  
+\f4\i \cf8 valueOfSupply
+\f2\i0 \cf0 *
+\f4\i \cf8 vatRate
+\f2\i0 \cf0 ;\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 \
+* \'c5\'ac\'b7\'a1\'bd\'ba\
+- \'bc\'ad\'b7\'ce \'bf\'ac\'b0\'fc\'b5\'c8 \'ba\'af\'bc\'f6\'bf\'cd method\'b8\'a6 grouping\'c7\'cf\'bf\'a9 \'c0\'cc\'b8\'a7\'c0\'bb \'ba\'d9\'c0\'d3\'a1\'a6 \'b8\'b6\'c2\'f9\'b0\'a1\'c1\'f6\'b7\'ce \'c1\'a4\'b8\'ae\'c1\'a4\'b5\'b7!\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs32 \cf6 class
+\f2\b0 \cf0  Accounting\{\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0  
+\f4\i \cf8 valueOfSupply
+\f2\i0 \cf0 ;\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0  
+\f4\i \cf8 vatRate
+\f2\i0 \cf0 ;\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0  
+\f4\i \cf8 expenseRate
+\f2\i0 \cf0 ;\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 void
+\f2\b0 \cf0  print() \{\
+		System.
+\f3\i\b \cf8 out
+\f2\i0\b0 \cf0 .println(\cf9 "VAT : "\cf0 + 
+\f4\i getVAT
+\f2\i0 ());\
+		System.
+\f3\i\b \cf8 out
+\f2\i0\b0 \cf0 .println(\cf9 "Value of supply : "\cf0 +
+\f4\i \cf8 valueOfSupply
+\f2\i0 \cf0 );\
+		System.
+\f3\i\b \cf8 out
+\f2\i0\b0 \cf0 .println(\cf9 "Total : "\cf0 + 
+\f4\i getTotal
+\f2\i0 ());\
+		System.
+\f3\i\b \cf8 out
+\f2\i0\b0 \cf0 .println(\cf9 "Expense : "\cf0 +
+\f4\i getExpense
+\f2\i0 ());\
+		System.
+\f3\i\b \cf8 out
+\f2\i0\b0 \cf0 .println(\cf9 "Income : "\cf0 +
+\f4\i getIncome
+\f2\i0 ());\
+		System.
+\f3\i\b \cf8 out
+\f2\i0\b0 \cf0 .println(\cf9 "Dividend : "\cf0 +
+\f4\i getDividend1
+\f2\i0 ());\
+		System.
+\f3\i\b \cf8 out
+\f2\i0\b0 \cf0 .println(\cf9 "Dividend : "\cf0 +
+\f4\i getDividend2
+\f2\i0 ());\
+		System.
+\f3\i\b \cf8 out
+\f2\i0\b0 \cf0 .println(\cf9 "Dividend : "\cf0 +
+\f4\i getDividend3
+\f2\i0 ());\
+	\}\
+\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0  getDividend1() \{\
+		
+\f1\b \cf6 return
+\f2\b0 \cf0  
+\f4\i getIncome
+\f2\i0 () * 0.5;\
+	\}\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0  getDividend2() \{\
+		
+\f1\b \cf6 return
+\f2\b0 \cf0  
+\f4\i getIncome
+\f2\i0 () * 0.3;\
+	\}\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0  getDividend3() \{\
+		
+\f1\b \cf6 return
+\f2\b0 \cf0  
+\f4\i getIncome
+\f2\i0 () * 0.2;\
+	\}\
+\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0  getIncome() \{\
+		
+\f1\b \cf6 return
+\f2\b0 \cf0  
+\f4\i \cf8 valueOfSupply
+\f2\i0 \cf0 -
+\f4\i getExpense
+\f2\i0 ();\
+	\}\
+\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0  getExpense() \{\
+		
+\f1\b \cf6 return
+\f2\b0 \cf0  
+\f4\i \cf8 valueOfSupply
+\f2\i0 \cf0 *
+\f4\i \cf8 expenseRate
+\f2\i0 \cf0 ;\
+	\}\
+\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0  getTotal() \{\
+		
+\f1\b \cf6 return
+\f2\b0 \cf0  
+\f4\i \cf8 valueOfSupply
+\f2\i0 \cf0  + 
+\f4\i getVAT
+\f2\i0 ();\
+	\}\
+\
+	
+\f1\b \cf6 private
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 double
+\f2\b0 \cf0  getVAT() \{\
+		
+\f1\b \cf6 return
+\f2\b0 \cf0  
+\f4\i \cf8 valueOfSupply
+\f2\i0 \cf0 *
+\f4\i \cf8 vatRate
+\f2\i0 \cf0 ;\
+	\}\
+	\
+\}\
+\
+
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 class
+\f2\b0 \cf0  ClassApp \{\
+	
+\f1\b \cf6 public
+\f2\b0 \cf0  
+\f1\b \cf6 static
+\f2\b0 \cf0  
+\f1\b \cf6 void
+\f2\b0 \cf0  main(String[] \cf7 args\cf0 ) \{\
+		Accounting.
+\f4\i \cf8 valueOfSupply
+\f2\i0 \cf0  = 13000.0;\
+		Accounting.
+\f4\i \cf8 vatRate
+\f2\i0 \cf0  = 0.1;\
+		Accounting.
+\f4\i \cf8 expenseRate
+\f2\i0 \cf0  = 0.3;\
+		Accounting.
+\f4\i print
+\f2\i0 ();\
+		\cf10 // anotherVariable = ...;\cf0 \
+		\cf10 // anotherMethod = ...;\cf0 \
+\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 - \'c0\'cc\'b7\'b8\'b0\'d4 \'c7\'cf\'b8\'e9 Accounting\'b0\'fa \'b0\'fc\'b7\'c3 \'be\'f8\'b4\'c2 \'b4\'d9\'b8\'a5 \'c7\'d4\'bc\'f6\'b5\'e9\'c0\'cc \'b3\'aa\'bf\'cd\'b5\'b5 \'c5\'ac\'b7\'a1\'bd\'ba\'b7\'ce \'ba\'d0\'b7\'f9\'c7\'cf\'bf\'a9 \'b8\'ed\'c8\'ae\'c8\'f7 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+\
+* \'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba\
+- \'c7\'cf\'b3\'aa\'c0\'c7 \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'ba\'b9\'c1\'a6\'c7\'d8\'bc\'ad \'bc\'ad\'b7\'ce \'b4\'d9\'b8\'a5 \'b5\'a5\'c0\'cc\'c5\'cd\'c0\'c7 \'b0\'aa\'b0\'fa \'bc\'ad\'b7\'ce \'b0\'b0\'c0\'ba method\'b8\'a6 \'b0\'a1\'c1\'f8 \'ba\'b9\'c1\'a6\'ba\'bb\'c0\'bb \'b8\'b8\'b5\'e5\'b4\'c2 \'b0\'cd\
+(\'ba\'af\'b0\'e6 \'c0\'fc)\
+~ \'ba\'af\'bc\'f6\'c0\'c7 \'b0\'aa\'c0\'bb \'c1\'f7\'c1\'a2 \'ba\'af\'b0\'e6\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf0 		Accounting.
+\f4\i \cf8 valueOfSupply
+\f2\i0 \cf0  = 13000.0;\
+		Accounting.
+\f4\i \cf8 vatRate
+\f2\i0 \cf0  = 0.1;\
+		Accounting.
+\f4\i \cf8 expenseRate
+\f2\i0 \cf0  = 0.3;\
+		Accounting.
+\f4\i print
+\f2\i0 ();\
+		\cf10 // anotherVariable = ...;\cf0 \
+		\cf10 // anotherMethod = ...;\cf0 \
+		Accounting.
+\f4\i \cf8 valueOfSupply
+\f2\i0 \cf0  = 20000.0;\
+		Accounting.
+\f4\i \cf8 vatRate
+\f2\i0 \cf0  = 0.5;\
+		Accounting.
+\f4\i \cf8 expenseRate
+\f2\i0 \cf0  = 0.2;\
+		Accounting.
+\f4\i print
+\f2\i0 ();\
+		\cf10 //...\cf0 \
+		\cf10 //...\cf0 \
+		Accounting.
+\f4\i \cf8 valueOfSupply
+\f2\i0 \cf0  = 13000.0;\
+		Accounting.
+\f4\i \cf8 vatRate
+\f2\i0 \cf0  = 0.1;\
+		Accounting.
+\f4\i \cf8 expenseRate
+\f2\i0 \cf0  = 0.3;\
+		Accounting.
+\f4\i print
+\f2\i0 ();
+\f0\fs48 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+(\'b0\'b3\'bc\'b1 1)\
+~ class Accounting1 ~ 3\'b1\'ee\'c1\'f6 \'c1\'f6\'c1\'a4\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf0 		Accounting1.
+\f4\i \cf8 valueOfSupply
+\f2\i0 \cf0  = 13000.0;\
+		Accounting1.
+\f4\i \cf8 vatRate
+\f2\i0 \cf0  = 0.1;\
+		Accounting1.
+\f4\i \cf8 expenseRate
+\f2\i0 \cf0  = 0.3;\
+		Accounting1.
+\f4\i print
+\f2\i0 ();\
+		\cf10 // anotherVariable = ...;\cf0 \
+		\cf10 // anotherMethod = ...;\cf0 \
+		Accounting2.
+\f4\i \cf8 valueOfSupply
+\f2\i0 \cf0  = 20000.0;\
+		Accounting2.
+\f4\i \cf8 vatRate
+\f2\i0 \cf0  = 0.5;\
+		Accounting2.
+\f4\i \cf8 expenseRate
+\f2\i0 \cf0  = 0.2;\
+		Accounting2.
+\f4\i print
+\f2\i0 ();\
+		\
+		Accounting1.
+\f4\i print
+\f2\i0 ();
+\f0\fs48 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+(\'c0\'ce\'bd\'ba\'c5\'cf\'bd\'ba \'b0\'b3\'bc\'b1)\
+~class Accounting \'c7\'cf\'b3\'aa\'b8\'a6 oop\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf0 		Accounting \cf7 a1\cf0  = 
+\f1\b \cf6 new
+\f2\b0 \cf0  Accounting();\
+		\cf7 a1\cf0 .\cf8 valueOfSupply\cf0  = 10000.0;\
+		\cf7 a1\cf0 .\cf8 vatRate\cf0  = 0.1;\
+		\cf7 a1\cf0 .\cf8 expenseRate\cf0  = 0.3;\
+		\
+		Accounting \cf7 a2\cf0  = 
+\f1\b \cf6 new
+\f2\b0 \cf0  Accounting();\
+		\cf7 a2\cf0 .\cf8 valueOfSupply\cf0  = 20000.0;\
+		\cf7 a2\cf0 .\cf8 vatRate\cf0  = 0.2;\
+		\cf7 a2\cf0 .\cf8 expenseRate\cf0  = 0.5;\
+		\
+		\cf7 a1\cf0 .print();\
+		\cf7 a2\cf0 .print();
+\f0\fs48 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+** \'bc\'f6\'be\'f7\'c0\'bb \'b8\'b6\'c4\'a1\'b8\'e7\
+\
+\
+\
+\
+\
+\
+\
+\
+}
