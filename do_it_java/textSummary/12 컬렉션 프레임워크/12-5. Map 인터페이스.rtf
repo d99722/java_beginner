@@ -1,0 +1,408 @@
+{\rtf1\ansi\ansicpg949\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset129 AppleSDGothicNeo-Regular;\f1\fnil\fcharset129 AppleSDGothicNeo-Bold;\f2\fswiss\fcharset0 Helvetica-Bold;
+\f3\fswiss\fcharset0 Helvetica;\f4\fswiss\fcharset0 Helvetica-BoldOblique;}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red0\green0\blue192;\red106\green62\blue62;
+\red42\green0\blue255;}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c0\c0\c75294;\csgenericrgb\c41569\c24314\c24314;
+\csgenericrgb\c16471\c0\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12300\viewh19880\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 12-5. Map \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\
+\
+- Map \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b4\'c2 \'c0\'da\'b7\'e1\'b8\'a6 \'bd\'d6\'c0\'b8\'b7\'ce \'b0\'fc\'b8\'ae\'c7\'cf\'b4\'c2 \'b5\'a5 \'c7\'ca\'bf\'e4\'c7\'d1 \'b8\'de\'bc\'ad\'b5\'e5\'b0\'a1 \'c1\'a4\'c0\'c7\'b5\'c7\'be\'ee \'c0\'d6\'b4\'d9.\
+- key-value\'b7\'ce \'b1\'b8\'bc\'ba, key\'b4\'c2 \'c0\'af\'c0\'cf\'c7\'cf\'b8\'e7 value\'b4\'c2 \'c1\'df\'ba\'b9\'b0\'a1\'b4\'c9\'c7\'cf\'b4\'d9.\
+\
+
+\f1\b \ul @ HashMap \'c5\'ac\'b7\'a1\'bd\'ba
+\f0\b0 \ulnone \
+
+\f1\b * HashMap\'c0\'bb \'c8\'b0\'bf\'eb\'c7\'d8 \'c8\'b8\'bf\'f8 \'b0\'fc\'b8\'ae \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5 \'b1\'b8\'c7\'f6\'c7\'cf\'b1\'e2
+\f0\b0 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs30 \cf2 package
+\f3\b0 \cf0  collection.hashmap;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.HashMap;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.Iterator;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  collection.Member;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  MemberHashMap \{\
+	
+\f2\b \cf2 private
+\f3\b0 \cf0  HashMap<Integer, Member> \cf3 hashMap\cf0 ;\
+	\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  MemberHashMap() \{\
+		\cf3 hashMap\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  HashMap<Integer, Member>();\
+	\}\
+	\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  addMember(Member \cf4 member\cf0 ) \{\
+		\cf3 hashMap\cf0 .put(\cf4 member\cf0 .getMemberId(), \cf4 member\cf0 );\
+	\}\
+	\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 boolean
+\f3\b0 \cf0  removeMember(
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf4 memberId\cf0 ) \{\
+		
+\f2\b \cf2 if
+\f3\b0 \cf0 (\cf3 hashMap\cf0 .containsKey(\cf4 memberId\cf0 )) \{\
+			\cf3 hashMap\cf0 .remove(\cf4 memberId\cf0 );\
+			
+\f2\b \cf2 return
+\f3\b0 \cf0  
+\f2\b \cf2 true
+\f3\b0 \cf0 ;\
+		\}\
+		System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf4 memberId\cf0 +\cf5 "
+\f0 \'b0\'a1
+\f3  
+\f0 \'c1\'b8\'c0\'e7\'c7\'cf\'c1\'f6
+\f3  
+\f0 \'be\'ca\'bd\'c0\'b4\'cf\'b4\'d9
+\f3 ."\cf0 );\
+		
+\f2\b \cf2 return
+\f3\b0 \cf0  
+\f2\b \cf2 false
+\f3\b0 \cf0 ;\
+	\}\
+	\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  showAllMember() \{\
+		Iterator<Integer> \cf4 ir\cf0  = \cf3 hashMap\cf0 .keySet().iterator();\
+		\
+		
+\f2\b \cf2 while
+\f3\b0 \cf0  (\cf4 ir\cf0 .hasNext()) \{\
+			
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf4 key\cf0  = \cf4 ir\cf0 .next();\
+			Member \cf4 member\cf0  = \cf3 hashMap\cf0 .get(\cf4 key\cf0 );\
+			System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println(\cf4 member\cf0 );\
+		\}\
+		System.
+\f4\i\b \cf3 out
+\f3\i0\b0 \cf0 .println();\
+	\}\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 - hashMap.keySet() \'b8\'de\'bc\'ad\'b5\'e5\'b8\'a6 \'c8\'a3\'c3\'e2\'c7\'cf\'b8\'e9, key\'b8\'a6 \'bc\'f8\'c8\'b8\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 Iterator\'b0\'a1 \'b9\'dd\'c8\'af\'b5\'c8\'b4\'d9.\
+- \'b8\'f0\'b5\'e7 key \'b0\'aa\'c0\'bb \'c7\'cf\'b3\'aa\'be\'bf \'bc\'f8\'c8\'b8\'c7\'cf\'b8\'e9\'bc\'ad 32\'c7\'e0\'c3\'b3\'b7\'b3 get \'b8\'de\'bc\'ad\'b5\'e5\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'bf\'a9 \'c7\'d8\'b4\'e7 value\'b0\'aa\'c0\'bb \'b0\'a1\'c1\'ae\'bf\'c2\'b4\'d9.\
+\
+(test)\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs30 \cf2 package
+\f3\b0 \cf0  collection.hashmap;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  collection.Member;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  MemberHashMapTest \{\
+\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf4 args\cf0 ) \{\
+		MemberHashMap \cf4 memberHashMap\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  MemberHashMap();\
+		\
+		Member \cf4 memberLee\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Member(1001, \cf5 "
+\f0 \'c0\'cc\'c1\'f6\'bf\'f8
+\f3 "\cf0 );\
+		Member \cf4 memberSon\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Member(1002, \cf5 "
+\f0 \'bc\'d5\'b9\'ce\'b1\'b9
+\f3 "\cf0 );\
+		Member \cf4 memberPark\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Member(1003, \cf5 "
+\f0 \'b9\'da\'bb\'e7\'c8\'cd
+\f3 "\cf0 );\
+		Member \cf4 memberHong\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Member(1004, \cf5 "
+\f0 \'c8\'ab\'b1\'e6\'b5\'bf
+\f3 "\cf0 );\
+		\
+		\cf4 memberHashMap\cf0 .addMember(\cf4 memberLee\cf0 );\
+		\cf4 memberHashMap\cf0 .addMember(\cf4 memberSon\cf0 );\
+		\cf4 memberHashMap\cf0 .addMember(\cf4 memberPark\cf0 );\
+		\cf4 memberHashMap\cf0 .addMember(\cf4 memberHong\cf0 );\
+		\
+		\cf4 memberHashMap\cf0 .showAllMember();\
+		\
+		\cf4 memberHashMap\cf0 .removeMember(1004);\
+		\cf4 memberHashMap\cf0 .showAllMember();\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 >>\
+\pard\pardeftab720\partightenfactor0
+
+\fs30 \cf0 \'c0\'cc\'c1\'f6\'bf\'f8\'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  1001
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'bc\'d5\'b9\'ce\'b1\'b9\'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  1002
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'b9\'da\'bb\'e7\'c8\'cd\'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  1003
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'c8\'ab\'b1\'e6\'b5\'bf\'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  1004
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+\
+
+\f0 \'c0\'cc\'c1\'f6\'bf\'f8\'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  1001
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'bc\'d5\'b9\'ce\'b1\'b9\'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  1002
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'b9\'da\'bb\'e7\'c8\'cd\'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  1003
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b\fs40 \cf0 * HashMap\'b0\'fa Hashtable
+\f0\b0 \
+- Hashtable\'c0\'ba Vector\'bf\'cd \'b8\'b6\'c2\'f9\'b0\'a1\'c1\'f6\'b7\'ce \'b8\'d6\'c5\'d7\'bd\'ba\'b7\'b9\'b5\'e5\'b8\'a6 \'c0\'a7\'c7\'d1 \'b5\'bf\'b1\'e2\'c8\'ad\'b8\'a6 \'c1\'a6\'b0\'f8\'c7\'d1\'b4\'d9.\
+- \'b8\'d6\'c6\'bc\'bd\'ba\'b7\'b9\'b5\'e5\'b0\'a1 \'be\'c6\'b4\'cf\'b6\'f3\'b8\'e9 HashMap\'c0\'cc \'b1\'c7\'c0\'e5\'b5\'c8\'b4\'d9.\
+\
+
+\f1\b \ul @ TreeMap \'c5\'ac\'b7\'a1\'bd\'ba
+\f0\b0 \ulnone \
+- TreeMap\'c0\'ba TreeSet\'b0\'fa \'b8\'b6\'c2\'f9\'b0\'a1\'c1\'f6\'b7\'ce \'c0\'cc\'c1\'f8 \'b0\'cb\'bb\'f6 \'c6\'ae\'b8\'ae\'b7\'ce \'b1\'b8\'c7\'f6\'b5\'c7\'be\'fa\'b4\'d9.\
+- \'b5\'fb\'b6\'f3\'bc\'ad key \'b0\'aa\'bf\'a1 \'c7\'d8\'b4\'e7\'b5\'c7\'b4\'c2 \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1 Comparable\'c0\'cc\'b3\'aa Comparator \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d8\'be\'df\'c7\'d1\'b4\'d9.\
+- \'c7\'f6\'c0\'e7 \'bb\'e7\'bf\'eb \'c1\'df\'c0\'ce Key \'b0\'aa\'c0\'ce \'c8\'b8\'bf\'f8 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2 Integer\'c7\'fc\'c0\'cc\'b4\'d9.\
+- JavaDoc\'c0\'bb \'c8\'ae\'c0\'ce\'c7\'d8\'ba\'b8\'b8\'e9 \'c0\'cc\'b9\'cc Comparable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b0\'a1 \'b1\'b8\'c7\'f6\'b5\'c7\'be\'ee \'c0\'d6\'b4\'d9!\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs30 \cf2 package
+\f3\b0 \cf0  collection.treemap;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  collection.Member;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  \ul collection.hashmap.MemberHashMap\ulnone ;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  MemberTreeMapTest \{\
+\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf4 args\cf0 ) \{\
+		MemberTreeMap \cf4 memberTreeMap\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  MemberTreeMap();\
+		\
+		Member \cf4 memberPark\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Member(1003, \cf5 "
+\f0 \'b9\'da\'bc\'ad\'c8\'cd
+\f3 "\cf0 );\
+		Member \cf4 memberLee\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Member(1001, \cf5 "
+\f0 \'c0\'cc\'c1\'f6\'bf\'f8
+\f3 "\cf0 );\
+		Member \cf4 memberHong\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Member(1004,\cf5 "
+\f0 \'c8\'ab\'b1\'e6\'b5\'bf
+\f3 "\cf0 );\
+		Member \cf4 memberSon\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Member(1002, \cf5 "
+\f0 \'bc\'d5\'b9\'ce\'b1\'b9
+\f3 "\cf0 );\
+		\
+		\cf4 memberTreeMap\cf0 .addMember(\cf4 memberPark\cf0 );\
+		\cf4 memberTreeMap\cf0 .addMember(\cf4 memberLee\cf0 );\
+		\cf4 memberTreeMap\cf0 .addMember(\cf4 memberHong\cf0 );\
+		\cf4 memberTreeMap\cf0 .addMember(\cf4 memberSon\cf0 );\
+		\cf4 memberTreeMap\cf0 .showAllMember();\
+		\
+		\cf4 memberTreeMap\cf0 .removeMember(1004);\
+		\cf4 memberTreeMap\cf0 .showAllMember();\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 >>\
+\pard\pardeftab720\partightenfactor0
+
+\fs30 \cf0 \'c0\'cc\'c1\'f6\'bf\'f8\'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  1001
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'bc\'d5\'b9\'ce\'b1\'b9\'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  1002
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'b9\'da\'bc\'ad\'c8\'cd\'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  1003
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'c8\'ab\'b1\'e6\'b5\'bf\'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  1004
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+\
+
+\f0 \'c0\'cc\'c1\'f6\'bf\'f8\'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  1001
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'bc\'d5\'b9\'ce\'b1\'b9\'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  1002
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+
+\f0 \'b9\'da\'bc\'ad\'c8\'cd\'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  1003
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 .\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 - \'c0\'cc\'c3\'b3\'b7\'b3, \'c0\'da\'b9\'d9\'c0\'c7 \'c4\'c3\'b7\'ba\'bc\'c7 \'c7\'c1\'b7\'b9\'c0\'d3\'bf\'f6\'c5\'a9\'b4\'c2 \'c0\'da\'b7\'e1 \'b1\'b8\'c1\'b6\'b8\'a6 \'c3\'d6\'c0\'fb\'c8\'ad\'c7\'cf\'bf\'a9 \'b1\'b8\'c7\'f6\'c7\'df\'b0\'ed, \'b4\'d9\'be\'e7\'c7\'d1 \'b8\'de\'bc\'ad\'b5\'e5\'b5\'b5 \'b1\'b8\'c7\'f6\'b5\'c7\'be\'ee \'c0\'d6\'b4\'d9.\
+- \'c0\'cc\'b7\'af\'c7\'d1 \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'c6\'af\'bc\'ba\'c0\'bb \'c0\'df \'c0\'cc\'c7\'d8\'c7\'d8 \'b5\'ce\'b8\'e9, \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'bb \'b8\'b8\'b5\'e9 \'b6\'a7 \'c0\'fb\'c0\'fd\'c7\'cf\'b0\'d4 \'c8\'b0\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'d9.\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

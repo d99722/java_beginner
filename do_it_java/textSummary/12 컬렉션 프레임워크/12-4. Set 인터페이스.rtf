@@ -2,9 +2,9 @@
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset129 AppleSDGothicNeo-Regular;\f1\fnil\fcharset129 AppleSDGothicNeo-Bold;\f2\fswiss\fcharset0 Helvetica-Bold;
 \f3\fswiss\fcharset0 Helvetica;\f4\fswiss\fcharset0 Helvetica-BoldOblique;}
 {\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red106\green62\blue62;\red42\green0\blue255;
-\red0\green0\blue192;\red100\green100\blue100;\red63\green127\blue95;}
+\red0\green0\blue192;\red100\green100\blue100;\red63\green127\blue95;\red191\green191\blue191;}
 {\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c16471\c0\c100000;
-\csgenericrgb\c0\c0\c75294;\csgenericrgb\c39216\c39216\c39216;\csgenericrgb\c24706\c49804\c37255;}
+\csgenericrgb\c0\c0\c75294;\csgenericrgb\c39216\c39216\c39216;\csgenericrgb\c24706\c49804\c37255;\csgray\c79525;}
 \paperw11900\paperh16840\margl1440\margr1440\vieww12300\viewh19880\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
@@ -454,17 +454,490 @@
 
 \f0\fs40 \cf0 - \'c1\'a4\'b7\'c4\'b5\'c7\'be\'ee \'c3\'e2\'b7\'c2\'b5\'c8\'b4\'d9\'a1\'a6 \'b1\'d7 \'b9\'e6\'b9\'fd\'c0\'ba? : \'c0\'cc\'c1\'f8 \'c5\'bd\'bb\'f6 \'c6\'ae\'b8\'ae (Binary Search Tree)\
 \
-* TreeSet\'c0\'bb \'c8\'b0\'bf\'eb\'c7\'d8 \'c8\'b8\'bf\'f8 \'b0\'fc\'b8\'ae \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5 \'b1\'b8\'c7\'f6\'c7\'cf\'b1\'e2\
+
+\f1\b * TreeSet\'c0\'bb \'c8\'b0\'bf\'eb\'c7\'d8 \'c8\'b8\'bf\'f8 \'b0\'fc\'b8\'ae \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5 \'b1\'b8\'c7\'f6\'c7\'cf\'b1\'e2\
+
+\f0\b0 - String \'c5\'ac\'b7\'a1\'bd\'ba \'be\'c8\'bf\'a1 \'c1\'a4\'b7\'c4 \'b9\'e6\'bd\'c4\'c0\'cc \'c0\'cc\'b9\'cc \'b1\'b8\'c7\'f6\'b5\'c7\'be\'ee\'c0\'d6\'b4\'d9.\
+(MemberTreeSet)\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs30 \cf2 package
+\f3\b0 \cf0  collection.treeset;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.Iterator;\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.TreeSet;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  collection.Member;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  MemberTreeSet \{\
+	
+\f2\b \cf2 private
+\f3\b0 \cf0  TreeSet<Member> \cf5 treeSet\cf0 ;\
+	\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  MemberTreeSet() \{\
+		\cf5 treeSet\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  TreeSet<Member>();\
+	\}\
+	\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  addMember(Member \cf3 member\cf0 ) \{\
+		\cf5 treeSet\cf0 .add(\cf3 member\cf0 );\
+	\}\
+	\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 boolean
+\f3\b0 \cf0  removeMember(
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 memberId\cf0 ) \{\
+		Iterator<Member> \cf3 ir\cf0  = \cf5 treeSet\cf0 .iterator();\
+		\
+		
+\f2\b \cf2 while
+\f3\b0 \cf0 (\cf3 ir\cf0 .hasNext()) \{\
+			Member \cf3 member\cf0  = \cf3 ir\cf0 .next();\
+			
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 tempId\cf0  = \cf3 member\cf0 .getMemberId();\
+			
+\f2\b \cf2 if
+\f3\b0 \cf0 (\cf3 tempId\cf0  == \cf3 memberId\cf0 ) \{\
+				\cf5 treeSet\cf0 .remove(\cf3 member\cf0 );\
+				
+\f2\b \cf2 return
+\f3\b0 \cf0  
+\f2\b \cf2 true
+\f3\b0 \cf0 ;\
+			\}\
+		\}\
+		System.
+\f4\i\b \cf5 out
+\f3\i0\b0 \cf0 .println(\cf3 memberId\cf0 +\cf4 "
+\f0 \'b0\'a1
+\f3  
+\f0 \'c1\'b8\'c0\'e7\'c7\'cf\'c1\'f6
+\f3  
+\f0 \'be\'ca\'bd\'c0\'b4\'cf\'b4\'d9
+\f3 ."\cf0 );\
+		
+\f2\b \cf2 return
+\f3\b0 \cf0  
+\f2\b \cf2 false
+\f3\b0 \cf0 ;\
+	\}\
+	\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  showAllMember() \{\
+		
+\f2\b \cf2 for
+\f3\b0 \cf0 (Member \cf3 member\cf0  : \cf5 treeSet\cf0 ) \{\
+			System.
+\f4\i\b \cf5 out
+\f3\i0\b0 \cf0 .println(\cf3 member\cf0 );\
+		\}\
+		System.
+\f4\i\b \cf5 out
+\f3\i0\b0 \cf0 .println();\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \
+(MemberTreeSetTest)\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs30 \cf2 package
+\f3\b0 \cf0  collection.treeset;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  collection.Member;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  MemberTreeSetTest \{\
+\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		MemberTreeSet \cf3 memberTreeSet\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  MemberTreeSet();\
+		\
+		Member \cf3 memberPark\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Member(1003, \cf4 "
+\f0 \'b9\'da\'bc\'ad\'c8\'cd
+\f3 "\cf0 );\
+		Member \cf3 memberLee\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Member(1001, \cf4 "
+\f0 \'c0\'cc\'c1\'f6\'bf\'f8
+\f3 "\cf0 );\
+		Member \cf3 memberSon\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Member(1002, \cf4 "
+\f0 \'bc\'d5\'b9\'ce\'b1\'b9
+\f3 "\cf0 );\
+\
+		\cf3 memberTreeSet\cf0 .addMember(\cf3 memberLee\cf0 );\
+		\cf3 memberTreeSet\cf0 .addMember(\cf3 memberSon\cf0 );\
+		\cf3 memberTreeSet\cf0 .addMember(\cf3 memberPark\cf0 );\
+		\cf3 memberTreeSet\cf0 .showAllMember();\
+		\
+		Member \cf3 memberHong\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  Member(1003, \cf4 "
+\f0 \'c8\'ab\'b1\'e6\'b5\'bf
+\f3 "\cf0 );\
+		\cf3 memberTreeSet\cf0 .addMember(\cf3 memberHong\cf0 );\
+		\cf3 memberTreeSet\cf0 .showAllMember();\
+		\
+	\}\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 >>\
+\'bf\'c0\'b7\'f9!!\
+- \'be\'ee\'b6\'b2 \'b9\'e6\'bd\'c4\'c0\'b8\'b7\'ce \'ba\'f1\'b1\'b3\'c7\'d2 \'b0\'cd\'c0\'ce\'c1\'f6 \'c1\'a4\'c7\'cf\'c1\'f6 \'be\'ca\'be\'d2\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'b9\'df\'bb\'fd!\
+\
+
+\f1\b \ul @ Comparable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'bf\'cd Comparator \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba
+\f0\b0 \ulnone \
+- Member \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'b0\'a1\'c1\'f8 \'c8\'b8\'bf\'f8 \'be\'c6\'c0\'cc\'b5\'f0\'b8\'a6 \'b1\'e2\'c1\'d8\'c0\'b8\'b7\'ce \'c7\'cf\'bf\'a9 \'bf\'c0\'b8\'a7\'c2\'f7\'bc\'f8\'c0\'b8\'b7\'ce \'c1\'a4\'b7\'c4\
+- Comparable\'b0\'fa Comparator\'b4\'c2 \'c0\'cc\'b7\'af\'c7\'d1 \'c1\'a4\'b7\'c4\'c0\'bb \'b1\'b8\'c7\'f6\'c7\'d2 \'bc\'f6 \'c0\'d6\'b0\'d4 \'c7\'d8\'c1\'d6\'b4\'c2 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'c0\'cc\'b4\'d9.\
+- \'c1\'a4\'b7\'c4 \'b1\'e2\'c1\'d8 \'b0\'aa\'c0\'cc \'c0\'d6\'b4\'c2 Member \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1 \'b1\'b8\'c7\'f6\'c7\'cf\'b8\'e9 \'b5\'c8\'b4\'d9.\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth9720\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf8 \clbrdrl\brdrs\brdrw20\brdrcf8 \clbrdrb\brdrs\brdrw20\brdrcf8 \clbrdrr\brdrs\brdrw20\brdrcf8 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 public class Member implements Comparable<member>\{\
+    \'a1\'a6\
+\}\cell \lastrow\row
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+
+\f1\b * \'c0\'da\'b1\'e2 \'c0\'da\'bd\'c5\'b0\'fa \'c0\'fc\'b4\'de\'b9\'de\'c0\'ba \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b8\'a6 \'ba\'f1\'b1\'b3\'c7\'cf\'b4\'c2 Comparable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba
+\f0\b0 \
+- Comparable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'bf\'a1\'b4\'c2 CompareTo() \'c3\'df\'bb\'f3 \'b8\'de\'bc\'ad\'b5\'e5\'b0\'a1 \'c6\'f7\'c7\'d4\'b5\'c7\'be\'ee \'c0\'d6\'b4\'d9.\
+- \'b5\'fb\'b6\'f3\'bc\'ad \'c0\'cc \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'cf\'b4\'c2 Member \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1\'bc\'ad compareTo() \'b8\'de\'bc\'ad\'b5\'e5\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d8\'be\'df \'c7\'d1\'b4\'d9.\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs30 \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  Member 
+\f2\b \cf2 implements
+\f3\b0 \cf0  Comparable<Member> \{\
+	
+\f2\b \cf2 private
+\f3\b0 \cf0  
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf5 memberId\cf0 ;\
+	
+\f2\b \cf2 private
+\f3\b0 \cf0  String \cf5 memberName\cf0 ;\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs40 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf0 	\cf6 @Override\cf0 \
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 int
+\f3\b0 \cf0  compareTo(Member \cf3 member\cf0 ) \{\
+		
+\f2\b \cf2 return
+\f3\b0 \cf0  (
+\f2\b \cf2 this
+\f3\b0 \cf0 .\cf5 memberId\cf0  - \cf3 member\cf0 .\cf5 memberId\cf0 );\
+	\}
+\f0\fs40 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 - \'bf\'a9\'b1\'e2\'bc\'ad \'c0\'e7\'c1\'a4\'c0\'c7\'c7\'d1 compareTo\'c0\'c7 \'c0\'c7\'b9\'cc\'b4\'c2\'a1\'a6\
+- this\'c0\'c7 \'c8\'b8\'bf\'f8 \'be\'c6\'c0\'cc\'b5\'f0 (\'bb\'f5\'b7\'ce \'c3\'df\'b0\'a1\'c7\'d1 \'c8\'b8\'bf\'f8\'c0\'c7 \'be\'c6\'c0\'cc\'b5\'f0)\'bf\'cd compareTo() \'b8\'de\'bc\'ad\'b5\'e5\'c0\'c7 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b7\'ce \'c0\'fc\'b4\'de\'b5\'c8 \'be\'c6\'c0\'cc\'b5\'f0\'bf\'cd \'ba\'f1\'b1\'b3\'c7\'cf\'bf\'a9, \'bb\'f5\'b7\'ce \'c3\'df\'b0\'a1\'c7\'d1 \'b0\'cd\'c0\'cc \'b4\'f5 \'c5\'a9\'b4\'d9\'b8\'e9 \'be\'e7\'bc\'f6, \'c0\'db\'b4\'d9\'b8\'e9 \'c0\'bd\'bc\'f6, \'b0\'b0\'b4\'d9\'b8\'e9 0\'c0\'bb \'b9\'dd\'c8\'af\'c7\'cf\'b0\'d4 \'c7\'d1\'b4\'d9.\
+\
+
+\f1\b * \'b5\'ce \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b8\'a6 \'ba\'f1\'b1\'b3\'c7\'cf\'b4\'c2 Comparator \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba
+\f0\b0 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs30 \cf2 package
+\f3\b0 \cf0  collection;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.Comparator;\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  Member2 
+\f2\b \cf2 implements
+\f3\b0 \cf0  Comparator<Member2> \{\
+	
+\f2\b \cf2 private
+\f3\b0 \cf0  
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf5 memberId\cf0 ;\
+	
+\f2\b \cf2 private
+\f3\b0 \cf0  String \cf5 memberName\cf0 ;\
+	\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  Member2(
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 memberId\cf0 , String \cf3 memberName\cf0 ) \{\
+		
+\f2\b \cf2 this
+\f3\b0 \cf0 .\cf5 memberId\cf0  = \cf3 memberId\cf0 ;\
+		
+\f2\b \cf2 this
+\f3\b0 \cf0 .\cf5 memberName\cf0  = \cf3 memberName\cf0 ;\
+	\}\
+	\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 int
+\f3\b0 \cf0  getMemberId() \{\
+		
+\f2\b \cf2 return
+\f3\b0 \cf0  \cf5 memberId\cf0 ;\
+	\}\
+	\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  setMemberId(
+\f2\b \cf2 int
+\f3\b0 \cf0  \cf3 memberId\cf0 ) \{\
+		
+\f2\b \cf2 this
+\f3\b0 \cf0 .\cf5 memberId\cf0  = \cf3 memberId\cf0 ;\
+	\}\
+	\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  String getMemberName() \{\
+		
+\f2\b \cf2 return
+\f3\b0 \cf0  \cf5 memberName\cf0 ;\
+	\}\
+	\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  setMemberName(String \cf3 memberName\cf0 ) \{\
+		
+\f2\b \cf2 this
+\f3\b0 \cf0 .\cf5 memberName\cf0  = \cf3 memberName\cf0 ;\
+	\}\
+\
+	\cf6 @Override\cf0 \
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  String toString() \{\
+		
+\f2\b \cf2 return
+\f3\b0 \cf0  \cf5 memberName\cf0  + \cf4 "
+\f0 \'c8\'b8\'bf\'f8\'b4\'d4\'c0\'c7
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b4\'c2
+\f3  "\cf0  + \cf5 memberId\cf0  + \cf4 "
+\f0 \'c0\'d4\'b4\'cf\'b4\'d9
+\f3 ."\cf0 ;\
+	\}\
+\
+	\cf6 @Override\cf0 \
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 int
+\f3\b0 \cf0  hashCode() \{\
+		
+\f2\b \cf2 return
+\f3\b0 \cf0  \cf5 memberId\cf0 ;	\cf7 // hashCode() 
+\f0 \'b8\'de\'bc\'ad\'b5\'e5\'b0\'a1
+\f3  
+\f0 \'c8\'b8\'bf\'f8
+\f3  
+\f0 \'be\'c6\'c0\'cc\'b5\'f0\'b8\'a6
+\f3  
+\f0 \'b9\'dd\'c8\'af\'c7\'cf\'b5\'b5\'b7\'cf
+\f3  
+\f0 \'c0\'e7\'c1\'a4\'c0\'c7
+\f3 \cf0 \
+	\}\
+\
+	\cf6 @Override\cf0 \
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 boolean
+\f3\b0 \cf0  equals(Object \cf3 obj\cf0 ) \{\
+		
+\f2\b \cf2 if
+\f3\b0 \cf0 (\cf3 obj\cf0  
+\f2\b \cf2 instanceof
+\f3\b0 \cf0  Member) \{\
+			Member \cf3 member\cf0  = (Member)\cf3 obj\cf0 ;\
+			
+\f2\b \cf2 if
+\f3\b0 \cf0 (
+\f2\b \cf2 this
+\f3\b0 \cf0 .\cf5 memberId\cf0  == \cf3 member\cf0 .getMemberId()) \{\
+				
+\f2\b \cf2 return
+\f3\b0 \cf0  
+\f2\b \cf2 true
+\f3\b0 \cf0 ;\
+			\} 
+\f2\b \cf2 else
+\f3\b0 \cf0  \{\
+				
+\f2\b \cf2 return
+\f3\b0 \cf0  
+\f2\b \cf2 false
+\f3\b0 \cf0 ;\
+			\}\
+		\}\
+		
+\f2\b \cf2 return
+\f3\b0 \cf0  
+\f2\b \cf2 false
+\f3\b0 \cf0 ;\
+\
+	\}\
+	\
+	\cf6 @Override\cf0 \
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 int
+\f3\b0 \cf0  compare(Member2 \cf3 mem1\cf0 , Member2 \cf3 mem2\cf0 ) \{\
+		
+\f2\b \cf2 return
+\f3\b0 \cf0  \cf3 mem1\cf0 .getMemberId() - \cf3 mem2\cf0 .getMemberId();\
+	\}\
+	\
+	\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 - \'c0\'cc \'b8\'de\'bc\'ad\'b5\'e5\'bf\'a1\'b4\'c2 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b0\'a1 2\'b0\'b3 \'c0\'fc\'b4\'de\'b5\'c8\'b4\'d9.\
+- \'c0\'af\'c0\'c7\'c7\'d2 \'c1\'a1\'c0\'ba TreeSet \'bb\'fd\'bc\'ba\'c0\'da\'bf\'a1 Comparator\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d1 \'b0\'b4\'c3\'bc\'b8\'a6 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b7\'ce \'c0\'fc\'b4\'de\'c7\'d1\'b4\'d9\'b4\'c2 \'b0\'cd\'c0\'cc\'b4\'d9. \'c1\'ef \'b4\'d9\'c0\'bd\'b0\'fa \'b0\'b0\'c0\'cc \'b1\'b8\'c7\'f6\'c7\'d8\'be\'df \'c7\'d1\'b4\'d9.\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth11780\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf8 \clbrdrl\brdrs\brdrw20\brdrcf8 \clbrdrb\brdrs\brdrw20\brdrcf8 \clbrdrr\brdrs\brdrw20\brdrcf8 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 TreeSet<Member> treeSet = new TreeSet<Member>(new Member());\cell \lastrow\row
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+- \'c0\'cf\'b9\'dd\'c0\'fb\'c0\'b8\'b7\'ce Comparator \'ba\'b8\'b4\'d9\'b4\'c2 Comparable\'c0\'bb \'b4\'f5 \'b8\'b9\'c0\'cc \'bb\'e7\'bf\'eb\'c7\'d1\'b4\'d9.\
+- \'b4\'d9\'b8\'b8 \'be\'ee\'b6\'b2 \'c5\'ac\'b7\'a1\'bd\'ba\'b0\'a1 \'c0\'cc\'b9\'cc Comparable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d1 \'b0\'e6\'bf\'ec\'bf\'a1 \'c0\'cc \'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7 \'c1\'a4\'b7\'c4 \'b9\'e6\'bd\'c4\'c0\'bb \'c1\'a4\'c0\'c7\'c7\'d2 \'b6\'a7 comparator\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d1\'b4\'d9.\
+- \'bf\'b9\'b8\'a6\'b5\'e9\'be\'ee String \'c5\'ac\'b7\'a1\'bd\'ba\'b4\'c2 Comparable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'c0\'cc\'b9\'cc \'b1\'b8\'c7\'f6\'c7\'df\'c0\'b8\'b9\'c7\'b7\'ce, \'b3\'bb\'b8\'b2\'c2\'f7\'bc\'f8\'c0\'b8\'b7\'ce \'b9\'d9\'b2\'d9\'b0\'ed \'bd\'cd\'c0\'ba \'b0\'e6\'bf\'ec\'bf\'a1\'b4\'c2 CompareTo()\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d1\'b4\'d9.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs30 \cf2 package
+\f3\b0 \cf0  collection.treeset;\
+\
+
+\f2\b \cf2 import
+\f3\b0 \cf0  java.util.*;\
+\
+
+\f2\b \cf2 class
+\f3\b0 \cf0  MyCompare 
+\f2\b \cf2 implements
+\f3\b0 \cf0  Comparator<String>\{\
+	\cf6 @Override\cf0 \
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 int
+\f3\b0 \cf0  compare(String \cf3 s1\cf0 , String \cf3 s2\cf0 ) \{\
+		
+\f2\b \cf2 return
+\f3\b0 \cf0  (\cf3 s1\cf0 .compareTo(\cf3 s2\cf0 )) * -1;\
+	\}	\
+\
+\}\
+\
+
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 class
+\f3\b0 \cf0  ComparatorTest \{\
+	
+\f2\b \cf2 public
+\f3\b0 \cf0  
+\f2\b \cf2 static
+\f3\b0 \cf0  
+\f2\b \cf2 void
+\f3\b0 \cf0  main(String[] \cf3 args\cf0 ) \{\
+		Set<String> \cf3 set\cf0  = 
+\f2\b \cf2 new
+\f3\b0 \cf0  TreeSet<String>(
+\f2\b \cf2 new
+\f3\b0 \cf0  MyCompare());\
+		\cf3 set\cf0 .add(\cf4 "aaa"\cf0 );\
+		\cf3 set\cf0 .add(\cf4 "ccc"\cf0 );\
+		\cf3 set\cf0 .add(\cf4 "bbb"\cf0 );\
+		\
+		System.
+\f4\i\b \cf5 out
+\f3\i0\b0 \cf0 .println(\cf3 set\cf0 );\
+	\}\
 \
 \
-\
-\
-\
-\
-\
-\
-\
-\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 >>\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf0 [ccc, bbb, aaa]\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \
+- TreeSet \'c5\'ac\'b7\'a1\'bd\'ba\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d2 \'b6\'a7, \'bb\'fd\'bc\'ba\'c0\'da\'bf\'a1 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b8\'a6 \'b3\'d6\'c1\'f6 \'be\'ca\'c0\'b8\'b8\'e9 \'bf\'f8\'b7\'a1 String \'c5\'ac\'b7\'a1\'bd\'ba\'bf\'a1 \'c1\'a4\'c0\'c7\'b5\'c8 Comparable \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'c0\'c7 CompareTo \'b1\'b8\'c7\'f6 \'b3\'bb\'bf\'eb\'b4\'eb\'b7\'ce \'c1\'a4\'b7\'c4\'b5\'c8\'b4\'d9.\
+- \'c0\'cc \'bf\'b9\'c1\'a6\'bf\'a1\'bc\'ad\'b4\'c2 TreeSet \'c5\'ac\'b7\'a1\'bd\'ba \'bb\'fd\'bc\'ba\'c0\'da\'bf\'a1 Comparator \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b8\'a6 \'b1\'b8\'c7\'f6\'c7\'d1 My Comparator\'b8\'a6 \'b8\'c5\'b0\'b3\'ba\'af\'bc\'f6\'b7\'ce \'b3\'d6\'be\'fa\'b1\'e2\'bf\'a1, \'c0\'e7\'c1\'a4\'c0\'c7\'c7\'d1 compare() \'b8\'de\'bc\'ad\'b5\'e5 \'b9\'e6\'bd\'c4\'bf\'a1 \'b5\'fb\'b6\'f3 \'b3\'bb\'b8\'b2\'c2\'f7\'bc\'f8\'c0\'b8\'b7\'ce \'c1\'a4\'b7\'c4\'b5\'c8\'b4\'d9.\
 \
 \
 \
