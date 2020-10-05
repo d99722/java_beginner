@@ -1,27 +1,37 @@
-import java.awt.Color;
-import java.awt.Graphics;
+import java.util.ArrayList;
 import java.util.Scanner;
 
-import javax.swing.*;
-
-public class Main extends JPanel {
+public class Main {
+	public static int sum = 0;
 	
-	public Main() {
-		JFrame frame = new JFrame();
-		frame.getContentPane().add(this);
-		frame.setTitle("test");
-		frame.setSize(300,200);
-		frame.setVisible(true);
-	}
-	
-	public void paintComponent (Graphics g) {
-		g.setColor(Color.red);
-		g.drawOval(100, 50, 100, 100);
+	public int recur(int a, int b) {
+		if (a==1) {
+			sum += b;
+		} else {
+			while (a!=b+1) {
+				recur(a-1, b-1);
+				b--;
+			}
+		}
+		return sum;
 	}
 	
 	public static void main(String[] args) {
-//		Scanner sc = new Scanner(System.in);
-		new Main();
+		Scanner sc = new Scanner(System.in);
+		int count = sc.nextInt();
+		Main ma = new Main();
+		ArrayList<Integer> results = new ArrayList<Integer>();
 		
-	}
+		for (int i = count; i>0; i--) {
+			int a = sc.nextInt();
+			int b = sc.nextInt();
+			results.add(ma.recur(a,b));
+			sum = 0;
+		}
+		
+		for (int result : results) {
+			System.out.println(result);
+		}
+		
+	}	
 }
