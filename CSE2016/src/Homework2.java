@@ -18,7 +18,7 @@ public class Homework2 extends JPanel {
 	
 	public void paintComponent(Graphics g) {
 		LocalTime now = LocalTime.now();
-		Date today = new Date();
+		LocalDate nowDate = LocalDate.now();
 		
 		int sec = now.getSecond();
 		int min = now.getMinute();
@@ -27,9 +27,12 @@ public class Homework2 extends JPanel {
 		int minutes_angle = 90 - min * 6;
 		int hours_angle = 90 - hour * 30;
 
+		int year = nowDate.getYear();
+		int month = nowDate.getMonthValue();
+		int day = nowDate.getDayOfMonth();
+		
 		String time = hour+":"+min+":"+sec;
-		SimpleDateFormat date = new SimpleDateFormat("yyyy년 MM월 dd일");
-		String formatToday = date.format(today);
+		String date = year+"년 "+month+"월 "+day+"일";		
 		
 		int x = 50;
 		int y = 50;
@@ -42,22 +45,77 @@ public class Homework2 extends JPanel {
 		// date & time
 		g.setColor(Color.black);
 		g.drawString(time, x+22, y-10);
-		g.drawString(formatToday, x-2, y+diameter+18);
+		g.drawString(date, x-2, y+diameter+18);
 
 		// draw clock border
 		g.drawOval(x, y, diameter, diameter);
 		
 		// mark1
-		for (int i=0; i<60; i++) {
-			if (i%5==0) continue;
-			else g.fillArc(x, y, diameter, diameter, 6*i-1, 2);
-		}
+		g.fillArc(x, y, diameter, diameter, 5, 2);
+		g.fillArc(x, y, diameter, diameter, 11, 2);
+		g.fillArc(x, y, diameter, diameter, 17, 2);
+		g.fillArc(x, y, diameter, diameter, 23, 2);
+		g.fillArc(x, y, diameter, diameter, 35, 2);
+		g.fillArc(x, y, diameter, diameter, 41, 2);
+		g.fillArc(x, y, diameter, diameter, 47, 2);
+		g.fillArc(x, y, diameter, diameter, 53, 2);
+		g.fillArc(x, y, diameter, diameter, 65, 2);
+		g.fillArc(x, y, diameter, diameter, 71, 2);
+		g.fillArc(x, y, diameter, diameter, 77, 2);
+		g.fillArc(x, y, diameter, diameter, 83, 2);
+		g.fillArc(x, y, diameter, diameter, 95, 2);
+		g.fillArc(x, y, diameter, diameter, 101, 2);
+		g.fillArc(x, y, diameter, diameter, 107, 2);
+		g.fillArc(x, y, diameter, diameter, 113, 2);
+		g.fillArc(x, y, diameter, diameter, 125, 2);
+		g.fillArc(x, y, diameter, diameter, 131, 2);
+		g.fillArc(x, y, diameter, diameter, 137, 2);
+		g.fillArc(x, y, diameter, diameter, 143, 2);
+		g.fillArc(x, y, diameter, diameter, 155, 2);
+		g.fillArc(x, y, diameter, diameter, 161, 2);
+		g.fillArc(x, y, diameter, diameter, 167, 2);
+		g.fillArc(x, y, diameter, diameter, 173, 2);
+		g.fillArc(x, y, diameter, diameter, 185, 2);
+		g.fillArc(x, y, diameter, diameter, 191, 2);
+		g.fillArc(x, y, diameter, diameter, 197, 2);
+		g.fillArc(x, y, diameter, diameter, 203, 2);
+		g.fillArc(x, y, diameter, diameter, 215, 2);
+		g.fillArc(x, y, diameter, diameter, 221, 2);
+		g.fillArc(x, y, diameter, diameter, 227, 2);
+		g.fillArc(x, y, diameter, diameter, 233, 2);
+		g.fillArc(x, y, diameter, diameter, 245, 2);
+		g.fillArc(x, y, diameter, diameter, 251, 2);
+		g.fillArc(x, y, diameter, diameter, 257, 2);
+		g.fillArc(x, y, diameter, diameter, 263, 2);
+		g.fillArc(x, y, diameter, diameter, 275, 2);
+		g.fillArc(x, y, diameter, diameter, 281, 2);
+		g.fillArc(x, y, diameter, diameter, 287, 2);
+		g.fillArc(x, y, diameter, diameter, 293, 2);
+		g.fillArc(x, y, diameter, diameter, 305, 2);
+		g.fillArc(x, y, diameter, diameter, 311, 2);
+		g.fillArc(x, y, diameter, diameter, 317, 2);
+		g.fillArc(x, y, diameter, diameter, 323, 2);
+		g.fillArc(x, y, diameter, diameter, 335, 2);
+		g.fillArc(x, y, diameter, diameter, 341, 2);
+		g.fillArc(x, y, diameter, diameter, 347, 2);
+		g.fillArc(x, y, diameter, diameter, 353, 2);
 		g.setColor(Color.white);
 		g.fillOval(x+3, y+3, diameter-6, diameter-6);
 		
 		// mark2
 		g.setColor(Color.black);
-		for (int i=0; i<12; i++) g.fillArc(x, y, diameter, diameter, 30*i-1, 2);
+		g.fillArc(x, y, diameter, diameter, -1, 2);
+		g.fillArc(x, y, diameter, diameter, 29, 2);
+		g.fillArc(x, y, diameter, diameter, 59, 2);
+		g.fillArc(x, y, diameter, diameter, 89, 2);
+		g.fillArc(x, y, diameter, diameter, 119, 2);
+		g.fillArc(x, y, diameter, diameter, 149, 2);
+		g.fillArc(x, y, diameter, diameter, 179, 2);
+		g.fillArc(x, y, diameter, diameter, 209, 2);
+		g.fillArc(x, y, diameter, diameter, 239, 2);
+		g.fillArc(x, y, diameter, diameter, 269, 2);
+		g.fillArc(x, y, diameter, diameter, 299, 2);
+		g.fillArc(x, y, diameter, diameter, 329, 2);
 		g.setColor(Color.white);
 		g.fillOval(x+5, y+5, diameter-10, diameter-10);
 		
