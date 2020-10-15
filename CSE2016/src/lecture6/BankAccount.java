@@ -39,7 +39,7 @@ public class BankAccount {
 			JOptionPane.showMessageDialog(null, "출금액에 문제가 있어서 출금이 취소되었습니다.");
 			return false;
 		} else if (amount>balance) {
-			JOptionPane.showMessageDialog(null, "출금액에 잔액보다 많아서 출금이 취소되었습니다.");
+			JOptionPane.showMessageDialog(null, "출금액이 잔액보다 많아서 출금이 취소되었습니다.");
 			return false;
 		} else {
 			balance -= amount;
@@ -52,27 +52,6 @@ public class BankAccount {
 	 * @return balance */
 	public int getBalance() {
 		return balance;
-	}
-	
-	public static void main(String[] args) {
-		BankAccount tester = new BankAccount(100);
-		System.out.println("잔액 : "+tester.getBalance());
-		int five = 50000;
-		int three = 30000;
-		if(tester.deposit(five))
-			System.out.println("잔액 : "+tester.getBalance());
-		else
-			System.out.println("실패 : "+tester.getBalance());
-		
-		if(tester.withdraw(three))
-			System.out.println("잔액 : "+tester.getBalance());
-		else
-			System.out.println("실패 : "+tester.getBalance());
-		
-		if (tester.withdraw(three))
-			System.out.println("잔액 : "+tester.getBalance());
-		else
-			System.out.println("실패 : "+tester.getBalance());
 	}
 }
 

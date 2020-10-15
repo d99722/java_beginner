@@ -141,8 +141,10 @@ public class QuickSort {
 //			System.out.print("Enter Input Size : ");
 //			Scanner sc = new Scanner(System.in);
 //			int input_size = sc.nextInt();
-			int input_size = 100000000;
+			int input_size = 300000000;
 			int[] testArray = randomArray(input_size);
+			
+//			int[] testArray = {2,1,3,4};
 			
 //			System.out.println();
 //			System.out.println("*");
@@ -152,12 +154,12 @@ public class QuickSort {
 //			}		
 			
 			
-			long start = System.currentTimeMillis();
+			long start = System.nanoTime();
 			QuickSort tester = new QuickSort();
 //			tester.sort(0, testArray.length-1, testArray);
 //			tester.sortRandom(0, testArray.length-1, testArray);
 			tester.sortMedian(0, testArray.length-1, testArray);
-			long end = System.currentTimeMillis();
+			long end = System.nanoTime();
 
 //			System.out.println();
 //			for (int number : testArray) {
@@ -172,7 +174,7 @@ public class QuickSort {
 //			System.out.println();
 			System.out.println("*");
 			System.out.println((i+1)+" time exp");
-			System.out.println("Time (ms) : "+(end-start));	
+			System.out.println("Time (ms) : "+(double)(end-start)/1000000);	
 		}
 		
 		
