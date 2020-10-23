@@ -136,42 +136,42 @@ public class QuickSort {
 	}
 	
 	public static void main(String[] args) {
-		for(int i=0; i<10; i++) {
+		for(int i=0; i<1; i++) {
 
-//			System.out.print("Enter Input Size : ");
-//			Scanner sc = new Scanner(System.in);
-//			int input_size = sc.nextInt();
-			int input_size = 300000000;
+			System.out.print("Enter Input Size : ");
+			Scanner sc = new Scanner(System.in);
+			int input_size = sc.nextInt();
+//			int input_size = 30000;
 			int[] testArray = randomArray(input_size);
 			
 //			int[] testArray = {2,1,3,4};
 			
-//			System.out.println();
-//			System.out.println("*");
-//			System.out.println("Array Before/After Sort");
-//			for (int number : testArray) {
-//				System.out.print(number+" ");
-//			}		
+			System.out.println();
+			System.out.println("*");
+			System.out.println("Array Before/After Sort");
+			for (int number : testArray) {
+				System.out.print(number+" ");
+			}		
 			
 			
 			long start = System.nanoTime();
 			QuickSort tester = new QuickSort();
-//			tester.sort(0, testArray.length-1, testArray);
+			tester.sort(0, testArray.length-1, testArray);
 //			tester.sortRandom(0, testArray.length-1, testArray);
-			tester.sortMedian(0, testArray.length-1, testArray);
+//			tester.sortMedian(0, testArray.length-1, testArray);
 			long end = System.nanoTime();
 
-//			System.out.println();
-//			for (int number : testArray) {
-//				System.out.print(number+" ");
-//			}
-//			System.out.println();
-//			System.out.println();
-//			System.out.println("*");
-//			tester.printCpCount();
-//			tester.printExCount();
+			System.out.println();
+			for (int number : testArray) {
+				System.out.print(number+" ");
+			}
+			System.out.println();
+			System.out.println();
+			System.out.println("*");
+			tester.printCpCount();
+			tester.printExCount();
 			
-//			System.out.println();
+			System.out.println();
 			System.out.println("*");
 			System.out.println((i+1)+" time exp");
 			System.out.println("Time (ms) : "+(double)(end-start)/1000000);	
