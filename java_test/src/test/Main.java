@@ -1,33 +1,49 @@
 package test;
 
-import javax.management.RuntimeErrorException;
+class Movie {
+	public void rating() {
+		System.out.println("rating of movie");
+	}
+	public void reserve() {
+		System.out.println("reserve");
+	}
+}
+
+class DeepMovie extends Movie{
+
+	@Override
+	public void rating() {
+		System.out.println("rating of deep movie");
+	}
+	
+	public void deep() {
+		System.out.println("deep");
+	}
+	
+	
+}
+
 
 public class Main {
-	public void forTest() {
-		int count = 0;
-		for(count=0; count<3; count++) {
-			System.out.println(count);
-		}
-		System.out.println(count+" at the end");
-	}
-	
-	public void whileTest() {
-		int count = 0;
-		while(count<3) {
-			count++;
-			System.out.println(count);
-		}
-		System.out.println(count+" at the end");
-	}
-	
 	public static void main(String[] args) {
-		int hour = 3;
-		for(int i=0; i<60; i++) {
-			System.out.println(90-(hour*30)-(i-(i%12))/2);
-			if(i%30==29)
-				System.exit(1);
-		}
+		Movie m = new Movie();
+		m.rating();
+		m.reserve();
+//		m.deep();
 		
+		System.out.println("***********");
+		DeepMovie dm = new DeepMovie();
+		dm.rating();
+		dm.reserve();
+		dm.deep();
+		System.out.println("***********");
+
+		m = new DeepMovie();
+		m.rating();
+		m.reserve();
+//		m.deep();
+		
+//		am = new Movie();
 	}
 
 }
