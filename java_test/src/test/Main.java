@@ -1,49 +1,19 @@
 package test;
 
-class Movie {
-	public void rating() {
-		System.out.println("rating of movie");
-	}
-	public void reserve() {
-		System.out.println("reserve");
-	}
-}
+import java.io.BufferedReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.util.StringTokenizer;
 
-class DeepMovie extends Movie{
-
-	@Override
-	public void rating() {
-		System.out.println("rating of deep movie");
-	}
-	
-	public void deep() {
-		System.out.println("deep");
-	}
-	
-	
-}
-
-
-public class Main {
-	public static void main(String[] args) {
-		Movie m = new Movie();
-		m.rating();
-		m.reserve();
-//		m.deep();
+public class Main{
+	public static void main(String[] args) throws IOException{
+		BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("도");
+		String province = keyboard.readLine();
+		System.out.println(province);
 		
-		System.out.println("***********");
-		DeepMovie dm = new DeepMovie();
-		dm.rating();
-		dm.reserve();
-		dm.deep();
-		System.out.println("***********");
-
-		m = new DeepMovie();
-		m.rating();
-		m.reserve();
-//		m.deep();
-		
-//		am = new Movie();
 	}
 
 }

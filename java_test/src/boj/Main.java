@@ -8,10 +8,15 @@ public class Main {
 		
 //		Scanner sc = new Scanner(System.in);
 		
-	String s = "abc";
-	String t = new String("abc");
-	System.out.println(s==t);
-	System.out.println(s.equals(t));
-		
+	int[] testarr = new int[9];
+	for(int i=0; i<testarr.length; i++) {
+		testarr[i] = (int)(Math.random()*testarr.length);
+	}
+	
+	for(int i=0; i<testarr.length; i++) {
+		System.out.println(testarr[i]);
+	}
+
+	
 	}
 }

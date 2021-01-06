@@ -26,7 +26,9 @@ public class Pi {
 			String result = d.format(temp);
 			double diff = Double.parseDouble(d.format(temp-Math.PI));
 //			System.out.println("input "+i+" : "+result);
-			System.out.println(i+"오차 : "+(Math.abs(diff)*10000));
+			System.out.println(i+"번째 실험 : "+result);
+			System.out.println("오차 : "+(Math.abs(diff)));
+			System.out.println();
 		}
 	}
 	
